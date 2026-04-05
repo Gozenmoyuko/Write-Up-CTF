@@ -391,12 +391,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/XSS Volatile.md",
+                "file": "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS Volatile"
+              "title": "writeup_bubulle_corp"
             }
           }
         ],
@@ -473,7 +473,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/XSS Volatile.md",
+                "file": "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -483,7 +483,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour XSS Volatile"
+              "title": "Rétrolien pour writeup_bubulle_corp"
             }
           },
           {
@@ -560,24 +560,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ff5bf5ad1cbae6a",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Write Up/Root-me/sudo - faiblesse de configuration.md",
+    "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
+    "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root me/Réseau Bluetooth - Fichier inconnu.md",
-    "Write Up/Root me/R101-Generalités.pdf",
-    "Write Up/Root me/Pasted image 20260405233556.png",
-    "Write Up/Root me/Pasted image 20260405233516.png",
-    "Write Up/Root me/Pasted image 20260405233456.png",
-    "Write Up/Root me/Pasted image 20260405232840.png",
-    "Write Up/Root me/Pasted image 20260405232634.png",
-    "Write Up/Root me/Pasted image 20260405232347.png",
-    "Write Up/Root me/Pasted image 20260405221809.png",
-    "Write Up/Root me/Pasted image 20260405221658.png",
-    "Write Up/Root me/Pasted image 20260405221610.png",
-    "Write Up/Root me/Pasted image 20260405220434.png",
-    "Write Up/Root me/Cours limite et continuité.pdf",
-    "Write Up/Root me/Archi_syst_inf_BUT_1A_VF.pdf",
-    "Write Up/Root me",
+    "Write Up/img/R101-Generalités.pdf",
+    "Write Up/img/Pasted image 20260405233556.png",
+    "Write Up/img/Pasted image 20260405233516.png",
+    "Write Up/img/Pasted image 20260405233456.png",
+    "Write Up/img/Pasted image 20260405232840.png",
+    "Write Up/img/Pasted image 20260405232634.png",
+    "Write Up/img/Pasted image 20260405232347.png",
+    "Write Up/img/Pasted image 20260405221809.png",
+    "Write Up/img/Pasted image 20260405221658.png",
+    "Write Up/img/Pasted image 20260405221610.png",
+    "Write Up/img/Pasted image 20260405220434.png",
+    "Write Up/img/Cours limite et continuité.pdf",
+    "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
+    "Write Up/img",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
@@ -588,7 +591,6 @@
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
-    "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/Root-me/Python input().md",
@@ -602,8 +604,6 @@
     "Write-Up-CTF/CTF Anssi 2026 (Hackropole)",
     "Write-Up-CTF/Write Up/Root-me/XSS Volatile.md",
     "Write-Up-CTF/Write Up/Root-me/XSS Stored 2.md",
-    "Write-Up-CTF/Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
-    "Write-Up-CTF/Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write-Up-CTF/Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write-Up-CTF/Write Up/Root-me",
     "Write-Up-CTF/Write Up/Pico-CTF",

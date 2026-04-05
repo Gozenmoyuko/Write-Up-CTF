@@ -1,11 +1,11 @@
 Tout d'abord regardons l'énoncer de ce challenge : 
 
-![Pasted image 20260405210812.png](img/Pasted%20image%2020260405210812.png)
+![Pasted image 20260405210812.png](Write%20Up/img/Pasted%20image%2020260405210812.png)
 
 Maintenant que nous savons que ça un rapport à notre ancien challenge API nous savons à peut près les manipulations qui ont été faite et pensez aussi au réglage qui ont été fait mais voyons voir plus en profondeur. 
 
 
-![Pasted image 20260405210913.png](img/Pasted%20image%2020260405210913.png)
+![Pasted image 20260405210913.png](Write%20Up/img/Pasted%20image%2020260405210913.png)
 
 Nous arrivons sur une page qui nous présente l'API de root-me (c'est juste pour le CTF pas le vrai haha)
 
@@ -13,23 +13,23 @@ Maintenant essayons de voir qu'elle sont les différentes options de cette API.
 
 Nous avons deux requête POST possible qui se situe dans /api/signup et api/login voyons voir le format du request et qu'est-ce que demande la request en terme de donné JSON. 
 
-![Pasted image 20260405211050.png](img/Pasted%20image%2020260405211050.png)
+![Pasted image 20260405211050.png](Write%20Up/img/Pasted%20image%2020260405211050.png)
 
 Okay il suffit de mettre un username et un password pour pouvoir créé un compte pour l'instant tout paraît assez logique. 
 
-![Pasted image 20260405211123.png](img/Pasted%20image%2020260405211123.png)
+![Pasted image 20260405211123.png](Write%20Up/img/Pasted%20image%2020260405211123.png)
 
 Deux réponse possible de notre API, réponse avec le code 201 qui nous affirme que notre utilisateur à été créé. Mais aussi le code 400 qui dis comme quoi l'utilisateur existe déjà (Je suppose qu'il se base juste sur le username.)
 
 Bon continuons voyons voir pour le login maintenant : 
 
-![Pasted image 20260405211530.png](img/Pasted%20image%2020260405211530.png)
+![Pasted image 20260405211530.png](Write%20Up/img/Pasted%20image%2020260405211530.png)
 
 La même chose cette fois ci, le code 200 nous dis juste si ont à réussi à se login, et le code 400 qu'on à un problème dans le username ou le password que l'ont à saisie. 
 
 Bon voyons voir d'autre chose. 
 
-![Pasted image 20260405211648.png](img/Pasted%20image%2020260405211648.png)
+![Pasted image 20260405211648.png](Write%20Up/img/Pasted%20image%2020260405211648.png)
 
 Tiens intéressant, l'option /api/user nous permet de connaître (Grâce à la requête GET) les informations de notre compte. Peut-être qu'il y aura une faille avec ça on verra plus tard pour l'instant continuons. Si nous sommes bien connecter sur le compte l'api nous retournera les différentes information suivante : 
 
@@ -44,13 +44,13 @@ Voyons voir maintenant l'option api/note qui nous permet de poster une note sur 
 
 
  
-![Pasted image 20260405212044.png](img/Pasted%20image%2020260405212044.png)
+![Pasted image 20260405212044.png](Write%20Up/img/Pasted%20image%2020260405212044.png)
 
 Ici on peut voir qu'elle utilise la requête PUT. Qui je rappel pour ceux qui ne sont habitué que d'utiliser POST ou GET, nous permet de remplacer une donné, ici c'est un strings. Ce qui veut dire que si ma note de départ été "test" et qu'après je refait une requête avec le PUT avec la valeur "Gozen le bg" nous n'aurons pas comme avec le POST "test" ,"Gozen le bg" mais plûtot cela écrasera l'ancienne donnée et mettra juste dans les notes de l'utilisateur : "Gozen le bg" (En vrai c'est vrai que je suis plûtot bg ) Bref continuons, cette requête nous intéresseras je vous invite de la gardé dans un coin de votre tête. Le code 200 dis que notre note à bien été publié et 400 quand nous ne somme pas connecté à un compte.
 
 
 Et enfin l'api qui contiendra notre Flag qui est /api/flag. 
-![Pasted image 20260405212610.png](img/Pasted%20image%2020260405212610.png)
+![Pasted image 20260405212610.png](Write%20Up/img/Pasted%20image%2020260405212610.png)
 
 Celui-ci nous renvois   200 "Hello admin, here is the flag : {le flag root me}" 
 
@@ -70,32 +70,32 @@ Allez sur l'api /api/signup et cliquez sur "Try it out"
 
 Mettez les informations que vous voulez pour vos compte pour ma part : 
 
-![Pasted image 20260405214707.png](img/Pasted%20image%2020260405214707.png)
+![Pasted image 20260405214707.png](Write%20Up/img/Pasted%20image%2020260405214707.png)
 
 Cliquez sur la cellule execute : 
 
-![Pasted image 20260405214819.png](img/Pasted%20image%2020260405214819.png)
+![Pasted image 20260405214819.png](Write%20Up/img/Pasted%20image%2020260405214819.png)
 
 Okay il à bien été crée. Mais attend est-ce qu'il existe un utilisateur nommée admin ? Nous allons voir cela grâce à l'erreur que dois nous renvoyez l'API : 
 
-![Pasted image 20260405214943.png](img/Pasted%20image%2020260405214943.png)
+![Pasted image 20260405214943.png](Write%20Up/img/Pasted%20image%2020260405214943.png)
 
 Okay parfait on pourra plus tard essayer de faire quelques chose avec cela, pour l'instant connectons nous à notre utilisateur pour ma part "username" : "Gozen2", "password " : "Gozen2"
 
 
 
-![Pasted image 20260405215109.png](img/Pasted%20image%2020260405215109.png)
+![Pasted image 20260405215109.png](Write%20Up/img/Pasted%20image%2020260405215109.png)
 
 Toujours pareil nous pouvons voir que j'ai mis les données en JSON de mon username et password (j'ai fait sur burpsuite mais vous pouvez voir qu'on doit mettre aussi en JSON de toute façon vous remplacez juste les champs sur le site rien de bien compliquez haha). 
 
 Bon continuons essayons de poster une note sur notre profil. 
 
 Rendez vous dans /api/note et mettez une note : 
-![Pasted image 20260405215346.png](img/Pasted%20image%2020260405215346.png)
+![Pasted image 20260405215346.png](Write%20Up/img/Pasted%20image%2020260405215346.png)
 
 Okay la note c'est bien mise, maintenant allons voir l'option /api/user qui permet de voir les informations relative à notre utilisateur, ici c'est Gozen2. 
 
-![Pasted image 20260405215550.png](img/Pasted%20image%2020260405215550.png)
+![Pasted image 20260405215550.png](Write%20Up/img/Pasted%20image%2020260405215550.png)
 
 
 
@@ -115,13 +115,13 @@ Tout d'abord j'ai lancer mon exegol. Par la suite j'ai remarqué que le cookie �
 
 Faisons cela : 
 
-![Pasted image 20260405220231.png](img/Pasted%20image%2020260405220231.png)
+![Pasted image 20260405220231.png](Write%20Up/img/Pasted%20image%2020260405220231.png)
 J'utilise l'outil flask-unsign qui permet de décortiqué un cookie, comme vous pouvez le voir ici le cookie de session est sous forme 
 
  `{'_fresh': True, '_id': '4f423b9974c473002c0079eafeb06bd5e22ea7d6589c156613a91869ae39976fb6e07abac24bc9e7ab823e36513038ca7b5da82a6f776b130807ccb2e59e16c7', '_user_id': '3'}`
 
 Bon j'ai tenter de crack grâce à l'option --wordlist mais comment vous dire cela n'as pas marché. J'ai donc décidé de me dire que le secret devais être vide. J'ai donc essayer cela : 
-![Pasted image 20260405220434.png](img/Pasted%20image%2020260405220434.png)
+![Pasted image 20260405220434.png](Write%20Up/img/Pasted%20image%2020260405220434.png)
 (C'est un ancien screen mais j'ai mis 0 en id car c'est souvent celui de l'admin ou d'un bot admin)
 
 Mais bref cela n'as pas marché aussi c'est normal ce n'est pas comme ça qu'il faut faire. 
@@ -145,7 +145,7 @@ Cookie: session= "Votre cookie que vous venez de récupérer"
 
 Faite comme ci dessous : 
 
-![Pasted image 20260405210605.png](img/Pasted%20image%2020260405210605.png)
+![Pasted image 20260405210605.png](Write%20Up/img/Pasted%20image%2020260405210605.png)
 
 Vous pouvez voir que j'ai rajouté en JSON les données de mon api/user mais que j'ai juste changé les différentes données, je me suis dis que l'admin ne devais pas avoir de note donc "" , statut j'ai changer "guest" en "admin" mon userid de 3 à 0 et mon username de "Gozen2" à "admin". Mais ce qui est le plus important c'est le status pourquoi ? 
 
@@ -157,16 +157,16 @@ Vous pouvez voir dans la réponse que nous avons reçu un message "User updated 
 
 Oui vous avez raison. En réalité c'est deux chose combiné qui donne la faille. Tout d'abord l'étape des données relié à notre compte (cookie) car oui, si vous faite cela sans changé la méthode de la requête, dans la réponse vous aurez que les données reliée à votre compte, regardé je fais le test pour vous : 
 
-![Pasted image 20260405221610.png](img/Pasted%20image%2020260405221610.png)
+![Pasted image 20260405221610.png](Write%20Up/img/Pasted%20image%2020260405221610.png)
 
 Bon maintenant regardé bien ce que je vais surlignée : 
 
-![Pasted image 20260405221658.png](img/Pasted%20image%2020260405221658.png)
+![Pasted image 20260405221658.png](Write%20Up/img/Pasted%20image%2020260405221658.png)
 Tiens tiens tiens, c'est pas notre méthode PUT ? et oui en réalité j'ai supprimé les données de mon compte et remplacé par ce que j'ai mis, maintenant je suis admin haha. Récupérons notre Flag grâce au /api/flag. 
 
 
 
-![Pasted image 20260405221809.png](img/Pasted%20image%2020260405221809.png)
+![Pasted image 20260405221809.png](Write%20Up/img/Pasted%20image%2020260405221809.png)
 
 Bingo ! On se revoit pour un autre chall :)
 

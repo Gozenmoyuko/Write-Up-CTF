@@ -1,11 +1,11 @@
 Dans ce challenges voici ce qui nous ai demandé : 
 
-![img/Pasted image 20260331000639.png](img/Pasted%20image%2020260331000639.png)
+![Write Up/img/Pasted image 20260331000639.png](Write%20Up/img/Pasted%20image%2020260331000639.png)
 
 
 Pour ce faire nous allons tout d'abord ouvrir le site concerné et démarrer le challenge. 
 
-![img/Pasted image 20260331000707.png](img/Pasted%20image%2020260331000707.png)
+![Write Up/img/Pasted image 20260331000707.png](Write%20Up/img/Pasted%20image%2020260331000707.png)
 
 Nous arrivons sur un site sur lequel nous avons un une galerie photo et un endroit pour upload. 
 
@@ -13,18 +13,18 @@ Rappelons il nous suffit de poster un code en PHP pour réussir le challenge mai
 
 Bon continuons, regardons la section Upload. 
 
-![img/Pasted image 20260331000941.png](img/Pasted%20image%2020260331000941.png)
+![Write Up/img/Pasted image 20260331000941.png](Write%20Up/img/Pasted%20image%2020260331000941.png)
 
 Okay cliquons sur Upload : 
 
-![img/Pasted image 20260331000959.png](img/Pasted%20image%2020260331000959.png)
+![Write Up/img/Pasted image 20260331000959.png](Write%20Up/img/Pasted%20image%2020260331000959.png)
 
 Nous pouvons Upload que des gif ou JPEG mais aussi PNG. 
 
 Pour cela nous allons devoir bypass et mettre du PHP. En réalité pour ce challenge nous allons pas nous attardé sur le contenu du php puisque ce n'est pas ce que l'ont souhaite. On souhaite juste vous initié à savoir upload et bypass les filtres dédiés au différents fichiers tel qu'ici les images. 
 
 
-![img/Pasted image 20260331001212.png](img/Pasted%20image%2020260331001212.png)
+![Write Up/img/Pasted image 20260331001212.png](Write%20Up/img/Pasted%20image%2020260331001212.png)
 
 Voici mon code php, évité de mettre un nom aussi explicite lorsque vous faites des failles haha. Bien-sûr à ne réalisé que sur des sites dans lequel vous êtes autorisé ou protéger par des agents politique (DGSI,DGSE ). Bon maintenant vous allez me dire comment faire ? Si on tape sur internet juste "null bytes" nous pouvons voir plusieurs sources qui combine "path traversal" un autres challenge plutôt simple que je vous conseilles d'aller voir, et justement notre null byte.
 
@@ -56,19 +56,19 @@ mv upload.php upload.php%00.png
 
 et tada maintenant essayons de mettre sur le serveur notre fichier.
 
-![img/Pasted image 20260331002444.png](img/Pasted%20image%2020260331002444.png)
+![Write Up/img/Pasted image 20260331002444.png](Write%20Up/img/Pasted%20image%2020260331002444.png)
 
 Okay maintenant je vais cliquez sur upload en espérant que c'est bon. 
 
-![img/Pasted image 20260331002526.png](img/Pasted%20image%2020260331002526.png)
+![Write Up/img/Pasted image 20260331002526.png](Write%20Up/img/Pasted%20image%2020260331002526.png)
 
 Okay parfait maintenant retournons dans upload et essayons de voir si y'a mon fichier. 
 
-![img/Pasted image 20260331002736.png](img/Pasted%20image%2020260331002736.png)
+![Write Up/img/Pasted image 20260331002736.png](Write%20Up/img/Pasted%20image%2020260331002736.png)
 
 Okay parfait maintenant cliquons sur le fichier ! 
 
-![img/Pasted image 20260331002818.png](img/Pasted%20image%2020260331002818.png)
+![Write Up/img/Pasted image 20260331002818.png](Write%20Up/img/Pasted%20image%2020260331002818.png)
 
 Bingo , au passage vous pouvez voir que le fichier en haut dans l'url est bien .php donc c'est bon !! 
 
