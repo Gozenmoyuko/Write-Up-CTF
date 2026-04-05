@@ -1,15 +1,15 @@
 
 Dans ce ctf nous allons devoir trouver une configuration qui à été mal faite lors du développement de l'intranet via Nginx.
 
-![Write Up/img/Pasted image 20260331204735.png](Write%20Up/img/Pasted%20image%2020260331204735.png)
+![../img/Pasted image 20260331204735.png](../img/Pasted%20image%2020260331204735.png)
 
 Maintenant  que nous savons essayons de voir le site : 
 
-![Write Up/img/Pasted image 20260331204857.png](Write%20Up/img/Pasted%20image%2020260331204857.png)
+![../img/Pasted image 20260331204857.png](../img/Pasted%20image%2020260331204857.png)
 
 Si vous avez l'oeil vous devriez voir qu'il y a une note laisser par le développeur qui dis ce qui aurait du être fait donc Patch un bug essayons d'avoir accès à ce dossier. 
 
-![Write Up/img/Pasted image 20260331204950.png](Write%20Up/img/Pasted%20image%2020260331204950.png)
+![../img/Pasted image 20260331204950.png](../img/Pasted%20image%2020260331204950.png)
 
 Okay nous voyons que nous avons accès que au retour mais peut-être qu'il y a des fichiers caché et c'est cela que nous allons voir. 
 
@@ -38,16 +38,16 @@ https://example.com/folder1/folder2../folder2/static/main.css https://example.co
 bon essayons dans notre cas :
 
 
-![Write Up/img/Pasted image 20260331205941.png](Write%20Up/img/Pasted%20image%2020260331205941.png)
+![../img/Pasted image 20260331205941.png](../img/Pasted%20image%2020260331205941.png)
 
 
 Cela n'as pas l'air de réussir avec le %s essayons de voir si c'est les .. ou le %s qui bloque pour cela on fait : 
 
-![Write Up/img/Pasted image 20260331205958.png](Write%20Up/img/Pasted%20image%2020260331205958.png)
+![../img/Pasted image 20260331205958.png](../img/Pasted%20image%2020260331205958.png)
 
 Okay ce n'est pas les .. qui pose problème maintenant essayons de les remettre et d'enlever le %s. 
 
-![Write Up/img/Pasted image 20260331210032.png](Write%20Up/img/Pasted%20image%2020260331210032.png)
+![../img/Pasted image 20260331210032.png](../img/Pasted%20image%2020260331210032.png)
 
 Parfait cela nous à fait remonté dans le fichier juste au dessus comme nous pouvons le voir, Nginx à pris comme si nous venons de faire : 
 
@@ -59,7 +59,7 @@ Mais on voit surtout que nous avons notre flag.txt
 
 Voyons voir si ce n'est pas une fausse piste. 
 
-![Write Up/img/Pasted image 20260331210307.png](Write%20Up/img/Pasted%20image%2020260331210307.png)
+![../img/Pasted image 20260331210307.png](../img/Pasted%20image%2020260331210307.png)
 
 Bingo !! 
 

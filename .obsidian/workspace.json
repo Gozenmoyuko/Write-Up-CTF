@@ -391,12 +391,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
+                "file": "Write Up/Root-me/sudo - faiblesse de configuration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "writeup_bubulle_corp"
+              "title": "sudo - faiblesse de configuration"
             }
           }
         ],
@@ -473,7 +473,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
+                "file": "Write Up/Root-me/sudo - faiblesse de configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -483,7 +483,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour writeup_bubulle_corp"
+              "title": "Rétrolien pour sudo - faiblesse de configuration"
             }
           },
           {
@@ -560,10 +560,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "2ff5bf5ad1cbae6a",
   "lastOpenFiles": [
-    "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
+    "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root me/Réseau Bluetooth - Fichier inconnu.md",
