@@ -363,12 +363,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
+                "file": "Write Up/Root-me/App-script 1 Rootme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur API Mass-Assignement"
+              "title": "App-script 1 Rootme"
             }
           }
         ],
@@ -425,8 +425,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -533,8 +532,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04fa4820bc0b2724",
+  "active": "4fd3f861b1b44e60",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
+    "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
+    "regex.md",
     "img/Pasted image 20260405221809.png",
     "img/Pasted image 20260405221658.png",
     "img/Pasted image 20260405221610.png",
@@ -545,9 +547,6 @@
     "img/Pasted image 20260405215346.png",
     "img/Pasted image 20260405215109.png",
     "img/Pasted image 20260405214943.png",
-    "img/Pasted image 20260405214819.png",
-    "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
-    "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/TEST.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
@@ -574,7 +573,6 @@
     "Write-Up-CTF/Write Up/Pico-CTF/SSTI1.md",
     "Write-Up-CTF/Write Up/Pico-CTF/Head-dump.md",
     "Write-Up-CTF/Write Up/Pico-CTF/Crack the Gate 1.md",
-    "Write-Up-CTF/Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
     "Write-Up-CTF/Write Up/Pico-CTF",
     "Write-Up-CTF/Write Up",
     "Write-Up-CTF",
