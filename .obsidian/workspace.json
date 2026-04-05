@@ -377,12 +377,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "img/Réseau Bluetooth - Fichier inconnu.md",
+                "file": "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Réseau Bluetooth - Fichier inconnu"
+              "title": "Cookie Monster Secret Recipe"
             }
           },
           {
@@ -560,8 +560,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7af64a6fc168702a",
+  "active": "2ff5bf5ad1cbae6a",
   "lastOpenFiles": [
+    "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
+    "Write Up/Root me/Réseau Bluetooth - Fichier inconnu.md",
+    "Write Up/Root me/R101-Generalités.pdf",
+    "Write Up/Root me/Pasted image 20260405233556.png",
+    "Write Up/Root me/Pasted image 20260405233516.png",
+    "Write Up/Root me/Pasted image 20260405233456.png",
+    "Write Up/Root me/Pasted image 20260405232840.png",
+    "Write Up/Root me/Pasted image 20260405232634.png",
+    "Write Up/Root me/Pasted image 20260405232347.png",
+    "Write Up/Root me/Pasted image 20260405221809.png",
+    "Write Up/Root me/Pasted image 20260405221658.png",
+    "Write Up/Root me/Pasted image 20260405221610.png",
+    "Write Up/Root me/Pasted image 20260405220434.png",
+    "Write Up/Root me/Cours limite et continuité.pdf",
+    "Write Up/Root me/Archi_syst_inf_BUT_1A_VF.pdf",
+    "Write Up/Root me",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
@@ -578,19 +594,9 @@
     "Write Up/Root-me/Python input().md",
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
-    "img/Pasted image 20260405233556.png",
-    "img/Pasted image 20260405233516.png",
-    "img/Pasted image 20260405233456.png",
     "img/Réseau Bluetooth - Fichier inconnu.md",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
-    "img/Pasted image 20260405232840.png",
-    "img/Pasted image 20260405232634.png",
-    "img/Pasted image 20260405232347.png",
     "regex.md",
-    "img/Pasted image 20260405221809.png",
-    "img/Pasted image 20260405221658.png",
-    "img/Pasted image 20260405221610.png",
-    "img/Pasted image 20260405220434.png",
     "Write Up/Root-me/TEST.md",
     "Write-Up-CTF/CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write-Up-CTF/CTF Anssi 2026 (Hackropole)",
@@ -598,15 +604,9 @@
     "Write-Up-CTF/Write Up/Root-me/XSS Stored 2.md",
     "Write-Up-CTF/Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write-Up-CTF/Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write-Up-CTF/Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
-    "Write-Up-CTF/Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write-Up-CTF/Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write-Up-CTF/Write Up/Root-me",
     "Write-Up-CTF/Write Up/Pico-CTF",
-    "Write-Up-CTF/Write Up",
-    "Write-Up-CTF",
-    "CTF Anssi 2026 (Hackropole)",
-    "Write Up/Web-Serveur Challenge 7 http cookies.pdf",
-    "img/Archi_syst_inf_BUT_1A_VF.pdf"
+    "Write-Up-CTF/Write Up"
   ]
 }
