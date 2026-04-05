@@ -13,7 +13,7 @@ Tout d'abord aller dans votre disque C, et créer un Dossier Burp :
 
 
 
-![[Pasted image 20260228115516.png]]
+![[img/Pasted image 20260228115516.png]]
 
 
 Ensuite dès lors que vous avez fais cela nous allons installer le [install.ps1](https://github.com/xiv3r/Burpsuite-Professional/blob/main/install.ps1 "install.ps1")

@@ -1,19 +1,19 @@
 **Contexte** 
 
-![[img/Pasted image 20250407121510.png]]
+![img/Pasted image 20250407121510.png](img/Pasted%20image%2020250407121510.png)
 Ici nous voyons lorsque qu'on se connecte au ctf (SSH) que nous somme l'utilisateur **app-script-ch12@challenge02**
 
 
-![[img/Pasted image 20250407121657.png]]
+![img/Pasted image 20250407121657.png](img/Pasted%20image%2020250407121657.png)
 on regarde qu'elle sont les fichiers cachées dans notre serveur ssh grâce a la fonction **ls** qui permet de lister **-la** pour lister les fichiers cacher
 
-![[img/Pasted image 20250407121814.png]]
+![img/Pasted image 20250407121814.png](img/Pasted%20image%2020250407121814.png)
 on essaye ici d'exécuter le binaire du code et nous voyons que nous avons pas la permission 
 
 ---
 Étape 1 : Essayons donc avec cat de voir si nous pouvons au moins lire ce fichier.
 
-![[img/Pasted image 20250407121943.png]]
+![img/Pasted image 20250407121943.png](img/Pasted%20image%2020250407121943.png)
 Ici nous voyons que nous pouvons bel est bien lire le fichier qui est un script d'intéraction avec notre dossier ch12.
 
 Il appelle `system("ls -lA /challenge/app-script/ch12/.passwd")`, donc il exécute la commande `ls` **via le shell**.
@@ -27,7 +27,7 @@ Puisque le C appelle `system("ls -lA ...")`, et que **`system()` utilise `$PATH`
 
  ___
  **Étape 2: 
-  ![[img/Pasted image 20250407132810.png]]
+  ![img/Pasted image 20250407132810.png](img/Pasted%20image%2020250407132810.png)
  Ici echo affiche le texte de statut dans un fichier ou sur notre écran 
  le -e permet de prendre en compte le retour à la ligne qui est ici ``\n`` 
 
@@ -36,12 +36,12 @@ par la suite on identifie ce que nous allons mettre dans notre configuration bas
 ___
 Étape 3: 
 
-![[img/Pasted image 20250407134113.png]]
+![img/Pasted image 20250407134113.png](img/Pasted%20image%2020250407134113.png)
 ici chmod permet de modifier les permission d'un fichier ici on modifie les permission de **/tmp/gozen/ls**  
 Le `+x` indique que l'on ajoute la permission d'exécution (execute permission) au fichier pour les utilisateurs.
 
 ___
-![[img/Pasted image 20250407134309.png]]
+![img/Pasted image 20250407134309.png](img/Pasted%20image%2020250407134309.png)
 Étape 4: 
 	Puisque le script appel system pour  vérifier les fonction qui sont utiliser en utilisant PATH on va donc exporter notre PATH dans notre nouvelle variable PATH qui est stocker dans notre dossier /tmp/gozen.
 	 
