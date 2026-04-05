@@ -412,7 +412,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Rechercher"
             }
           },
           {
@@ -425,7 +425,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -532,19 +533,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4fd3f861b1b44e60",
+  "active": "04fa4820bc0b2724",
   "lastOpenFiles": [
-    "Pasted image 20260405212610.png",
-    "Pasted image 20260405212044.png",
-    "Pasted image 20260405211648.png",
-    "Pasted image 20260405211530.png",
-    "Pasted image 20260405211123.png",
-    "Pasted image 20260405211050.png",
-    "Pasted image 20260405210913.png",
-    "Pasted image 20260405210812.png",
+    "img/Pasted image 20260405221809.png",
+    "img/Pasted image 20260405221658.png",
+    "img/Pasted image 20260405221610.png",
+    "img/Pasted image 20260405220434.png",
+    "img/Pasted image 20260405220231.png",
+    "img/Pasted image 20260405215550.png",
+    "img/Pasted image 20260405215442.png",
+    "img/Pasted image 20260405215346.png",
+    "img/Pasted image 20260405215109.png",
+    "img/Pasted image 20260405214943.png",
+    "img/Pasted image 20260405214819.png",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
-    "img/Pasted image 20260405210605.png",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/TEST.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
@@ -576,8 +579,6 @@
     "Write-Up-CTF/Write Up",
     "Write-Up-CTF",
     "CTF Anssi 2026 (Hackropole)",
-    "img/Pasted image 20260403000230.png",
-    "img/Pasted image 20260403000123.png",
     "Write Up/Web-Serveur Challenge 7 http cookies.pdf",
     "img/Archi_syst_inf_BUT_1A_VF.pdf"
   ]
