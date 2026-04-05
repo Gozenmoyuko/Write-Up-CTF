@@ -1,7 +1,7 @@
 
 Étape 1 : 
 
-![Pasted image 20250327195408.png](Pasted%20image%2020250327195408.png)
+![Pasted image 20250327195408.png](img/Pasted%20image%2020250327195408.png)
 - Ici nous voyons que nous avons pas la permission d'exécuté le fichier  ".passwd" avec /executable donc pour voir les fichiers dont on avait accès nous avons utilisés "ls -la" (ls qui sert à listez les fichiers et le -l permet d'affichier un détaille et -a permet de affichier les fichiers cachées on peut les additionnées en -la).
 - Par la suite on voit que le fichier .passwd est dans nos fichier accessible et cacher.
 ---
@@ -58,10 +58,10 @@ On utilisera export puis on indiquera PATH pour et on lui donnera la valeur qui 
 On copie la valeur binaire de cat dans fonction ls pour cacher notre fonction cat et donc utiliser le cat à travers ls qui lui est autorisé à être utilisée.
 
 puis on sort de notre dossier à la fin de toute ses manipulations en utilisant ```cd ``` on retourne donc dans 
-**![[Pasted image 20250327210904.png]]**
+![Pasted image 20250327210904.png](Pasted%20image%2020250327210904.png)**
 on réessaye 'ls' mais on voit que cela ne marche pas. :(
 
 Pour cela dernière étape on exécute le fichier /ch11 en faisant ./ch11 
-![[Pasted image 20250327210956.png]]
+![Pasted image 20250327210956.png](Pasted%20image%2020250327210956.png)
 
 et voila problème résolut on à le mot de passe demander ;).
