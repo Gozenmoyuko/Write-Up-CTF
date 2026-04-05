@@ -53,7 +53,8 @@ On utilisera export puis on indiquera PATH pour et on lui donnera la valeur qui 
 
 Étape 5 : 
 
-![Pasted image 20250327210410.png|549](Pasted%20image%2020250327210410.png%7C549.md)
+![Pasted image 20250327210410.png](Pasted%20image%2020250327210410.png%7C.md)
+
 
 On copie la valeur binaire de cat dans fonction ls pour cacher notre fonction cat et donc utiliser le cat à travers ls qui lui est autorisé à être utilisée.
 

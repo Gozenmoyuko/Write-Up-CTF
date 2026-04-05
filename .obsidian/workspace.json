@@ -391,12 +391,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/sudo - faiblesse de configuration.md",
+                "file": "Write Up/Root-me/XSS Stored 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sudo - faiblesse de configuration"
+              "title": "XSS Stored 2"
             }
           }
         ],
@@ -473,7 +473,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/sudo - faiblesse de configuration.md",
+                "file": "Write Up/Root-me/XSS Stored 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -483,7 +483,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour sudo - faiblesse de configuration"
+              "title": "Rétrolien pour XSS Stored 2"
             }
           },
           {
@@ -562,8 +562,9 @@
   },
   "active": "2ff5bf5ad1cbae6a",
   "lastOpenFiles": [
-    "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
+    "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
+    "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root me/Réseau Bluetooth - Fichier inconnu.md",
@@ -591,7 +592,6 @@
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
-    "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/Root-me/Python input().md",
     "Write Up/Root-me/CSRF 0 Protection.md",
