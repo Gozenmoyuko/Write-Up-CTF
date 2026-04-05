@@ -404,7 +404,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "line:(Pasted)",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -425,7 +425,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -532,7 +533,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4fd3f861b1b44e60",
+  "active": "04fa4820bc0b2724",
   "lastOpenFiles": [
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
