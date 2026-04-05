@@ -3,17 +3,17 @@
 Tout d'abord connecter vous sur le challenge :
 ssh -p 2222 app-script-ch6@challenge02.root-me.org
 
-![[Pasted image 20260308115226.png]]
+![[img/Pasted image 20260308115226.png]]
 
 Mot de passe du ssh : app-script-ch6
 
 Par la suite il faut connaître l'environnement où on se situe, qu'elle droit on as etc... C'est pour cela que nous allons effectuer ls -la puis whoami et enfin pwd pour savoir où nous nous situons
 
-![[Pasted image 20260308115247.png]]
+![[img/Pasted image 20260308115247.png]]
 
-![[Pasted image 20260308115302.png]]
+![[img/Pasted image 20260308115302.png]]
 
-![[Pasted image 20260308115322.png]]
+![[img/Pasted image 20260308115322.png]]
 
 Bon maintenant que nous avons toute c'est informations voyons ce qu'on peut faire. On voit que sur le ch6.py nous pouvons juste lire le script python et l'exécuté. 
 
@@ -23,7 +23,7 @@ Et enfin on voit qu'il y a un fichier qui s'appel .passwd que nous pouvons rien 
 
 On va donc regarder le script python.
 
-![[Pasted image 20260308115420.png]]
+![[img/Pasted image 20260308115420.png]]
 
 On peut voir que la première fonction ne sert qu'a afficher un message d'erreur du défi.
 
@@ -41,15 +41,15 @@ Pour ce challenge nous allons faire simple nous allons voir si un autre fichier 
 
 Pour cela lisons le fichier en .c qui est setuid-wrapper.c .
 
-![[Pasted image 20260308115640.png]]
+![[img/Pasted image 20260308115640.png]]
 
 Pas besoin de tout comprendre en gros il exécute directement le script ch6.py et on peut essayer de lancer ça version compiler avec gcc ou autre (setuid-wrapper) pour voir.
 
-![[Pasted image 20260308115800.png]]
+![[img/Pasted image 20260308115800.png]]
 
 Okay parfait tentons d'injecter du code directement ici.
 
-![[Pasted image 20260308115826.png]]
+![[img/Pasted image 20260308115826.png]]
 
 Okay on vois que le script nous renvoie bien ce que j'ai fais et qu'il quitte le script c'est donc qu'il s'exécute et affiche notre message au lieu du "Try again". 
 
@@ -82,7 +82,7 @@ Ici j'ai donc exécuté le fichier .c compiler j'ai mis le payload que j'ai expl
 
 Maintenant que vous avez compris essayons de voir si on peut tout simplement faire cela avec cat pour ouvrir le fichier qui contient notre flag qui est .passwd comme on peut le voir dans le script python
 
-![[Pasted image 20260308120511.png]]
+![[img/Pasted image 20260308120511.png]]
 
 Bingo ici on voit bel est bien que le fichier à été exécuté par le system et que celui-ci c'est donc exécuté et que nous avons le flag.
 
