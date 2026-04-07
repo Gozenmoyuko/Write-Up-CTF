@@ -36,3 +36,12 @@ Ici on peut voir que j'ai accès au .git et donc à tout ce qui est hébergé su
 
 Mais voyons voir les différents fichier. Il faut qu'on trouve un mot de passe écrit en clair vous vous rappelez ? 
 
+![](../../Pasted%20image%2020260407222630.png)
+
+Maintenant vous allez tentez de vous déplacer dans chacun des dossiers. Ici je vous montre un qui est intéressant avec /logs/refs/heads/master (Un fichier qui se trouve aussi dans refs mais ce fichier permet de stocker les événements. Ici on peut voir qu'il y a 5 événement qui ont été enregistrer allons voir )
+
+![](../../Pasted%20image%2020260407222759.png)
+
+Okay on peut voir que l'administrateur à initialisé le commit (github) , à sécurisé le mot de passe via MD5, à changé le mot de passe mais aussi à renommé le nom de l'application. Un message du commit à dis comme quoi ils veulent pour le mot de passe du sha256. Peut-être qu'on trouvera un mot de passe sous sha256 ou soit sous md5 s'il n'y as pas encore eu le changement.
+
+Sortons d'ici et continuons de chercher.
