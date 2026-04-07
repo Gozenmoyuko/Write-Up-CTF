@@ -79,4 +79,10 @@ Ici je pense que la méthode 0 suffira et wordlist c'est sur les mot de passes q
 
 Bon malheureusement hashcat n'as pas trouvé... 
 
+Pour mieux voir et savoir si je me suis pas tromper de piste je vais installer le site grâce à : 
+
+![](../../Pasted%20image%2020260407225752.png)
+
+On peut voir que tout à été installer voyons voir ce qu'il y a dans mes fichiers. 
+
 
