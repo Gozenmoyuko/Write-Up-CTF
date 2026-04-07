@@ -45,3 +45,25 @@ Maintenant vous allez tentez de vous déplacer dans chacun des dossiers. Ici je 
 Okay on peut voir que l'administrateur à initialisé le commit (github) , à sécurisé le mot de passe via MD5, à changé le mot de passe mais aussi à renommé le nom de l'application. Un message du commit à dis comme quoi ils veulent pour le mot de passe du sha256. Peut-être qu'on trouvera un mot de passe sous sha256 ou soit sous md5 s'il n'y as pas encore eu le changement.
 
 Sortons d'ici et continuons de chercher.
+
+![](../../Pasted%20image%2020260407223530.png)
+
+En cherchant beaucoup, dans le fichier config ou le head par exemple j'ai vu que beaucoup renvoyer à ce fichier donc au /.git/refs/heads/master
+
+On peut voir que quelque chose ressemble à un mot de passe hashé. Rappelez vous la blue team demander du sha256 et qu'elle autre hash et faible comparer au sha256 ? et oui le sha1 bon testons de trouver le mot de passe.
+
+Nous allons tester de le faire via hashcat pour cela prenons leur docu. 
+
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
+On peut voir sur la page que SHA1 sans salt ni rien est la méthode 100. Mais en quoi cela nous interesse ? car dans hashcat il faut préciser le type de hash que vous voulez cracker via la méthode -m qu'on utilise beaucoup pour les challenges réseau par exemple.
+
+Bon continuons notre commande hashcat va ressembler à cela. 
+
+hashcat -m 100 -a 0  (le_fichier_où_il_y_a_le_hash) wordlist=/usr/share/wordlist/rockyou.txt
+
+
+ici -a permet de dire le vecteur d'attaque que l'ont veut faire voilà un exemple.
+
+
+
