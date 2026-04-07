@@ -86,3 +86,14 @@ Pour mieux voir et savoir si je me suis pas tromper de piste je vais installer l
 On peut voir que tout à été installer voyons voir ce qu'il y a dans mes fichiers. 
 
 
+Maintenant qu'on à installer le site nous pouvons simplement utiliser les commandes de git que vous pouvez retrouvez sur ce site : 
+
+https://git-scm.com/docs
+
+Nous allons utiliser git log pour voir les logs. 
+
+
+
+![](../../Pasted%20image%2020260407230256.png)Bon on peut voir que c'est les mêmes log.
+
+Bon il faut qu'on trouve le mot de passe encore ! 
