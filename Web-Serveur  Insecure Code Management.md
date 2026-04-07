@@ -22,4 +22,10 @@ Rien de très intéressant n'est-ce pas ?
 
 Pour vous faire gagner du temps, sachez que j'ai cherché à faire du path traversal et autre pour trouver des fichiers sensible. Malheureusement sans réussite. Normal on est sur un challenge WEB serveur. 
 
-Essayons de voir s'il existe une faille expliquez qui porte 
+Essayons de voir s'il existe une faille expliquez qui porte ce nom sur le github [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master)
+
+
+[PayloadsAllTheThings/Insecure Source Code Management at master · swisskyrepo/PayloadsAllTheThings · GitHub](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Insecure%20Source%20Code%20Management)
+
+Parfait, Essayons d'avoir accès à .git, en gros la faille c'est que l'administrateur n'as pas enlever l'accès au .git, ce qui veut dire qu'on peut avoir toute la structure du site et les fichiers hébergé. 
+
