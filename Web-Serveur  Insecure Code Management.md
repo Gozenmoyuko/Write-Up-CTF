@@ -11,11 +11,11 @@ On peut se dire "Ok bah c'est peut-être une faille du code source et on à just
 
 Regardons de plus près. 
 
-![](Pasted%20image%2020260407131816.png)
+![](Write%20Up/img/Pasted%20image%2020260407131816.png)
 
 C'est un simple POST et si j'essaye avec username = admin et password = admin voici ce qui est retourné. 
 
-![](Pasted%20image%2020260407131848.png)
+![](Write%20Up/img/Pasted%20image%2020260407131848.png)
 
 Rien de très intéressant n'est-ce pas ? 
 
@@ -29,3 +29,7 @@ Essayons de voir s'il existe une faille expliquez qui porte ce nom sur le github
 
 Parfait, Essayons d'avoir accès à .git, en gros la faille c'est que l'administrateur n'as pas enlever l'accès au .git, ce qui veut dire qu'on peut avoir toute la structure du site et les fichiers hébergé. 
 
+
+![](Write%20Up/img/Pasted%20image%2020260407133233.png)
+
+Ici on peut voir que j'ai accès au .git 
