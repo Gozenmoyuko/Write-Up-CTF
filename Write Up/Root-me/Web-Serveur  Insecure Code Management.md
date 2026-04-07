@@ -108,3 +108,12 @@ Maintenant nous allons récupérer le fichier config.php. Pour cela nous allons 
 
 Maintenant qu'il est restauré essayons de l'ouvrir : 
 
+![](../../Pasted%20image%2020260407231832.png)
+
+Récupérons se hash et mettons le sur ce site : 
+
+https://hashes.com/en/decrypt/hash
+
+![](../../Pasted%20image%2020260407231926.png)
+
+Bingo !! 
