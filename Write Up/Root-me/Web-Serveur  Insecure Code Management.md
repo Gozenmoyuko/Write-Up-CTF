@@ -100,3 +100,11 @@ Bon il faut qu'on trouve le mot de passe encore !
 
 Maintenant nous allons utilisé la commande `git status`, cela va nous permettre de voir les fichiers qui ont été supprimé ou modifier. 
 
+![](../../Pasted%20image%2020260407231236.png)
+
+Maintenant nous allons récupérer le fichier config.php. Pour cela nous allons utiliser la commande git restore [notre fichier] donc ici ce sera : 
+
+	git restore config.php
+
+Maintenant qu'il est restauré essayons de l'ouvrir : 
+
