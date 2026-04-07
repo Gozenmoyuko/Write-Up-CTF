@@ -32,4 +32,7 @@ Parfait, Essayons d'avoir accès à .git, en gros la faille c'est que l'administ
 
 ![](Write%20Up/img/Pasted%20image%2020260407133233.png)
 
-Ici on peut voir que j'ai accès au .git 
+Ici on peut voir que j'ai accès au .git et donc à tout ce qui est hébergé sur le site web.
+
+Mais voyons voir les différents fichier. Il faut qu'on trouve un mot de passe écrit en clair vous vous rappelez ? 
+
