@@ -97,3 +97,6 @@ Nous allons utiliser git log pour voir les logs.
 ![](../../Pasted%20image%2020260407230256.png)Bon on peut voir que c'est les mêmes log.
 
 Bon il faut qu'on trouve le mot de passe encore ! 
+
+Maintenant nous allons utilisé la commande `git status`, cela va nous permettre de voir les fichiers qui ont été supprimé ou modifier. 
+
