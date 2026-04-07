@@ -405,7 +405,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Serveur  Insecure Code Management.md",
+                "file": "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
                 "mode": "source",
                 "source": false
               },
@@ -487,7 +487,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Serveur  Insecure Code Management.md",
+                "file": "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -581,7 +581,7 @@
     "Write Up/img/Pasted image 20260407131816.png",
     "Write Up/img/Pasted image 20260407131729.png",
     "Write Up/Root-me/XSS Stored 2.md",
-    "Web-Serveur  Insecure Code Management.md",
+    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
