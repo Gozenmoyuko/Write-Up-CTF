@@ -60,10 +60,19 @@ On peut voir sur la page que SHA1 sans salt ni rien est la méthode 100. Mais en
 
 Bon continuons notre commande hashcat va ressembler à cela. 
 
-hashcat -m 100 -a 0  (le_fichier_où_il_y_a_le_hash) wordlist=/usr/share/wordlist/rockyou.txt
+hashcat -m 100 -a 0  (le_fichier_où_il_y_a_le_hash) /usr/share/wordlists/rockyou.txt
 
 
 ici -a permet de dire le vecteur d'attaque que l'ont veut faire voilà un exemple.
 
+  # `| Mode`
+ `===+======`
+  `0 | Straight`
+  `1 | Combination`
+  `3 | Brute-force`
+  `6 | Hybrid Wordlist + Mask`
+  `7 | Hybrid Mask + Wordlist`
+  `9 | Association`
 
+Ici je pense que la méthode 0 suffira et wordlist c'est sur les mot de passes qu'il va se passé comme une bibliothèque. 
 
