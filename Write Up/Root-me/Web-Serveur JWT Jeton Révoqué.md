@@ -96,3 +96,10 @@ Tout les trois séparé par un "." .
 
 Bon maintenant que nous savons cela essayons de voir comment réagit le site web qui nous ai donnée. 
 
+On peut déjà savoir à peut près grâce au code source. Car lorsqu'on va lancer une requête GET vers la racine du site qui est http://challenge01.root-me.org/web-serveur/ch63/
+
+Cela va nous renvoyer nos deux endpoint. Preuve : 
+
+![](../img/Pasted%20image%2020260411160354.png)
+
+Maintenant que nous savons cela 
