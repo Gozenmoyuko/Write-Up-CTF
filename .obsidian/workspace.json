@@ -405,12 +405,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
+                "file": "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur  Insecure Code Management"
+              "title": "Web-Serveur File upload - Null byte"
             }
           }
         ],
@@ -487,7 +487,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
+                "file": "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -497,7 +497,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Web-Serveur  Insecure Code Management"
+              "title": "Rétrolien pour Web-Serveur File upload - Null byte"
             }
           },
           {
@@ -576,6 +576,7 @@
   },
   "active": "b1d43f78c171e261",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Pasted image 20260407231926.png",
     "Pasted image 20260407231856.png",
     "Pasted image 20260407231832.png",
@@ -588,9 +589,7 @@
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/XSS Stored 2.md",
-    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/img/Pasted image 20260407133233.png",
-    "Write Up/img/Pasted image 20260407131848.png",
     "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
