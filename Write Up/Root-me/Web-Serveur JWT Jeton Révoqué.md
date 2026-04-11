@@ -102,4 +102,27 @@ Cela va nous renvoyer nos deux endpoint. Preuve :
 
 ![](../img/Pasted%20image%2020260411160354.png)
 
-Maintenant que nous savons cela 
+Maintenant que nous savons cela essayons de voir comment ce comporte le endpoint par la méthode POST de /web-serveur/ch63/login
+
+
+![](../img/Pasted%20image%2020260411160955.png)
+
+Nous pouvons voir que le serveur nous envoie un message d'erreur nous disant que notre requête est mauvaise, et qu'il faut mettre les données d'utilisateurs suivant : 
+
+{"username":"admin","password":"admin} 
+
+Sachant cela on va pouvoir tenter de ce connecter au compte qui détient c'est donnée. 
+Mais avant cela il faut rajouter en Header HTTP : Content-Type : application/json
+
+Cette header va nous permettre d'échanger des données JSON(Javascript Object Notation) avec le serveur. 
+
+Voici à quoi doit ressemblé la requête : 
+
+![](../img/Pasted%20image%2020260411161321.png)
+
+
+Et voici la réponse : 
+![](../../Pasted%20image%2020260411161401.png)
+
+Un token JWT vient d'être générer et nous à été donnée. On peut remarqué que c'est bien un jeton JWT puisqu'il détient les 3 champs que je vous ai rappelez juste avant. 
+
