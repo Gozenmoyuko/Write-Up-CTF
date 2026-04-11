@@ -155,3 +155,14 @@ Nous pouvons remarqué que si l'accès-token (le token JWT que nous venons de r�
 
 Essayons de voir si notre token récupérer est révoqué. Mais aussi il faut tenir compte que le token n'as une durée de vie que de 3 min selon le code source. 
 
+
+
+
+
+
+
+
+
+Selon le RFC 7515 Section 2 "Terminology " : 
+
+"Base64 encoding using the URL- and filename-safe character set defined in Section 5 of RFC 4648 [RFC4648], **with all trailing '=' characters omitted** (as permitted by Section 3.2) and without the inclusion of any line breaks, whitespace, or other additional characters."
