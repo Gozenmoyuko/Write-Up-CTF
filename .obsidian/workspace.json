@@ -501,7 +501,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -511,7 +510,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Web-Serveur JWT Jeton Révoqué"
+              "title": "Rétroliens"
             }
           },
           {
