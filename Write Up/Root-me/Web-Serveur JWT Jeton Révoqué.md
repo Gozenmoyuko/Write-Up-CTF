@@ -122,7 +122,36 @@ Voici à quoi doit ressemblé la requête :
 
 
 Et voici la réponse : 
-![](../../Pasted%20image%2020260411161401.png)
+![](../img/Pasted%20image%2020260411161401.png)
 
 Un token JWT vient d'être générer et nous à été donnée. On peut remarqué que c'est bien un jeton JWT puisqu'il détient les 3 champs que je vous ai rappelez juste avant. 
+
+
+On peut donc pensez qu'il faut cracker la signature du token, vous avez bien raison, différent outil nous permette d'essayer cela telque hashcat ou même johntheripper. 
+
+Mais pour vous faire gagner du temps (car j'ai déjà essayer) cela ne marche pas. Car ce n'est pas le but du CTF actuel. Tout de même cela sera le but dans un autre CTF. 
+
+Revenons sur le code source rapidement : 
+
+
+# `Standard admin endpoint`
+`@app.route('/web-serveur/ch63/admin', methods=['GET'])`
+`@jwt_required`
+`def protected():`
+    `access_token = request.headers.get("Authorization").split()[1]`
+    `with lock:`
+        `if access_token in blacklist:`
+            `return jsonify({"msg":"Token is revoked"})`
+        `else:`
+            `return jsonify({'Congratzzzz!!!_flag:': FLAG})`
+
+
+`if __name__ == '__main__':`
+    `scheduler = BackgroundScheduler()`
+    `job = scheduler.add_job(delete_expired_tokens, 'interval', seconds=10)`
+    `scheduler.start()`
+    `app.run(debug=False, host='0.0.0.0', port=5000)`
+Nous pouvons remarqué que si l'accès-token (le token JWT que nous venons de récupérer) est dans la black-list. Alors ont à un message d'erreur "Token is revoked", si ce n'est pas le cas alors on nous renvoie le flag du challenge. 
+
+Essayons de voir si notre token récupérer est révoqué. Mais aussi il faut tenir compte que le token n'as une durée de vie que de 3 min selon le code source. 
 
