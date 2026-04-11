@@ -36,17 +36,17 @@ Ici on peut voir que j'ai accès au .git et donc à tout ce qui est hébergé su
 
 Mais voyons voir les différents fichier. Il faut qu'on trouve un mot de passe écrit en clair vous vous rappelez ? 
 
-![](../../Pasted%20image%2020260407222630.png)
+![](../img/Pasted%20image%2020260407222630.png)
 
 Maintenant vous allez tentez de vous déplacer dans chacun des dossiers. Ici je vous montre un qui est intéressant avec /logs/refs/heads/master (Un fichier qui se trouve aussi dans refs mais ce fichier permet de stocker les événements. Ici on peut voir qu'il y a 5 événement qui ont été enregistrer allons voir )
 
-![](../../Pasted%20image%2020260407222759.png)
+![](../img/Pasted%20image%2020260407222759.png)
 
 Okay on peut voir que l'administrateur à initialisé le commit (github) , à sécurisé le mot de passe via MD5, à changé le mot de passe mais aussi à renommé le nom de l'application. Un message du commit à dis comme quoi ils veulent pour le mot de passe du sha256. Peut-être qu'on trouvera un mot de passe sous sha256 ou soit sous md5 s'il n'y as pas encore eu le changement.
 
 Sortons d'ici et continuons de chercher.
 
-![](../../Pasted%20image%2020260407223530.png)
+![](../img/Pasted%20image%2020260407223530.png)
 
 En cherchant beaucoup, dans le fichier config ou le head par exemple j'ai vu que beaucoup renvoyer à ce fichier donc au /.git/refs/heads/master
 
@@ -81,7 +81,7 @@ Bon malheureusement hashcat n'as pas trouvé...
 
 Pour mieux voir et savoir si je me suis pas tromper de piste je vais installer le site grâce à : 
 
-![](../../Pasted%20image%2020260407225752.png)
+![](../img/Pasted%20image%2020260407225752.png)
 
 On peut voir que tout à été installer voyons voir ce qu'il y a dans mes fichiers. 
 
@@ -94,13 +94,13 @@ Nous allons utiliser git log pour voir les logs.
 
 
 
-![](../../Pasted%20image%2020260407230256.png)Bon on peut voir que c'est les mêmes log.
+![](../img/Pasted%20image%2020260407230256.png)Bon on peut voir que c'est les mêmes log.
 
 Bon il faut qu'on trouve le mot de passe encore ! 
 
 Maintenant nous allons utilisé la commande `git status`, cela va nous permettre de voir les fichiers qui ont été supprimé ou modifier. 
 
-![](../../Pasted%20image%2020260407231236.png)
+![](../img/Pasted%20image%2020260407231236.png)
 
 Maintenant nous allons récupérer le fichier config.php. Pour cela nous allons utiliser la commande git restore [notre fichier] donc ici ce sera : 
 
@@ -108,12 +108,12 @@ Maintenant nous allons récupérer le fichier config.php. Pour cela nous allons 
 
 Maintenant qu'il est restauré essayons de l'ouvrir : 
 
-![](../../Pasted%20image%2020260407231832.png)
+![](../img/Pasted%20image%2020260407231832.png)
 
 Récupérons se hash et mettons le sur ce site : 
 
 https://hashes.com/en/decrypt/hash
 
-![](../../Pasted%20image%2020260407231926.png)
+![](../img/Pasted%20image%2020260407231926.png)
 
 Bingo !! 
