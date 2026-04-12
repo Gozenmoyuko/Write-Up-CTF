@@ -501,6 +501,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -510,7 +511,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétroliens"
+              "title": "Rétrolien pour Web-Serveur JWT Jeton Révoqué"
             }
           },
           {
@@ -587,8 +588,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "bf5d57be450a81fc",
   "lastOpenFiles": [
+    "Pasted image 20260411201141.png",
+    "Pasted image 20260411201111.png",
+    "Pasted image 20260411200831.png",
     "Write Up/img/Pasted image 20260411161401.png",
     "Write Up/img/Pasted image 20260411161321.png",
     "Write Up/img/Pasted image 20260411160955.png",
@@ -600,9 +604,6 @@
     "Write Up/img/Pasted image 20260407231926.png",
     "Write Up/img/Pasted image 20260407231856.png",
     "Write Up/img/Pasted image 20260407231832.png",
-    "Write Up/img/Pasted image 20260407231236.png",
-    "Write Up/img/Pasted image 20260407230256.png",
-    "Write Up/img/Pasted image 20260407225752.png",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/XSS Stored 2.md",
