@@ -419,12 +419,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/XSS Volatile.md",
+                "file": "Write Up/Root-me/CSRF 0 Protection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS Volatile"
+              "title": "CSRF 0 Protection"
             }
           }
         ],
@@ -501,7 +501,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/XSS Volatile.md",
+                "file": "Write Up/Root-me/CSRF 0 Protection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -511,7 +511,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour XSS Volatile"
+              "title": "Rétrolien pour CSRF 0 Protection"
             }
           },
           {
@@ -588,12 +588,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bf5d57be450a81fc",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Write Up/Root-me/Python input().md",
+    "Write Up/Root-me/XSS Stored 2.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
-    "Pasted image 20260411201141.png",
-    "Pasted image 20260411201111.png",
-    "Pasted image 20260411200831.png",
+    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
+    "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
+    "Write Up/Root-me/XSS Volatile.md",
+    "Write Up/img/Pasted image 20260411201141.png",
+    "Write Up/img/Pasted image 20260411201111.png",
+    "Write Up/img/Pasted image 20260411200831.png",
     "Write Up/img/Pasted image 20260411161401.png",
     "Write Up/img/Pasted image 20260411161321.png",
     "Write Up/img/Pasted image 20260411160955.png",
@@ -605,25 +612,18 @@
     "Write Up/img/Pasted image 20260407231856.png",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
-    "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
-    "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root me/Réseau Bluetooth - Fichier inconnu.md",
     "Write Up/img/R101-Generalités.pdf",
     "Write Up/img/Cours limite et continuité.pdf",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Write Up/img",
-    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
-    "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
-    "Write Up/Root-me/Python input().md",
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
     "img/Réseau Bluetooth - Fichier inconnu.md",

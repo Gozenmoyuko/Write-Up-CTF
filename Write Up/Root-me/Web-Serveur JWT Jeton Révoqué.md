@@ -156,12 +156,12 @@ Nous pouvons remarqué que si l'accès-token (le token JWT que nous venons de r�
 Essayons de voir si notre token récupérer est révoqué. Mais aussi il faut tenir compte que le token n'as une durée de vie que de 3 min selon le code source. 
 
 
-![](../../Pasted%20image%2020260411200831.png)
+![](../img/Pasted%20image%2020260411200831.png)
 
 Okay on peut voir qu'il manque le Header nommée "Authorization". Si on regarde les fichiers données dans l'énoncé de root-me, on peut voir qu'il faut mettre Authorization suivie de Bearer qui permet d'identifier le type de token ici JWT.
 
 Faisons le et rajoutons notre token JWT : 
-![](../../Pasted%20image%2020260411201111.png)
+![](../img/Pasted%20image%2020260411201111.png)
 
 Maintenant que notre token est révoqué (banni) essayons de trouver une solution en lisant les différents RFC du JWT. 
 NB: Vous pourrez voir que mes tokens peuvent changer car je n'ai pas tout fais d'un coup, les différents token(jeton) on expirer et donc changer mais si vous faite cela dans le temps impartie le token ne changera pas pour vous.
@@ -173,6 +173,6 @@ Selon le RFC 7515 Section 2 "Terminology " :
 
 Ce qui veut dire que le caractère = est ignoré et n'existe même pas pour le serveur lors de la lecture du token. Essayons de le mettre dans le signature (JWS) pour pouvoir bypass, car oui ici la logique est que notre token est révoqué(banni) mais on peut avoir accès car le serveur ne vas pas le lire mais pourtant va le prendre comme un autre token. Autrement dis, la valeur de notre token JWT est la même pour le serveur, mais n'est pas la même lorsqu'il va lire la blacklist. Et donc nous aurons accès et réussiront le CTF.
 
-![](../../Pasted%20image%2020260411201141.png)
+![](../img/Pasted%20image%2020260411201141.png)
 
 Bingo notre solution est bonne.
