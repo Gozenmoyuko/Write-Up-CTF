@@ -5,7 +5,7 @@ Lorsqu'on arrive sur le site web nous arrivons sur une page tel quel :
 
 
 
-![../img/Pasted image 20260321125156.png](../img/Pasted%20image%2020260321125156.png)
+![Pasted image 20260321125156.png](../img/Pasted%20image%2020260321125156.png)
 Ici nous pouvons voir que je n'appartient pas au LAN du site web 
 
 Bon nous pouvons tenter de nous connecter mais cela ne servira à rien il n'y as pas de compte c'est justement pour faire perdre du temps. 
@@ -14,12 +14,12 @@ Nous allons maintenant voir ce qui se passe dans la requête et la réponse norm
 
 Voici notre requête lorsqu'on tente de soumettre un identifiant et un mot de passe : 
 
-![../img/Pasted image 20260321125818.png](../img/Pasted%20image%2020260321125818.png)
+![Pasted image 20260321125818.png](../img/Pasted%20image%2020260321125818.png)
 
 C'est une requête très basique mais ici nous ne pouvons pas nous connecter si nous ne faisons pas partie de l'intranet pour cela je vais simplement chercher un Header HTTP qui permet de changer d'ip ou d'en ajouter une ip au "client" qui est nous.
 
 
-![../img/Pasted image 20260321125024.png](../img/Pasted%20image%2020260321125024.png)
+![Pasted image 20260321125024.png](../img/Pasted%20image%2020260321125024.png)
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Forwarded-For
 On clique sur la documentation de mozilla et on apprend comment marche cette header. 
 # X-Forwarded-For header
@@ -54,7 +54,7 @@ Et enfin l'adresse IPV4 de notre client qui passe par un proxy qui lui à une ad
 
 Bon cela ne nous intéresse pas les proxys pour l'instant mais c'est important de comprendre comment cela marche. Une image très simple de IONOS va me permettre d'économiser un grand temps : 
 
-![../img/Pasted image 20260321131012.png](../img/Pasted%20image%2020260321131012.png)
+![Pasted image 20260321131012.png](../img/Pasted%20image%2020260321131012.png)
 
 Bon retournons à notre exploit (qui ne vas pas utiliser de proxy)
 
@@ -63,13 +63,13 @@ Je vais donc rajouter dans mon Header HTTP l'option :
 X-Forwarded-For : 192.168.1.1
 
 Voici à quoi ressemble ma requête : 
-![../img/Pasted image 20260321131236.png](../img/Pasted%20image%2020260321131236.png)
+![Pasted image 20260321131236.png](../img/Pasted%20image%2020260321131236.png)
 
 Vous pouvez mettre l'option où vous voulez tant qu'il est au dessus de Connection car on utilise ici un Header et non du JSON si c'était du JSON on aurait mis en dessous de Connection: 
 
-![../img/Pasted image 20260321131359.png](../img/Pasted%20image%2020260321131359.png)
+![Pasted image 20260321131359.png](../img/Pasted%20image%2020260321131359.png)
 
 Vous pouvez le voir aussi dans Render : 
-![../img/Pasted image 20260321131435.png](../img/Pasted%20image%2020260321131435.png)
+![Pasted image 20260321131435.png](../img/Pasted%20image%2020260321131435.png)
 
 Bingo vous venez de réussir le challenge mais aussi de faire votre première Spoofing ici vous avez fait de l'ip spoofing (usurpation d'adresse IP)

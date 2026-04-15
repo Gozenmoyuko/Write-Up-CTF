@@ -6,7 +6,7 @@
 - Par la suite on voit que le fichier .passwd est dans nos fichier accessible et cacher.
 ---
 Étape 2 : 
-![../img/Pasted image 20250327195527.png](../img/Pasted%20image%2020250327195527.png)
+![Pasted image 20250327195527.png](../img/Pasted%20image%2020250327195527.png)
 Dans cette étape on regarde si ont peut donc lire directement notre fichier .passwd et biensûr que non sinon ce ne serais pas intéressant :). 
 
 C'est pourquoi on va se poser la question "comment cacher la commande cat dans la commande ls" et on regardera si ça marche et si notre intuition est bonne.

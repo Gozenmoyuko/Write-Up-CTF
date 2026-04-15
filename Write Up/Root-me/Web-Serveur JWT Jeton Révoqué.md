@@ -4,7 +4,7 @@ Dans ce challenge notre but est d'obtenir accès à l'endpoint /web-serveur/ch63
 
 Pour cela nous avons deux endpoint qui nous sont donnée avec les deux méthodes disponible les voici : 
 
-![](Write%20Up/img/Pasted%20image%2020260411155122.png)
+![](../img/Pasted%20image%2020260411155122.png)
 
 
 Au passage le code source nous ai donnée en dessous : 
