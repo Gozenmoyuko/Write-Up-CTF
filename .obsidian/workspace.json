@@ -419,12 +419,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
+                "file": "Write Up/Root-me/XSS Volatile.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur File upload - Null byte"
+              "title": "XSS Volatile"
             }
           }
         ],
@@ -501,7 +501,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
+                "file": "Write Up/Root-me/XSS Volatile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -511,7 +511,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Web-Serveur File upload - Null byte"
+              "title": "Rétrolien pour XSS Volatile"
             }
           },
           {
@@ -590,6 +590,7 @@
   },
   "active": "bf5d57be450a81fc",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/Python input().md",
     "Write Up/Root-me/XSS Stored 2.md",
@@ -608,7 +609,6 @@
     "Write Up/img/Pasted image 20260411160354.png",
     "Write Up/img/Pasted image 20260411155122.png",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
-    "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/img/Pasted image 20260407231926.png",
     "Write Up/img/Pasted image 20260407231856.png",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
