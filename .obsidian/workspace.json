@@ -447,12 +447,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Python - Server-side Template Injection Introduction.md",
+                "file": "Write Up/Root-me/App-script 1 Rootme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python - Server-side Template Injection Introduction"
+              "title": "App-script 1 Rootme"
             }
           }
         ],
@@ -529,7 +529,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Python - Server-side Template Injection Introduction.md",
+                "file": "Write Up/Root-me/App-script 1 Rootme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -539,7 +539,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Python - Server-side Template Injection Introduction"
+              "title": "Rétrolien pour App-script 1 Rootme"
             }
           },
           {
@@ -618,6 +618,8 @@
   },
   "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
+    "Write Up/Pico-CTF/SSTI1.md",
     "Write Up/img/Pasted image 20260417234637.png",
     "Write Up/img/Pasted image 20260417234459.png",
     "Write Up/img/Pasted image 20260417234435.png",
@@ -628,9 +630,7 @@
     "Write Up/img/Pasted image 20260417233253.png",
     "Write Up/img/Pasted image 20260417233152.png",
     "Write Up/img/Pasted image 20260417232853.png",
-    "Write Up/img/Pasted image 20260417232751.png",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
-    "Write Up/Root-me/Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/Root-me/Python input().md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",

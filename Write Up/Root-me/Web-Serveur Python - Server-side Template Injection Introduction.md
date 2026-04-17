@@ -1,5 +1,5 @@
 
-![](Write%20Up/img/Pasted%20image%2020260417232025.png)
+![](../img/Pasted%20image%2020260417232025.png)
 
 Tout d'abord il faut savoir comment marche un Server-side Template.
 
@@ -7,11 +7,11 @@ Tout simplement il va récupérer les informations d'un utilisateurs et créé u
 
 Voyons voir comment marche ce site : 
 
-![](Write%20Up/img/Pasted%20image%2020260417232201.png)
+![](../img/Pasted%20image%2020260417232201.png)
 
 On dirais que c'est un site pour créé une page, comme ils nous ai dis dans l'énoncer. Testons de créé une page avec test et test.
 
-![](Write%20Up/img/Pasted%20image%2020260417232250.png)
+![](../img/Pasted%20image%2020260417232250.png)
 
 Okay on peut voir que nos deux informations sont ici. Le deuxième champs est le contenu donc la première information qui apparaît et le titre le deuxième qui apparaît. Cela nous servira vous verrez.
 
@@ -35,11 +35,11 @@ ${{<%[%'"}}%\.
 Pour savoir où le serveur exécute quelques choses il faut voir dans qu'elle champs on à une page d'erreur qui apparaît. 
 
 
-![](Write%20Up/img/Pasted%20image%2020260417232717.png)
+![](../img/Pasted%20image%2020260417232717.png)
 
 Okay ce n'est pas dans le titre (premier champs) peut-être dans le deuxième ? 
 
-![](Write%20Up/img/Pasted%20image%2020260417232751.png)
+![](../img/Pasted%20image%2020260417232751.png)
 
 Bingo ! 
 
@@ -47,7 +47,7 @@ Maintenant, on sait que via le titre du challenge que c'est une faille SSTI du �
 
 Mais comment savoir lequel c'est ? 
 
-![](Write%20Up/img/Pasted%20image%2020260417232853.png)
+![](../img/Pasted%20image%2020260417232853.png)
 
 Comme vous le voyez il n'y a que deux catégorie de syntaxe ici. Ceux qui sont régit par ${ } et ceux qui sont régit par {{ }}
 
