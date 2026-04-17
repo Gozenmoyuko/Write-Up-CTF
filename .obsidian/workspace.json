@@ -454,9 +454,23 @@
               "icon": "lucide-file",
               "title": "App-script 1 Rootme"
             }
+          },
+          {
+            "id": "694d2d4bd955501f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web-Serveur JWT - Unsecure File Signature"
+            }
           }
         ],
-        "currentTab": 34
+        "currentTab": 35
       }
     ],
     "direction": "vertical"
@@ -529,7 +543,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/App-script 1 Rootme.md",
+                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -539,7 +553,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour App-script 1 Rootme"
+              "title": "Rétrolien pour Web-Serveur JWT - Unsecure File Signature"
             }
           },
           {
@@ -616,8 +630,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "694d2d4bd955501f",
   "lastOpenFiles": [
+    "Write Up/img/Pasted image 20260417235555.png",
+    "Write Up/Root-me/App-script 1 Rootme.md",
+    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Pico-CTF/SSTI1.md",
     "Write Up/img/Pasted image 20260417234637.png",
@@ -644,7 +661,6 @@
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
-    "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root me/Web Bubulle Corp (Part 1 sur 2).md",
@@ -657,8 +673,6 @@
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
-    "img/Réseau Bluetooth - Fichier inconnu.md",
-    "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
     "Write-Up-CTF/CTF Anssi 2026 (Hackropole)",
     "Write-Up-CTF/Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write-Up-CTF/Write Up/Root-me",
