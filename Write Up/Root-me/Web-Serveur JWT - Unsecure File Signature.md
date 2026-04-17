@@ -57,4 +57,80 @@ Dès que cela est fait, nous allons tenter de modifier la valeur de KID ici vous
 
 ![](../img/Pasted%20image%2020260418001534.png)
 
-Bon nous avons pas le bon signature mais c'est pas grave nous allons tenter de le bypass via du Path traversal. Pour cela on va changer notre kid en quelques chose que l'ont connaît. Plusieurs façon sont possible, tel que prendre le retour d'une page WEB déjà sur le site pour mettre la valeur de retour. Mais ici je vais utiliser /dev/null qui est un fichier qui ne contient rien sur linux. En gros il ne contient aucune donnée, tout ce qui rentre est directement supprimé et on va utiliser cela. Car lors que notre kid va chercher une valeur de clé null et va tenter de vérifier grâce à cela notre signature et bien on as juste à mettre une signature null et cela sera bon. 
+Bon nous avons pas le bon signature mais c'est pas grave nous allons tenter de le bypass via du Path traversal. Pour cela on va changer notre kid en quelques chose que l'ont connaît. Plusieurs façon sont possible, tel que prendre le retour d'une page WEB déjà sur le site pour mettre la valeur de retour. Mais ici je vais utiliser /dev/null qui est un fichier qui ne contient rien sur linux. En gros il ne contient aucune donnée, tout ce qui rentre est directement supprimé et on va utiliser cela. Car lors que notre kid va chercher une valeur de clé dans un fichier qui ne contient rien cela va forcé une clé vide et va tenter de vérifier grâce à cela notre signature et bien on as juste à mettre une signature null et cela sera bon. 
+
+D'abord occupons nous de mettre une signature null. 
+
+![](../img/Pasted%20image%2020260418002316.png)
+
+Comme vous pouvez le voir ici, un secret JWT ne peux pas être vide, on va donc le bypass via l'option "base64url encoded"
+
+![](../img/Pasted%20image%2020260418002358.png)
+Ne vous en faite pas de l'erreur. Mais comment on sais que c'est AA par exemple et non AA== ? 
+
+Tout simplement regardons ce que donne AA== en base 64 : 
+
+![](../img/Pasted%20image%2020260418002518.png)
+
+Okay on voit que cela nous donne null mais pourquoi ? Regardons la table de Base64 de notre bon vieux Wikipédia https://en.wikipedia.org/wiki/Base64 :
+
+![](../img/Pasted%20image%2020260418002719.png)
+
+
+Okay on peut voir que la valeur de A en base 64 est globalement (0 x 64) en binaire. Car la valeur de la table est 0 par exemple pour faire B il faudrait 63 fois 0 et le dernier (le plus à droite en 1). Sachant cela on sait que l'ordinateur ou d'autre système comme application Web etc va lire cela comme une valeur null si celui-ci utilise base64. 
+
+
+On devrait mettre en base64 classique == cela permet de dire que c'est la dernière valeur de notre base64 donc on devrait mettre AA== sur le site JWT.io nan ? 
+
+Eh bien en réalité on est sur une base64 URL, donc pour les == sont "omitted" (ignoré) donc pas besoin on peut mettre juste AA. 
+
+Maintenant que vous avez compris pourquoi j'ai mis AA en signature de mon token JWT nous allons essayer de faire du path traversal en changeant la valeur du header kid dans notre token JWT. 
+
+![](../img/Pasted%20image%2020260418003305.png)
+
+Réponse : 
+
+![](../img/Pasted%20image%2020260418003315.png)
+
+Peut-être que j'ai fais une erreur il cherche un fichier dans le dossier keys/ ? peut-être que si je rajoute encore une fois ../ cela va me remettre au dessus ou est-ce que je suis bloqué dans le dossier keys/  ? 
+
+
+![](../img/Pasted%20image%2020260418003421.png)
+Réponse  : 
+
+
+![](../img/Pasted%20image%2020260418003436.png)
+
+
+Okay je suis bloqué dans le dossier, mais pourquoi ? techniquement c'est censé marché. Ah mais attendez, pourquoi il cherche keys/dev/null et pas keys/../../dev/null ? Y'a t'il un filtre comme un replace en python ? Pour cela essayons de doublé tout cela( on aura 4 . et 2 /) .
+
+
+![](../img/Pasted%20image%2020260418003800.png)
+
+![](../img/Pasted%20image%2020260418003822.png)
+
+Okay parfait, il regarde bien les caractère ../ maintenant, essayons de continuer et de voir combien de fois il faut de return pour que cela marche (je vais juste rajouter un nombre n de ../ pour voir comment il réagit au delà de 7 c'est vraiment abusé haha)
+
+
+![](../img/Pasted%20image%2020260418003941.png)
+
+![](../img/Pasted%20image%2020260418004005.png)
+
+Encore une fois ? 
+
+![](../img/Pasted%20image%2020260418004035.png)
+
+![](../img/Pasted%20image%2020260418004103.png)
+
+Bingo ! 
+
+Mais explication en vif ? 
+
+Le système de filtre (WAF) ou autre devait enfaite juste remplacer la combinaison "../" par "" pour évité le Path traversal, mais il à fallut juste doublé les caractère, il capte une fois, donc remplace par un caractère null 
+
+exemple 
+
+demande.replace("../" , "")
+
+donc quand demande = "....//"
+il capte que les deux points le plus collé au slash 
