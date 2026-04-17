@@ -130,7 +130,6 @@ Le système de filtre (WAF) ou autre devait enfaite juste remplacer la combinais
 
 exemple 
 
-demande.replace("../" , "")
+![](../img/Pasted%20image%2020260418004630.png)
 
-donc quand demande = "....//"
-il capte que les deux points le plus collé au slash 
+Voilà j'espère que cela vous auras aider :). 
