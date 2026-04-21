@@ -56,4 +56,16 @@ Donc strpos renvoie une valeur 9 ce qui est différent de false donc il trouve u
 
 Mais grosse erreur de vérifier cela via strpos. Car maintenant nous savons que le Path traversal ne marche pas, donc qu'il faut que notre code ne contiennent pas de ".." ce qui été censé être une correction d'erreur deviens une erreur fatale, puisque notre input est directement mis dans le assert, on peut simplement de plusieurs façon de fermer le code avant(comme une injection de code JS classique par exemple ou html).
 
-Testons de chercher une page entre des guillemets par exemple
+Testons de chercher une page entre des guillemets par exemple 'test'
+http://challenge01.root-me.org/web-serveur/ch47/?page='test'
+
+![](../../Pasted%20image%2020260421153927.png)
+Tiens tiens tiens, il à eu une erreur lorsqu'il à voulu évaluer le code, ce qu'il veut dire plusieurs choses.
+
+- Le serveur à bel est bien mis notre strings dans le strpos
+- Que la structure de ce que nous avons vu auparavant est bonne
+- "Faillure evaluating code", Le serveur à tenter d'évaluer le code, on peut passer à la vitesse supérieur.
+
+Maintenant que cela est fait. 
+
+Testons de voir qu'est-ce qui nous permet d'exécuté du code shell directement via php et essayons de le mettre entre '{notre injection}'
