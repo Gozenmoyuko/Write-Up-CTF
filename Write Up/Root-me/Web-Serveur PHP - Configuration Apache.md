@@ -132,4 +132,44 @@ Essayons :
 
 Mince, il n'as pas été interprêter que ce passe-til ? 
 
-Tout simplement car il nous manque quelques choses dans notre fichier .htaccess, 
+Tout simplement car il nous manque quelques choses dans notre fichier .htaccess, il faut maintenant que nous activons l'activation du moteur PHP car il est possible qu'il soit éteint et si c'est le cas, alors c'est une raison pour laquelle notre code n'est pas exécuté et est juste lu. 
+
+
+Pour cela nous allons utiliser : 
+https://www.php.net/manual/en/apache.configuration.php
+
+la directive que nous allons rajouter n'est pas celle avec "off "mais bel est bien avec l'option "on" car on veut que celui-ci soit activer ce qui donne : 
+
+php_flag engine on
+
+Request final : 
+
+![](../img/Pasted%20image%2020260421190753.png)
+
+
+Parfait maintenant essayons de faire une requête là où se situe notre fichier .png
+
+![](../img/Pasted%20image%2020260421190824.png)
+
+Bingo on peut voir ici tout les fichiers qui sont dans notre dossier. 
+
+Maintenant nous allons exécuté la commande cat et essayer de revenir à la racine du serveur pour pouvoir lire le fichier dans /private/flag.txt 
+
+Comme dis dans l'énoncer : 
+"Votre objectif est de récupérer le fichier situé dans /private/flag.txt depuis la racine du serveur web."
+
+Depuis la racine du serveur. 
+
+Ici nous voyons qu'on se situe dans /uploads/mn5f66i9fcr0bnja2u7anvlnpj/test2.png
+
+On va donc devoir remonté de deux répertoire ce qui donne pour notre fichier test2.png : 
+
+![](../img/Pasted%20image%2020260421191214.png)
+
+
+Allons regarder le résultat : 
+![](../img/Pasted%20image%2020260421191254.png)
+
+Bingo !! 
+
+Vous pouvez valider le chall :) 
