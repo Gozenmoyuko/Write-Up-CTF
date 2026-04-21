@@ -96,3 +96,7 @@ Moment de vériter je vais cliquer sur exploit.txt :
 
 Bingo ! 
 ![](../img/Pasted%20image%2020260421210949.png)
+
+Source utile aussi qu'on aurait pu utiliser :
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Zip%20Slip
