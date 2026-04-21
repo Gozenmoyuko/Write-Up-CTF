@@ -578,7 +578,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "Rétrolien pour Web-Serveur PHP - Configuration Apache"
@@ -660,6 +660,9 @@
   },
   "active": "9d72c0f3a8440193",
   "lastOpenFiles": [
+    "Write Up/img/Pasted image 20260421185046.png",
+    "Write Up/img/Pasted image 20260421184924.png",
+    "Write Up/img/Pasted image 20260421184627.png",
     "Write Up/img/Pasted image 20260421183701.png",
     "Write Up/img/Pasted image 20260421183200.png",
     "Write Up/img/Pasted image 20260421183020.png",
@@ -668,9 +671,6 @@
     "Write Up/img/Pasted image 20260421182146.png",
     "Write Up/img/Pasted image 20260421182021.png",
     "Write Up/img/Pasted image 20260421181615.png",
-    "Write Up/img/Pasted image 20260421181514.png",
-    "Write Up/img/Pasted image 20260421181106.png",
-    "Write Up/img/Pasted image 20260421175407.png",
     "Write Up/Root-me/Web-Serveur Php assert().md",
     "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",

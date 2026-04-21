@@ -102,4 +102,34 @@ https://httpd.apache.org/docs/2.2/fr/howto/htaccess.html
 Nous allons nous intéressé à cette partie. 
 
 
-Ici on nous dis qu'un fichier .htaccess peut être utiliser pour un répertoire en particulier et que pour cela ils faut mettre des 
+Ici on nous dis qu'un fichier .htaccess peut être utiliser pour un répertoire en particulier et que pour cela ils faut mettre des directives de configuration qui sont les suivante : 
+
+Option +Includes 
+Addhandler [Le handler qu'on va utiliser] .png
+
+Option permet à apache d'exécuté des instructions dans des fichiers HTML
+Ici l'option +Includes permet de d'autorisé cette fonctionnalité seulement dans le dossier où se trouve notre .htaccess
+
+Le handler quand à lui va dire au serveur comment le fichier sera traité par exemple le fichier ici .png sera traiter comme un script php si on met le handler php interne à Apache. 
+
+Mais comment choisir le handler qu'on va utiliser ? 
+
+Simplement en regardant la doc de php sur l'utilisation de apache2 : 
+
+![](../img/Pasted%20image%2020260421184627.png)
+
+Le handler que nous allons utiliser est application/x-httpd-php
+
+la requête ressemble à cela maintenant : 
+
+![](../img/Pasted%20image%2020260421184924.png)
+
+C'est censé être bon on peut faire les commandes php? Donc on à juste à visité l'url où se trouve notre image et voir notre ls -la s'exécuté nan ? 
+
+Essayons : 
+
+![](../img/Pasted%20image%2020260421185046.png)
+
+Mince, il n'as pas été interprêter que ce passe-til ? 
+
+Tout simplement car il nous manque quelques choses dans notre fichier .htaccess, 
