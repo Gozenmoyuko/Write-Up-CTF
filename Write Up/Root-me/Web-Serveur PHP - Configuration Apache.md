@@ -97,3 +97,9 @@ Modifions notre .htaccess maintenant en se basant pour la plus part de la config
 
 https://httpd.apache.org/docs/2.2/fr/howto/htaccess.html
 
+![](../img/Pasted%20image%2020260421183701.png)
+
+Nous allons nous intéressé à cette partie. 
+
+
+Ici on nous dis qu'un fichier .htaccess peut être utiliser pour un répertoire en particulier et que pour cela ils faut mettre des 
