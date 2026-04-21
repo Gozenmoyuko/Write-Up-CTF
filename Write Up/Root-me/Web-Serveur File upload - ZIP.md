@@ -43,3 +43,40 @@ Elle nous explique qu'est-ce qu'un symlinks :
 Un lien symbolique(symlinks) est un type de fichier qui pointe vers d'autres fichiers ou répertoires (dossiers) sous Linux.
 
 On nous dis qu'on peut créé des liens symbolique (symlinks) via la commande "ln" 
+
+l'option -s permet de faire un lien relatif si on ne met pas l'option -s cela fait une redirection avec le chemin depuis la racine, or nous voulons partir du relatif pour remonté vers index.php on va faire du path traversal mais d'une autre façon on va dire. 
+
+![](../img/Pasted%20image%2020260421203920.png)
+
+Tout d'abord il va falloir supprimé le fichier zip de base, car le symlinks doit être créé avant le zip vous verrez pourquoi. 
+
+Créons maintenant un symlinks(lien symbolique) comme il nous à été expliquer, voici comment taper la commande : 
+
+ln -s (notre fichier.php) (notre fichier symlinks).(l'extension accepter)
+
+Mais comment connaître l'extension accepter ? J'ai tout simplement fait refait le zip avec un fichier test.txt dans lequel j'ai mis un texte test et j'ai regarder si le serveur me renvoie toujours error 403. 
+
+![](../img/Pasted%20image%2020260421204424.png)
+
+J'ai remis sur le site et appuyer sur sumbit :
+
+![](../img/Pasted%20image%2020260421204452.png)
+
+Je vais tenter de cliquer sur test.txt 
+
+![](../img/Pasted%20image%2020260421204515.png)
+
+Okay parfait on peut lire les fichiers .txt, on va donc mettre la commande suivante : 
+
+ln -s exploit.php exploit.txt
+
+
+![](../img/Pasted%20image%2020260421204609.png)
+
+On peut voir grâce à ls que notre fichier exploit.txt redirige bien vers exploit.php sauf qu'on ne veut pas qu'il redirige vers exploit.php mais vers notre index.php qui se situe à la racine du site. 
+
+On est actuellement dans : 
+http://challenge01.root-me.org/web-serveur/ch51/tmp/upload/69e7c537419dc5.37161142/
+![](../../Pasted%20image%2020260421204727.png)
+Il faut remonté de 3 niveau on va donc mettre à la place de notre exploit.php maintenant que vous êtes familier vous devriez savoir qu'on va rediriger vers ../../../index.php
+
