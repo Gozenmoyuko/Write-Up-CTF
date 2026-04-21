@@ -16,3 +16,4 @@ https://httpd.apache.org/docs/2.2/fr/howto/htaccess.html
 
 Mais pour l'instant voyons comment ce comporte le site : 
 
+![](../img/Pasted%20image%2020260421175407.png)
