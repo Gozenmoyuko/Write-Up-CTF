@@ -77,6 +77,22 @@ On peut voir grâce à ls que notre fichier exploit.txt redirige bien vers explo
 
 On est actuellement dans : 
 http://challenge01.root-me.org/web-serveur/ch51/tmp/upload/69e7c537419dc5.37161142/
-![](../../Pasted%20image%2020260421204727.png)
-Il faut remonté de 3 niveau on va donc mettre à la place de notre exploit.php maintenant que vous êtes familier vous devriez savoir qu'on va rediriger vers ../../../index.php
+![](../img/Pasted%20image%2020260421204727.png)
+Il faut remonté de 3 niveau on va donc mettre à la place de notre exploit.php maintenant que vous êtes familier vous devriez savoir qu'on va rediriger vers ../../../index.php ce qui va faire que lorsqu'on va cliquer sur le fichier exploit.txt celui-ci va nous renvoyer le code source index.php qui se trouve à la racine : 
 
+![](../img/Pasted%20image%2020260421210523.png)
+
+On peut remarqué ici que exploit.txt nous redirigera bien vers ../../../index.php ce qui nous renverra vers la racine.
+
+Vous pouvez voir que j'ai eu une erreur car oui si on se base sur le man de zip qui nous ai donnée dans les ressources pour l'exo on trie avec "symlinks" et on voit qu'il faut faire l'option -y car zip prend en charge de base que des fichiers concret et qu'il faut qu'on lui disent si notre fichier qu'on met dans le zip est un symlinks (lien symbolique) si c'est le cas alors il faut mettre l'option -y. 
+
+Bon essayons d'upload  exploit.zip sur le site ! 
+
+![](../img/Pasted%20image%2020260421210815.png)
+
+Moment de vériter je vais cliquer sur exploit.txt : 
+
+![](../img/Pasted%20image%2020260421210910.png)
+
+Bingo ! 
+![](../img/Pasted%20image%2020260421210949.png)
