@@ -461,16 +461,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+                "file": "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur JWT - Unsecure File Signature"
+              "title": "Web-Serveur  Flask - Unsecure session"
+            }
+          },
+          {
+            "id": "f6de10eeebbc65b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Serveur Php assert().md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web-Serveur Php assert()"
             }
           }
         ],
-        "currentTab": 35
+        "currentTab": 36
       }
     ],
     "direction": "vertical"
@@ -543,7 +557,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+                "file": "Web-Serveur Php assert().md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -553,7 +567,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Web-Serveur JWT - Unsecure File Signature"
+              "title": "Rétrolien pour Web-Serveur Php assert()"
             }
           },
           {
@@ -630,8 +644,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "694d2d4bd955501f",
+  "active": "f6de10eeebbc65b4",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
+    "Web-Serveur Php assert().md",
+    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
+    "Write Up/Root-me/Web-serveur JWT secret faible.md",
+    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
+    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/img/Pasted image 20260418004630.png",
     "Write Up/img/Pasted image 20260418004103.png",
     "Write Up/img/Pasted image 20260418004035.png",
@@ -642,24 +664,17 @@
     "Pasted image 20260418003619.png",
     "Write Up/img/Pasted image 20260418003436.png",
     "Write Up/img/Pasted image 20260418003421.png",
-    "Write Up/img/Pasted image 20260418003315.png",
     "Write Up/Root-me/App-script 1 Rootme.md",
-    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
-    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Pico-CTF/SSTI1.md",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/Root-me/Python input().md",
-    "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
-    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
-    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
@@ -670,7 +685,6 @@
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Write Up/img",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
-    "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
     "Write-Up-CTF/CTF Anssi 2026 (Hackropole)",
