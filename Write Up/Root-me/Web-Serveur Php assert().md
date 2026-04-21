@@ -59,7 +59,7 @@ Mais grosse erreur de vérifier cela via strpos. Car maintenant nous savons que 
 Testons de chercher une page entre des guillemets par exemple 'test'
 http://challenge01.root-me.org/web-serveur/ch47/?page='test'
 
-![](../../Pasted%20image%2020260421153927.png)
+![](../img/Pasted%20image%2020260421153927.png)
 Tiens tiens tiens, il à eu une erreur lorsqu'il à voulu évaluer le code, ce qu'il veut dire plusieurs choses.
 
 - Le serveur à bel est bien mis notre strings dans le strpos
@@ -68,4 +68,48 @@ Tiens tiens tiens, il à eu une erreur lorsqu'il à voulu évaluer le code, ce q
 
 Maintenant que cela est fait. 
 
-Testons de voir qu'est-ce qui nous permet d'exécuté du code shell directement via php et essayons de le mettre entre '{notre injection}'
+Testons de voir qu'est-ce qui nous permet d'exécuté du code shell directement via php et essayons de le mettre entre '.{notre injection}.'
+
+Les . avant et après sont très important, vous avez du sûrement déjà fait des injections en Javascript, vous avez du utiliser déjà le .concat aussi c'est la même chose. Le . permet de concaténer avec ce qui se trouve avant si en php ce serait comme en Javascript on aurait eu ' + {notre injection} + ' document.cookie
+
+(ce n'est pas ce qu'on va faire mais c'est un exemple. )
+
+Petit tips voici la logique globale des injections de code + injection de commande un peu 'universel' : 
+
+[FERMER ce qui précède] + [TON CODE] + [ROUVRIR ce qui suit]
+
+PHP  :   '  .  system()  .  '
+SQL  :   '  OR 1=1  --
+JS   :   '  +  payload  +  '
+HTML :   ">  <script>  </script>  <"
+
+ce sera souvent cela pour les classiques après vous pouvez poussez plus loins en remplaçant par exemple pour le html le <script></script> par <svg onload></svg> etc vous aurez compris. 
+
+Dans mon cas pour faire de l'injection arbitraire sur le serveur je vais utiliser : 
+
+https://www.php.net/manual/fr/function.system.php
+
+qui permet comme c'est écrit sur le site " system — Exécute un programme externe et affiche le résultat"
+
+Ce qui est parfait dans notre cas. 
+
+Essayons ce payload : 
+http://challenge01.root-me.org/web-serveur/ch47/?page=' .system("ls -la").'
+
+Il est important de mettre un espace après le ' et de mettre le . pour concaténer ce qui va suivre avec le includes/ et de mettre à la fin le . pour concaténer avec le reste. 
+
+Pourquoi je fais pas directement par exemple cat .passwd ? 
+
+Car tout simplement je ne sais pas si d'autre fichier existe ou sous dossier, comme cela je sais s'il se situe dans un dossier j'utiliserais le chemin total pour cat le fichier. 
+
+![](../img/Pasted%20image%2020260421155655.png)
+
+Bingo, on peut directement lire .passwd, utilisons cat pour en finir avec ce chall :) 
+
+Payload final : 
+http://challenge01.root-me.org/web-serveur/ch47/?page=' .system("cat .passwd").'
+
+![](../img/Pasted%20image%2020260421155754.png)
+
+
+Bingo vous pouvez validé le chall ! 
