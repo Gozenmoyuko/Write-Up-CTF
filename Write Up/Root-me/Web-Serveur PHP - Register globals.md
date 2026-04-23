@@ -182,9 +182,23 @@ $_SESSION
 ```
 la deuxième est que la conditions pour valider le challenge est un "ou" || est pas un "Et" &&. 
 
-Donc il suffit qu'un des deux soit valide. Pour cela c'est très simple puisque la méthode GET est valable et qu'il suffit que l'ont utilise un paramètre de requête HTTP(query parameter) et de mettre une des conditions à l'interieur sachant que le $ veut dire "variable" c'est des variables prédéfini mais puisqu'on va le mettre dans l'url on l'enlèvera, et aussi on prend la condition : 
+Donc il suffit qu'un des deux soit valide. Pour cela c'est très simple puisque la méthode GET est valable il suffit  de mettre une des conditions à l'interieur sachant que le $ veut dire "variable" c'est des variables prédéfini(`_GET, _SESSION etc...`) mais puisqu'on va le mettre dans l'url on l'enlèvera, et aussi on prend la condition : 
 
 ```php
 _SESSION["logged"]==1
 ```
-Puisque 
+
+Il faut savoir qu'en PHP lorsqu'il y a un seul guillemet cela signifie que c'est une chaîne littérale or les doubles guillemets peuvent contenir une variable à l'intérieur. Voyez cela un peut comme le Fstring en Python.
+
+Donc ici logged n'est pas une chaîne de caractère mais une variable que l'ont peut retrouver plusieurs fois dans le code. Il faut donc enlever c'est double guillemet pour que notre requête soit bonne car on va faire une requête HTTP et non via PHP donc il faut l'enlever. Il faudra aussi ne mettre qu'un seul = puisque le double est propre à PHP et pas HTTP
+
+Ce qui donne : 
+
+```http
+http://challenge01.root-me.org/web-serveur/ch17/?_SESSION[logged]=1
+```
+
+
+![](../img/Pasted%20image%2020260423230327.png)
+
+Bingo !! 
