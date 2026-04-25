@@ -42,3 +42,6 @@ Okay parfait, maintenant essayons de voir qu'elle environnement web est utiliser
 
 On voit que le serveur utilise WERKZEUG essayons d'aller voir leurs documentation : 
 
+https://werkzeug.palletsprojects.com/en/stable/tutorial/
+
+Voici l'utilisation de base de werkzeug 
