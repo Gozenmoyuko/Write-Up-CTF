@@ -531,12 +531,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur PHP assert().md",
+                "file": "Write Up/Root-me/Web-Serveur Flask - Development server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur PHP assert()"
+              "title": "Web-Serveur Flask - Development server"
             }
           }
         ],
@@ -613,7 +613,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur PHP assert().md",
+                "file": "Write Up/Root-me/Web-Serveur Flask - Development server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -623,7 +623,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour Web-Serveur PHP assert()"
+              "title": "Rétrolien pour Web-Serveur Flask - Development server"
             }
           },
           {
@@ -700,11 +700,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "435eac34d0169b89",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Write Up/img/Pasted image 20260425155628.png",
+    "Write Up/img/Pasted image 20260425155602.png",
+    "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
+    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
+    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
-    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
@@ -712,7 +717,6 @@
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Write Up/Root-me/Web-Serveur Flask - Development server.md",
-    "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
     "Write Up/Root-me/CSRF 0 Protection.md",
@@ -723,7 +727,6 @@
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
-    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/img/Pasted image 20260423230327.png",
@@ -735,10 +738,7 @@
     "Write Up/img/Pasted image 20260423222725.png",
     "Write Up/img/Pasted image 20260423222450.png",
     "Write Up/img/Pasted image 20260423222344.png",
-    "Write Up/img/Pasted image 20260423222309.png",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write Up/Root-me/XSS Volatile.md",
     "Write Up/img/R101-Generalités.pdf",
     "Write Up/img/Cours limite et continuité.pdf",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
