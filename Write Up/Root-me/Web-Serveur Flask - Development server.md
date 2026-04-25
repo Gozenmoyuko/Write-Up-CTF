@@ -34,10 +34,11 @@ Ici on voit que l'interfaces réseau utiliser de la machine est le "eth0"
 
 Essayons de récupérer l'adresse mac dans le fichier /sys/class/net/eth0/address : 
 
-![](../../Pasted%20image%2020260425161404.png)
+![](../img/Pasted%20image%2020260425161404.png)
 
-Okay parfait, maintenant essayons de voir qu'elle environnement web est utiliser. Pour cela on va visiter le fichier /proc/self/environ : 
+Okay parfait, maintenant essayons de voir qu'elle environnement web est utiliser. Pour cela on va visiter le fichier /proc/self/environ(au passage /proc est souvent le dossier des interfaces virtuelle vers les informations du noyau des processus. Le /self est le processus actuel (celui qui lit le fichier et le /environ est désigner pour les variables d'environnement )) : 
 
-![](../../Pasted%20image%2020260425161459.png)
+![](../img/Pasted%20image%2020260425161459.png)
 
-On voit que le serveur utilise WERKZEUG essayons d'aller voir leurs documentation 
+On voit que le serveur utilise WERKZEUG essayons d'aller voir leurs documentation : 
+
