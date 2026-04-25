@@ -277,4 +277,8 @@ la commande c'est bien exécuté mais elle nous renvoie pas ce qu'on veut.
 
 Donc on va utiliser quelque choses d'autre que .system 
 
-On va utiliser 
+On va utiliser popen() qui permet d'ouvrir 
+
+
+
+![](../../Pasted%20image%2020260425180458.png)
