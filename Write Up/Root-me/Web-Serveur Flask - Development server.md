@@ -50,4 +50,4 @@ Voyons voir le stockage des adresses mémoire des différents processus dans /pr
 
 ![](../img/Pasted%20image%2020260425163715.png)
 
-On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de 
+On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de correspondance avec 
