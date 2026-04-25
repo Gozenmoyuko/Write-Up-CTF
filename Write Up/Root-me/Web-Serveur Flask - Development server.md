@@ -53,6 +53,13 @@ Voyons voir le stockage des adresses mémoire des différents processus dans /pr
 On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de correspondance avec /home/web-app/.local/lib/python3.11/site-packages/
 
 Avant de récupérer le chemin complet du processus qui est exécuté on va aller regarder qu'elle fichier à eu une commande d'exécution pour cela on va visité le fichier suivant(/proc/self/cmdline ) : 
-![](../../Pasted%20image%2020260425170259.png)
+![](../img/Pasted%20image%2020260425170259.png)
 Okay le processus s'appel app.py on aura donc quelques chose de la forme : 
-/home/web-app/.local/lib/python3.11/site-packages/
+/home/web-app/.local/lib/python3.11/site-packages/[dependance]/app.py
+dans ce que j'appel dépendance je parle notamment de ce qui est dans un requirements.txt basic. 
+
+Pour cela il faut savoir que le requirements.txt ce trouve forcément quelques part dans le répertoire du processus actif. Comme je vous l'ai dis /proc est le dossier des interfaces virtuelle vers les informations du processus. /self est le processus actif donc ici app.py et cwd (**C**urrent **W**orking **D**irectory) est le répertoire dans lequel notre processus est entrain de tourner actuellement, c'est un symlinks (lien symbolique) important puisqu'il nous enverra toujours dans le dossier du processus actuelle puis que le principe d'un lien symbolique je vous le rappel est de renvoyer vers un autre dossier ou fichier.
+
+Ici /proc/self/cwd
+
+
