@@ -50,4 +50,9 @@ Voyons voir le stockage des adresses mémoire des différents processus dans /pr
 
 ![](../img/Pasted%20image%2020260425163715.png)
 
-On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de correspondance avec 
+On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de correspondance avec /home/web-app/.local/lib/python3.11/site-packages/
+
+Avant de récupérer le chemin complet du processus qui est exécuté on va aller regarder qu'elle fichier à eu une commande d'exécution pour cela on va visité le fichier suivant(/proc/self/cmdline ) : 
+![](../../Pasted%20image%2020260425170259.png)
+Okay le processus s'appel app.py on aura donc quelques chose de la forme : 
+/home/web-app/.local/lib/python3.11/site-packages/
