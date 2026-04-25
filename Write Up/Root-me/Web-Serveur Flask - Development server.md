@@ -29,3 +29,15 @@ Bingo ! On voit à la toute fin qu'il y a un utilisateur linux qui s'appel web-a
 Maintenant essayons de voir qu'elle interface réseaux dispose ce serveur, vos mieux prendre un max d'information sur le serveur pour cela on va lire le fichier /proc/net/arp qui contient tout les processus arp de cette machine : 
 
 ![](../img/Pasted%20image%2020260425160550.png)
+
+Ici on voit que l'interfaces réseau utiliser de la machine est le "eth0"
+
+Essayons de récupérer l'adresse mac dans le fichier /sys/class/net/eth0/address : 
+
+![](../../Pasted%20image%2020260425161404.png)
+
+Okay parfait, maintenant essayons de voir qu'elle environnement web est utiliser. Pour cela on va visiter le fichier /proc/self/environ : 
+
+![](../../Pasted%20image%2020260425161459.png)
+
+On voit que le serveur utilise WERKZEUG essayons d'aller voir leurs documentation 
