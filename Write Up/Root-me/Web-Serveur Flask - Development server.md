@@ -271,14 +271,54 @@ os.system("whoami")
 
 Ceci va donc me dire qui je suis nan ? Et bein nan si vous vous rappelez de ce que je vous ai dis ici cela va nous renvoyer que 0 preuve : 
 
-![](../../Pasted%20image%2020260425180132.png)
+![](../img/Pasted%20image%2020260425180132.png)
 
 la commande c'est bien exécuté mais elle nous renvoie pas ce qu'on veut. 
 
 Donc on va utiliser quelque choses d'autre que .system 
 
-On va utiliser popen() qui permet d'ouvrir 
+On va utiliser popen() qui permet d'exécuter une commande shell et d'en renvoyer sont adresses mémoire où est stocker le résultat. 
+https://docs.python.org/fr/3/library/os.html
+
+![](../img/Pasted%20image%2020260425181112.png)
 
 
+Mais si on essaye de le faire bêtement comme cela, nous aurons une réponse de type 
 
-![](../../Pasted%20image%2020260425180458.png)
+```shell
+<os._wrap_close object at [adresse de la mémoire où est stocker la commande]>
+```
+
+C'est pour cela que l'ont va utiliser l'option read() du module os.
+L'option read() permet de récupérer directement les informations stocker dans une adresse mémoire (ici qui sera l'adresse mémoire renvoyer par la commande popen() qui je vous rappel renvoie une l'adresse mémoire où est stocker le résultat de la commande) donc en combinant les deux on obtient une commande comme : 
+```python
+__import__("os").popen("whoami").read()
+```
+
+Preuve de ce que j'avancer sur l'importance du .read() : 
+
+![](../img/Pasted%20image%2020260425180458.png)
+
+Bon pourquoi on ne peux pas combiner read() avec .system par exemple ? Tout simplement car celui-ci ne figure pas dans les commandes compatible avec read() : 
+
+![](../img/Pasted%20image%2020260425181919.png)
+
+Comme vous pouvez le voir ici, il est compatible directement avec popen() ce qu'on vient d'utiliser. 
+
+Mais pourquoi cela renvoie un 0 ou un 1 pour l'option .system? 
+
+Simplement car lorsque os.system("whoami") est utiliser de base sans être rentrer dans une variable, il renvoie l'information de la commande. Or ici vu ce qui nous à été retourner on sais que le debugger met notre commande dans une variable. Puisque lorsque celui-ci est bien exécuté (je parle du os.system()) retourne bien une valeur soit 0 soit 1 donc on ne peut pas affichier le retour, la manière la plus simple et de faire via popen().read comme je vous l'ai montrer.
+Bon maintenant que je vous ai appris des trucs (plus ou moins je l'espère :) ) passons à notre commande finale, nous utiliserons la suivante donc : 
+
+```python
+__import__("os").popen("notre commande").read()
+```
+
+ce qui revient exactement à 
+
+```python
+import os 
+x = os.popen("notre commande") #on a vu que le serveur mettez dans une variable notre input il détient donc l'adresse du retour par exemple 0x .... 
+
+
+```
