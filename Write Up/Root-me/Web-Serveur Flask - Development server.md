@@ -48,6 +48,6 @@ Voici l'utilisation de base de werkzeug et comment il marche. Mais pour l'instan
 
 Voyons voir le stockage des adresses mémoire des différents processus dans /proc/self/maps : 
 
-![](../../Pasted%20image%2020260425163715.png)
+![](../img/Pasted%20image%2020260425163715.png)
 
-On peut voir que 
+On peut voir que lorsqu'on trie en faisant CTRL + F et qu'on cherche "web-app" on trouve beaucoup de 
