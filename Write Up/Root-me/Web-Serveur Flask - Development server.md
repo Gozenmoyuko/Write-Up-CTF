@@ -60,6 +60,34 @@ dans ce que j'appel dépendance je parle notamment de ce qui est dans un require
 
 Pour cela il faut savoir que le requirements.txt ce trouve forcément quelques part dans le répertoire du processus actif. Comme je vous l'ai dis /proc est le dossier des interfaces virtuelle vers les informations du processus. /self est le processus actif donc ici app.py et cwd (**C**urrent **W**orking **D**irectory) est le répertoire dans lequel notre processus est entrain de tourner actuellement, c'est un symlinks (lien symbolique) important puisqu'il nous enverra toujours dans le dossier du processus actuelle puis que le principe d'un lien symbolique je vous le rappel est de renvoyer vers un autre dossier ou fichier.
 
-Ici /proc/self/cwd
+Ici /proc/self/cwd va forcément nous renvoyer sur le répertoire du processus il suffira de taper /requirements.txt pour voir les dépendances de l'application. 
+
+![](../img/Pasted%20image%2020260425171914.png)
+
+Okay parfait on voit dans les dépendances donc qu'il y a notre Werkzeug qu'on avait trouver, mais aussi maintenant on voit quelques choses qui nous ai familier qui est Flask. 
+
+Essayons de voir ce que nous renvoie si on lit le fichier donc qui je rappel été /home/web-app/.local/lib/python3.11/site-packages/[dependance]/app.py
+
+ici on va remplacer dependance par flask. 
+
+![](../img/Pasted%20image%2020260425172148.png)
 
 
+Okay on voit que c'est bien flask qui est utiliser. Mais avant tout, il y a beaucoup trop d'information nan ? Essayons de rejouer avec notre symlink(liens symboliques) pour voir ce que contient notre fichier app.py directement. Car la c'est plein de choses qui sont regrouper mais pas forcément le plus important. 
+
+On va donc taper : 
+
+/proc/self/cwd/app.py 
+
+![](../img/Pasted%20image%2020260425172323.png)
+Okay Bingo ! on voit tout en bas qu'une option de debug qui est utiliser(True) sur notre serveur web donc il y a une shell de debug du serveur web. Mais comment connaitre le endpoint de ce shell de Werkzeug ? Tout simplement on appel notre ami internet :)
+
+![](../img/Pasted%20image%2020260425172522.png)
+
+Bingo cherchons la de dans. 
+
+![](../../Pasted%20image%2020260425172543.png)
+
+Tiens bingo il y a un danger qui est marquer. Il ne faut pas activer le debug sur des machines en productions... Pas pro tout cela.
+
+Bon continuons essayons de voir ou ce situe ce 
