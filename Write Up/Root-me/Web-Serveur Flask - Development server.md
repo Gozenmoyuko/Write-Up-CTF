@@ -277,7 +277,7 @@ la commande c'est bien exécuté mais elle nous renvoie pas ce qu'on veut.
 
 Donc on va utiliser quelque choses d'autre que .system 
 
-On va utiliser popen() qui permet d'exécuter une commande shell et d'en renvoyer sont adresses mémoire où est stocker le résultat. 
+On va utiliser popen() qui permet d'exécuter une commande shell et d'en renvoyer sont adresses mémoire où est stocker le résultat(l'adresse mémoire de l'objet de type fichier). 
 https://docs.python.org/fr/3/library/os.html
 
 ![](../img/Pasted%20image%2020260425181112.png)
@@ -307,7 +307,7 @@ Comme vous pouvez le voir ici, il est compatible directement avec popen() ce qu'
 
 Mais pourquoi cela renvoie un 0 ou un 1 pour l'option .system? 
 
-Simplement car lorsque os.system("whoami") est utiliser de base sans être rentrer dans une variable, il renvoie l'information de la commande. Or ici vu ce qui nous à été retourner on sais que le debugger met notre commande dans une variable. Puisque lorsque celui-ci est bien exécuté (je parle du os.system()) retourne bien une valeur soit 0 soit 1 donc on ne peut pas affichier le retour, la manière la plus simple et de faire via popen().read comme je vous l'ai montrer.
+Simplement car lorsque os.system("whoami") est utiliser de base sans être rentrer dans une variable, il renvoie l'information de la commande. Or ici vu ce qui nous à été retourner on sais que le debugger met notre commande dans une variable. Puisque lorsque celui-ci est bien exécuté (je parle du os.system() ) retourne bien une valeur soit 0 soit 1 donc on ne peut pas affichier le retour, la manière la plus simple et de faire via popen().read comme je vous l'ai montrer.
 Bon maintenant que je vous ai appris des trucs (plus ou moins je l'espère :) ) passons à notre commande finale, nous utiliserons la suivante donc : 
 
 ```python
@@ -319,6 +319,35 @@ ce qui revient exactement à
 ```python
 import os 
 x = os.popen("notre commande") #on a vu que le serveur mettez dans une variable notre input il détient donc l'adresse du retour par exemple 0x .... 
-x.read()
+x.read() #.read() accède au contenu textuel(brute) stocké dans l'objet fichier en mémoire (dont l'adresse nous était retournée par popen() ), et le retourne sous forme de string lisible.
 
 ```
+
+
+Bon maintenant je vais taper : 
+
+```python
+__import__("os").popen("ls -la").read()
+```
+
+Pour pouvoir, voir qu'elle fichier il y a : 
+
+![](../img/Pasted%20image%2020260425183722.png)
+
+On peut voir qu'il y a beaucoup de fichier, mais beaucoup on à déjà vu leur contenu comme requirements.txt etc.. Mais un long fichier me paraît bizarre voyons voir son contenu, ce fichier est : 
+1b2cba8365de790bbb1e3dabcacdede935745e393288fd48f64b985cb52dad11.txt
+
+essayons de le lire via "cat" et donc via notre commande : 
+
+```python
+__import__("os").popen("cat 1b2cba8365de790bbb1e3dabcacdede935745e393288fd48f64b985cb52dad11.txt").read()
+```
+![](../img/Pasted%20image%2020260425183955.png)
+
+Bingo ! 
+
+Essayons de voir si c'est bon : 
+
+![](../img/Pasted%20image%2020260425184129.png)
+
+Bravo !! 
