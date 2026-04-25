@@ -319,6 +319,6 @@ ce qui revient exactement à
 ```python
 import os 
 x = os.popen("notre commande") #on a vu que le serveur mettez dans une variable notre input il détient donc l'adresse du retour par exemple 0x .... 
-
+x.read()
 
 ```
