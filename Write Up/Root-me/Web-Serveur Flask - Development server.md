@@ -7,3 +7,25 @@ Voyons voir à quoi ressemble le site web :
 
 ![](../img/Pasted%20image%2020260425155628.png)
 
+
+Cliquons sur "Nos services" (Our services) : 
+
+![](../img/Pasted%20image%2020260425155851.png)
+
+On arrive sur une page qui n'est pas totalement fonctionnel soit disant leurs services  de recherches de d'autres services n'est pas totalement fonctionnel. Essayons de chercher quelques chose comme "test". 
+
+![](../img/Pasted%20image%2020260425155957.png)
+
+Bizarre, il essaye de chercher un fichier ou de l'ouvrir, essayons de rentrer dans le répertoire racine de la machine : 
+
+![](../img/Pasted%20image%2020260425160055.png)
+
+Okay donc il ne rentre pas dans un fichier peut-être qu'il exécute un "cat" ou autre, pour en avoir le coeur net essayons lire le fichier /etc/passwd en tapant dans l'input /etc/passwd : 
+
+![](../img/Pasted%20image%2020260425160219.png)
+
+Bingo ! On voit à la toute fin qu'il y a un utilisateur linux qui s'appel web-app car il détient un dossier utilisateur (/home) donc la suite est le nom de l'utilisateur, ici qui est web-app. On à déjà un utilisateur :)
+
+Maintenant essayons de voir qu'elle interface réseaux dispose ce serveur, vos mieux prendre un max d'information sur le serveur pour cela on va lire le fichier /proc/net/arp qui contient tout les processus arp de cette machine : 
+
+![](../img/Pasted%20image%2020260425160550.png)
