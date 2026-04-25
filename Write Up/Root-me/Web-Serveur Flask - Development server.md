@@ -86,8 +86,14 @@ Okay Bingo ! on voit tout en bas qu'une option de debug qui est utiliser(True) s
 
 Bingo cherchons la de dans. 
 
-![](../../Pasted%20image%2020260425172543.png)
+![](../img/Pasted%20image%2020260425172543.png)
 
 Tiens bingo il y a un danger qui est marquer. Il ne faut pas activer le debug sur des machines en productions... Pas pro tout cela.
 
-Bon continuons essayons de voir ou ce situe ce 
+Bon continuons essayons de voir ou ce situe cette console de debug : 
+
+![](../img/Pasted%20image%2020260425172910.png)
+
+Essayons de voir s'il est bien actif sur notre site pour cela je vais taper l'url suivante : 
+
+challenge01.root-me.org:59085/console
