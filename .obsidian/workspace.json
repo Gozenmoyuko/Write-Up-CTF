@@ -566,9 +566,23 @@
               "icon": "lucide-file",
               "title": "Cookie Monster Secret Recipe"
             }
+          },
+          {
+            "id": "334a20d7c44da2a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHP - Remote Xdebug.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PHP - Remote Xdebug"
+            }
           }
         ],
-        "currentTab": 42
+        "currentTab": 43
       }
     ],
     "direction": "vertical"
@@ -729,10 +743,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3f7c92a3f7a20409",
+  "active": "334a20d7c44da2a5",
   "lastOpenFiles": [
-    "Write Up/Pico-CTF/Crack the Gate 1.md",
+    "Pasted image 20260515153220.png",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
+    "PHP - Remote Xdebug.md",
+    "Write Up/Pico-CTF/Crack the Gate 1.md",
     "Sans titre.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root-me/XSS Stored 2.md",
@@ -756,8 +772,6 @@
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
-    "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
-    "Write Up/Root-me/Python input().md",
     "Write Up/img/Pasted image 20260425184129.png",
     "Write Up/img/Pasted image 20260425183955.png",
     "Write Up/img/Pasted image 20260425183722.png",
