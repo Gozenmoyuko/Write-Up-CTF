@@ -51,12 +51,51 @@ Essayons d'ouvrir les 3 dans notre navigateur.
 
 Voici le contenu du commands.js : 
 
-![](../../Pasted%20image%2020260516124534.png)
+![](../img/Pasted%20image%2020260516124534.png)
 
 Nous pouvons voir qu'il export une variable type constante donc non modifiable qui s'appelle GAME_WON mais aussi GAME_LOST.
 
 Maintenant essayons de voir le contenu de main.js : 
 
-![](../../Pasted%20image%2020260516124712.png)
+![](../img/Pasted%20image%2020260516124712.png)
 
-Bon nous pouvons voir que le fichier est assez long 
+Bon nous pouvons voir que le fichier est assez long.
+
+On peut notamment voir que la fonction playerWon et playerLost sont importé depuis game.js, Essayons de voir s'il y a playerWon dans le fichier main.js.
+
+![](../img/Pasted%20image%2020260516125316.png)
+
+On peut voir que nos options qui ont marché sont juste ici, mais bizarre il n'y en as que 3 alors que ça doit ce finir après le SET UP CAMP. Donc techniquement avec toutes les options nous pouvons pas finir le jeu.
+
+On voit qu'il essaye de récupérer des informations d'un dossier /api essayons de voir s'il n'y as pas par exemple un code de l'api qui traine qui à toute les options à l'intérieur.
+
+
+![](../img/Pasted%20image%2020260516125508.png)
+
+Bingo il n'y en as que deux donc on à notre /api/monitor et /api/options.
+
+Regardons le premier.
+
+![](../img/Pasted%20image%2020260516125607.png)
+
+Bon rien de très intéressant. Regardons /api/options.
+
+![](../img/Pasted%20image%2020260516125638.png)
+
+Okay bingo rejouons au jeu et partons de cette aventur ! Ici on peut voir qu'il y a plusieurs commandes. Or on connais déjà les 3 premières commandes qui sont les bonnes qui je rappel sont : 
+
+HEAD NORTH
+FOLLOW A MYSTERIOUS PATH
+SET UP CAMP
+et pour le 4ème on à vu que rien ne marché. Essayons au quatrième de mettre la phrase du secret qui est : 
+
+Blip-blop, in a pickle with a hiccup! Shmiggity-shmack
+
+
+![](../img/Pasted%20image%2020260516130022.png)
+
+BINGO !! 
+
+![](../img/Pasted%20image%2020260516130047.png)
+:) 
+
