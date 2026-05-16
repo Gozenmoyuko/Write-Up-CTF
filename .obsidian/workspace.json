@@ -573,12 +573,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHP - Remote Xdebug.md",
+                "file": "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PHP - Remote Xdebug"
+              "title": "Web-Serveur  Insecure Code Management"
             }
           }
         ],
@@ -745,9 +745,9 @@
   },
   "active": "334a20d7c44da2a5",
   "lastOpenFiles": [
+    "PHP - Remote Xdebug.md",
     "Pasted image 20260515153220.png",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
-    "PHP - Remote Xdebug.md",
     "Write Up/Pico-CTF/Crack the Gate 1.md",
     "Sans titre.md",
     "Write Up/Root-me/XSS Volatile.md",
@@ -781,7 +781,6 @@
     "Write Up/img/Pasted image 20260425180132.png",
     "Write Up/img/Pasted image 20260425175533.png",
     "Write Up/img/Pasted image 20260425175417.png",
-    "Write Up/img/Pasted image 20260425175400.png",
     "Write Up/img/R101-Generalités.pdf",
     "Write Up/img/Cours limite et continuité.pdf",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
