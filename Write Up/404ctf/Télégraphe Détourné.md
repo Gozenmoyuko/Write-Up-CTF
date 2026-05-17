@@ -26,7 +26,8 @@ Nous pouvons mettre test par exemple pour voir la dépêche reçu.
 ![](../img/Pasted%20image%2020260517124844.png)
 
 
-Essayons de 
+Essayons de faire une XSS classique pour voir si le champs est vulnérable.
+
 
 
 
