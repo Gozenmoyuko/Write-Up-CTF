@@ -60,7 +60,17 @@ Tiens tiens tiens, un script est importé mais aussi une fonction est utiliser s
 
 On peut voir qu'on nous donne un token de type csrf qui ce situe dans le /api/init_csrf. On peut donc pensez qu'il faudra récupérer les informations du bot admin lorsqu'il va chercher sont token csrf et donc le récupérer. 
 
-On peut voir aussi qu'il y a une fonction qui est notre fameux boutons pour notifier l'administrateur qui se situe au /visit. 
+On peut voir aussi qu'il y a une fonction qui est notre fameux boutons pour notifier l'administrateur qui se situe au /visit.
+
+Bon essayons de chargé une XSS par une balise image. 
+
+```javascript
+"><img src=x onerror="console.log('test2');"</img>
+```
+
+![](../img/Pasted%20image%2020260517150336.png)
+
+Okay parfait maintenant nous allons rester sur cela. 
 
 
 
