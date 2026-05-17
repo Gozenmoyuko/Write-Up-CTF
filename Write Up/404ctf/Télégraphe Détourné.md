@@ -82,6 +82,9 @@ Récap de ce qui se passe lors d'un signalement.
 
 
 
+Maintenant voyons voir à quoi va ressembler la solution finale et ce qui est attendu via un dessin : 
+
+
 
 
 
