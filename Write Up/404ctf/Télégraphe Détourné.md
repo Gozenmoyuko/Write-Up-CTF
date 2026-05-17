@@ -13,6 +13,16 @@ Grâce à cette phrase :
 `_Signaler un problème" vous permettra d'amener un admin possédant un cookie plutôt intéressant sur la page_`
 
 
+Tout d'abord voyons voir à quoi ressemble le site web qui nous ai mis à notre disposition.
+
+![](../img/Pasted%20image%2020260517123901.png)
+![](../../Pasted%20image%2020260517124000.png)
+
+On peut voir que tout d'abord il faut établir le lien(qui on verra nous servira à quelques chose)
+
+Puis deuxième étape il faut transmettre une dépêche qui celui ci sera lisible dans les dépêche reçu. 
+Nous pouvons mettre test par exemple pour voir la dépêche reçu.
+
 
 
 
