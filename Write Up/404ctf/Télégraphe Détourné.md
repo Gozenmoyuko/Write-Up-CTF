@@ -84,7 +84,15 @@ Récap de ce qui se passe lors d'un signalement.
 
 Maintenant voyons voir à quoi va ressembler la solution finale et ce qui est attendu via un dessin : 
 
+![](../img/Pasted%20image%2020260517180433.png)
 
+![](../img/Pasted%20image%2020260517180603.png)
+
+Ceci est pour l'instant qu'une hypothèse et nous allons essayer de faire en sorte que cela deviennent la solution haha
+
+Pour cela nous allons utiliser fetch et le langage Javascript. Je vous invite à allez lire plus en détail comment fonctionnent fetch et de c'est différentes options cela vous permettra de comprendre facilement le payload finale ci dessous.
+
+https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
 
 
 
