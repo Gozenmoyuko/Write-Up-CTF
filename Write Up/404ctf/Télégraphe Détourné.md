@@ -39,10 +39,11 @@ Maintenant regardons si le champs est vulnérable ou non.
 
 ![](../img/Pasted%20image%2020260517141744.png)
 
-Ici le "> permet d'échapper à la balise "li" dans laquelle notre input est mis. 
+On peut voir que notre code à été traiter et mise dans une balise ```<li>```
+
 ![](../img/Pasted%20image%2020260517141834.png)
 
-par la suite on peut mettre du script. Le plus parlant est d'utiliser l'option alert qui vous permet de voir une popup sauf que si vous faite un reload du site vous verrez que cela se ré-exécutera ce qui est un peu troublant.
+Par la suite on peut mettre du script. Le plus parlant est d'utiliser l'option alert qui vous permet de voir une popup sauf que si vous faite un reload du site vous verrez que cela se ré-exécutera ce qui est un peu troublant.
 
 On sais que le bot admin n'as pas accès à Internet au moment des différents tests cela n'était pas préciser j'avais donc essayer des payload simple et classique tel que : 
 
