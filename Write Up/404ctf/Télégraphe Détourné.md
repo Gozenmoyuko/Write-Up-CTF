@@ -165,3 +165,10 @@ Cliquez sur envoyer la Dépêche puis sur Signaler un problème en bas de la pag
 ![](../img/Pasted%20image%2020260517182636.png)
 
 Bingo ! 
+
+Merci encore pour ce CTF qui ma permis de voir une autre façon de faire des XSS en same origin que je n'avais jamais encore fait. 
+
+Pour plus d'information sur le créateur allez voir son Github il fait des projets plutôt pas mal. 
+
+[tornac1234 (rootcan) · GitHub](https://github.com/tornac1234)
+
