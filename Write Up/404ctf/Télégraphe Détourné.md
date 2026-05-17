@@ -76,6 +76,8 @@ On met notre payload XSS => l'image ce charge dans le champs dépêches reçues 
 
 Maintenant il faut faire en sorte de récupérer les cookies du bot admin. Pour cela nous allons particulièrement utiliser fetch qui permet aussi de manipuler via Javascript les différents champs comme les Headers HTTP mais aussi le Body etc... 
 
+Récap de ce qui se passe lors d'un signalement. 
+
 
 
 
