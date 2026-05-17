@@ -76,9 +76,6 @@ On met notre payload XSS => l'image ce charge dans le champs dépêches reçues 
 
 Maintenant il faut faire en sorte de récupérer les cookies du bot admin. Pour cela nous allons particulièrement utiliser fetch qui permet aussi de manipuler via Javascript les différents champs comme les Headers HTTP mais aussi le Body etc... 
 
-```javascript
-	
-```
 
 
 
@@ -89,7 +86,7 @@ Solution finale :
 ```
 
 
-La deuxième XSS ne marche pas puisque j'essaye d'accéder à un Set-Cookie 
+La deuxième XSS ne marche pas puisque j'essaye d'accéder à un Set-Cookie ce qui n'est accessible que par le navigateur et non par Javascript c'est pour cela qu'on va garder que le bon payload 
 
 
 Le bon payload pour la solution finale est la suivante : 
