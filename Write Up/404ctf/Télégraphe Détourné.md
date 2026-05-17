@@ -70,8 +70,15 @@ Bon essayons de chargé une XSS par une balise image.
 
 ![](../img/Pasted%20image%2020260517150336.png)
 
-Okay parfait maintenant nous allons rester sur cela. 
+Okay parfait maintenant nous allons rester sur cela car voici ce qui va se passer : 
 
+On met notre payload XSS => l'image ce charge dans le champs dépêches reçues => La source de l'image n'existe pas => On exécute le script qui est dans le onerror. 
+
+Maintenant il faut faire en sorte de récupérer les cookies du bot admin. Pour cela nous allons particulièrement utiliser fetch qui permet aussi de manipuler via Javascript les différents champs comme les Headers HTTP mais aussi le Body etc... 
+
+```javascript
+
+```
 
 
 
