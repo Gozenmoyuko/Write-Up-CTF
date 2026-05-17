@@ -48,9 +48,9 @@ On sais que le bot admin n'as pas accès à Internet au moment des différents t
 
 Mais maintenant que cela est préciser, cela va me permettre de raccourcie grandement votre temps de lecture au niveau de mon write-up (compte rendu). 
 
-Bon essayons de voir s'il n'y as pas un endpoint qui peut-être intéressant. Car oui nous avons vu qu'il y a une XSS mais qu'on ne peux pas récupérer les cookies du bot admin comme cela puisque cela est filtrer par un CSP de type same origin. 
+Bon essayons de voir s'il n'y as pas un endpoint qui peut-être intéressant. Car oui nous avons vu qu'il y a une XSS mais qu'on ne peux pas récupérer les cookies du bot admin comme cela puisque le bot n'as pas accès à internet donc le XSS basic vers un webhook n'est pas possible.
 
-On peut le voir dans le header. 
+Essayons de trouver un endpoint 
 
 Solution finale : 
 
