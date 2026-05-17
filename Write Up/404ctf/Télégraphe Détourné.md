@@ -50,7 +50,9 @@ Mais maintenant que cela est préciser, cela va me permettre de raccourcie grand
 
 Bon essayons de voir s'il n'y as pas un endpoint qui peut-être intéressant. Car oui nous avons vu qu'il y a une XSS mais qu'on ne peux pas récupérer les cookies du bot admin comme cela puisque le bot n'as pas accès à internet donc le XSS basic vers un webhook n'est pas possible.
 
-Essayons de trouver un endpoint qui peut nous aider et essayons de voir un 
+Essayons de trouver un endpoint qui peut nous aider et essayons de voir un peu les différents code sources qui sont à notre disposition sur le site : 
+
+
 
 Solution finale : 
 
