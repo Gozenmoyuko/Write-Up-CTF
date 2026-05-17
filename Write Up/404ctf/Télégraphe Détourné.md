@@ -78,6 +78,10 @@ Maintenant il faut faire en sorte de récupérer les cookies du bot admin. Pour 
 
 Récap de ce qui se passe lors d'un signalement. 
 
+![](../img/Pasted%20image%2020260517175457.png)
+
+
+
 
 
 
