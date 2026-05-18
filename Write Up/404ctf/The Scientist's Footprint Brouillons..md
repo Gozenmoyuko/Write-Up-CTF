@@ -43,7 +43,11 @@ Possibilité de request POST et de poster le contenu de fichier sensible.
 
 requête : 
 
-![](../../Pasted%20image%2020260518230549.png)
+![](../img/Pasted%20image%2020260518230549.png)
+
+
+
+![](../img/Pasted%20image%2020260518230601.png)
 
 
 
