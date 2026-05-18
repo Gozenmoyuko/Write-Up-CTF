@@ -585,12 +585,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/404ctf/Télégraphe Détourné.md",
+                "file": "Write Up/Root-me/Web-serveur JWT secret faible.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Télégraphe Détourné"
+              "title": "Web-serveur JWT secret faible"
             }
           }
         ],
@@ -755,8 +755,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "1de9adff02be2fee",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
+    "Write Up/Root-me/XSS Stored 2.md",
+    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/img/Pasted image 20260517182636.png",
     "Write Up/img/Pasted image 20260517182547.png",
     "Write Up/img/Pasted image 20260517181943.png",
@@ -769,11 +772,8 @@
     "Pasted image 20260517175234.png",
     "Pasted image 20260517175228.png",
     "Write Up/HTB/Flag Command.md",
-    "Pasted image 20260517174918.png",
     "Write Up/Root-me/CSRF 0 Protection.md",
     "Write Up/Root-me/XSS Volatile.md",
-    "Write Up/Root-me/XSS Stored 2.md",
-    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
@@ -790,7 +790,6 @@
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
