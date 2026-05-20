@@ -599,12 +599,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+                "file": "Write Up/404ctf/Télégraphe Détourné.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Serveur JWT - Unsecure File Signature"
+              "title": "Télégraphe Détourné"
             }
           }
         ],
@@ -771,8 +771,11 @@
   },
   "active": "d359b8b1b24c4f2e",
   "lastOpenFiles": [
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
+    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
+    "Write Up/404ctf/Télégraphe Détourné.md",
+    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
@@ -781,8 +784,6 @@
     "Write Up/img/Pasted image 20260518230549.png",
     "Write Up/img/Pasted image 20260518230330.png",
     "Write Up/img/Pasted image 20260518230114.png",
-    "Write Up/404ctf/Télégraphe Détourné.md",
-    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
@@ -806,7 +807,6 @@
     "Write Up/HTB/Spookifier.md",
     "Write Up/404ctf",
     "Write Up/HTB",
-    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Pico-CTF/Crack the Gate 1.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
