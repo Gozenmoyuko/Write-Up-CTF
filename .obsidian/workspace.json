@@ -599,12 +599,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/XSS Stored 2.md",
+                "file": "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS Stored 2"
+              "title": "The Scientist's Footprint Brouillons."
             }
           }
         ],
@@ -771,6 +771,7 @@
   },
   "active": "d359b8b1b24c4f2e",
   "lastOpenFiles": [
+    "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
@@ -792,7 +793,6 @@
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/img/Pasted image 20260517182636.png",
     "Write Up/img/Pasted image 20260517182547.png",
