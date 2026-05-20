@@ -599,12 +599,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
+                "file": "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Scientist's Footprint Brouillons."
+              "title": "Web-Serveur JWT - Unsecure File Signature"
             }
           }
         ],
@@ -771,11 +771,12 @@
   },
   "active": "d359b8b1b24c4f2e",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
+    "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
     "Write Up/Root-me/XSS Stored 2.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Pico-CTF/Cookie Monster Secret Recipe.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
-    "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
     "Write Up/img/Pasted image 20260518230601.png",
     "Write Up/img/Pasted image 20260518230549.png",
     "Write Up/img/Pasted image 20260518230330.png",
@@ -809,7 +810,6 @@
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Pico-CTF/Crack the Gate 1.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
-    "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
     "Write Up/img/R101-Generalités.pdf",
     "Write Up/img/Cours limite et continuité.pdf",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
