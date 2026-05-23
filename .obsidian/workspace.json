@@ -599,12 +599,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/404ctf/Télégraphe Détourné.md",
+                "file": "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Télégraphe Détourné"
+              "title": "The Scientist's Footprint Brouillons."
             }
           }
         ],
@@ -771,9 +771,9 @@
   },
   "active": "d359b8b1b24c4f2e",
   "lastOpenFiles": [
+    "Write Up/404ctf/Télégraphe Détourné.md",
     "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
-    "Write Up/404ctf/Télégraphe Détourné.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/XSS Stored 2.md",
