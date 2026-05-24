@@ -1,4 +1,4 @@
-![](../img/Pasted%20image%2020260516170225.png)
+![](../../img/Pasted%20image%2020260516170225.png)
 
 `Scénario du défi`
 `Une nouvelle tendance fait son apparition : une application qui génère un nom effrayant pour vous. Les utilisateurs de cette application ont découvert par la suite que leurs vrais noms avaient eux aussi été modifiés comme par magie, ce qui a semé le chaos dans leur vie. Pourriez-vous aider à faire disparaître cette application ?`
@@ -6,7 +6,7 @@
 
 Tout d'abord voyons voir ce qu'on à lorsqu'on installe les fichiers du site : 
 
-![](../img/Pasted%20image%2020260516170521.png)
+![](../../img/Pasted%20image%2020260516170521.png)
 
 
 On peut voir ici que le flag ce trouve à la racine de l'application.
@@ -15,13 +15,13 @@ Voyons voir un peu le site comment il se comporte maintenant.
 
 
 
-![](../img/Pasted%20image%2020260516171006.png)
+![](../../img/Pasted%20image%2020260516171006.png)
 
 On arrive sur un site plutôt jolie, on nous dis qu'on peut rentrer un nom et que celui-ci deviendra un nom "spooki" effrayant. Essayons une XSS simple connu comme : 
 
 "><script>alert("test")</script>
 
-![](../img/Pasted%20image%2020260516171140.png)
+![](../../img/Pasted%20image%2020260516171140.png)
 
 Okay parfait. 
 
@@ -29,11 +29,11 @@ Mais je ne vois pas comment on peut faire une RCE (Remote command execution) à 
 
 Mais bon voyons voir le code source si nous trouvons quelques choses de plutôt intéressant . 
 
-![](../img/Pasted%20image%2020260516171459.png)
+![](../../img/Pasted%20image%2020260516171459.png)
 
 Essayons de voir le main.py. 
 
-![](../img/Pasted%20image%2020260516171529.png)
+![](../../img/Pasted%20image%2020260516171529.png)
 
 
 On peut voir que le main.py importe flask et surtout flask_mako.
@@ -64,7 +64,7 @@ Celui-ci représente la section des SSTI mais beaucoup d'autre domaine et payloa
 Bon on sais qu'on est sur du mako mais comment faire si on n'aurais pas eu cette information ? 
 Toujours via le github nous pouvons essayer les différentes façons de reconnaissances avant l'attaque. 
 
-![](../img/Pasted%20image%2020260516172551.png)
+![](../../img/Pasted%20image%2020260516172551.png)
 
 Les lignes vertes sont à suivres si la commande est un succès et les lignes rouges si cela à échoué. Mais pour vous montrez je vais emprunté rapidement un chemin rouge et vous comprendrez rapidement.
 
@@ -73,14 +73,14 @@ Les lignes vertes sont à suivres si la commande est un succès et les lignes ro
 Bon tout d'abord essayons le simple ```
 ${7*7}```
 
-![](../img/Pasted%20image%2020260516172636.png)
+![](../../img/Pasted%20image%2020260516172636.png)
 
 Okay cela à marché. On peut voir que le site à interpréter notre calcul. 
 
 Essayons maintenant de voir exactement quel chemin est le bon pour la phase de reconnaissance. Essayons le payload suivant : 
 
 `{{7*7}}`
-![](../img/Pasted%20image%2020260516172945.png)
+![](../../img/Pasted%20image%2020260516172945.png)
 
 On peut voir que celui-ci n'as pas été interpréter, donc on ne prendras pas le chemin du bas mais celui du haut .
 
@@ -89,13 +89,13 @@ Testons maintenant le payload suivant :
 `a{*comment*}b`
 
 
-![](../img/Pasted%20image%2020260516173306.png)
+![](../../img/Pasted%20image%2020260516173306.png)
 
 Celui-ci n'as pas été interpréter. Donc nous allons passer à la suivante : 
 
 `${"z".join("ab")}`
 
-![](../img/Pasted%20image%2020260516173431.png)
+![](../../img/Pasted%20image%2020260516173431.png)
 
 Nous pouvons voir que celui-ci à bel est bien été interpréter par le serveur ce qui veut dire qu'on est sur du Mako.
 
@@ -103,16 +103,16 @@ Bravo vous venez trouvez de vous même comment savoir quel est le vecteur d'atta
 
 Maintenant passons à la phase d'exploitation.
 
-![](../img/Pasted%20image%2020260516173557.png)
+![](../../img/Pasted%20image%2020260516173557.png)
 
 Maintenant qu'on sais qu'on est sur du mako et que mako est basé sous python allons dans la rubrique Python.md. 
 
-![](../img/Pasted%20image%2020260516173710.png)
+![](../../img/Pasted%20image%2020260516173710.png)
 
 
 Maintenant qu'on est sur Mako et qu'on veux effectuer une RCE nous allons tentez les différentes solution qui nous sont présenté. (Pas toutes).
 
-![](../img/Pasted%20image%2020260516173803.png)
+![](../../img/Pasted%20image%2020260516173803.png)
 
 Je vais tenter de copier coller pour la première, la deuxième mais aussi pour la 10ème voir ce que ça donne.
 
@@ -131,7 +131,7 @@ Globalement cela va exécuté la commande "id" dans le input et nous renvoyer le
 
 testons maintenant : 
 
-![](../img/Pasted%20image%2020260516174845.png)
+![](../../img/Pasted%20image%2020260516174845.png)
 
 Bingo!
 
@@ -147,11 +147,11 @@ ${self.module.cache.util.os.popen(str().join(chr(i)for(i)in[108,115,32,45,108,97
 ```
 
 
-![](../img/Pasted%20image%2020260516175508.png)
+![](../../img/Pasted%20image%2020260516175508.png)
 
 Bingo Bon c'est pas trop joli regardons dans un fichier texte de base. 
 
-![](../img/Pasted%20image%2020260516175545.png)
+![](../../img/Pasted%20image%2020260516175545.png)
 
 
 C'est plus jolie mais on peut voir surtout que sur la troisième lignes nous avons flag.txt qui se trouve dans le répertoire racine comme dans le code source. On va pouvoir maintenant le lire en faisant : 
@@ -173,11 +173,11 @@ Maintenant il suffit de le mettre dans notre payload.
 ${self.module.cache.util.os.popen(str().join(chr(i)for(i)in[99,97,116,32,47,102,108,97,103,46,116,120,116])).read()}
 ```
 
-![](../img/Pasted%20image%2020260516180044.png)
+![](../../img/Pasted%20image%2020260516180044.png)
 
 Bingo ! 
 
 Prenons nos points. 
 
-![](../img/Pasted%20image%2020260516180102.png)
+![](../../img/Pasted%20image%2020260516180102.png)
 
