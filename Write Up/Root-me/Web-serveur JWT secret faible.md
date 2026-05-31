@@ -1,4 +1,4 @@
-
+	
 ![](../img/Pasted%20image%2020260415222618.png)
 
 Dans ce challenge il nous faudra craquer le secret (signature) du token JWT.

@@ -787,6 +787,7 @@
   "lastOpenFiles": [
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
+    "Write Up/Root-me/Web-serveur JWT secret faible.md",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/Web-Serveur Flask - Development server.md",
@@ -803,7 +804,6 @@
     "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write Up/Root-me/Web-serveur JWT secret faible.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
