@@ -620,9 +620,23 @@
               "icon": "lucide-file",
               "title": "Web-Serveur HTTP-Contournement-de-filtrage-IP"
             }
+          },
+          {
+            "id": "ccb8c3370af37a43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Write Up/HTB/Web/OpenSecret.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "OpenSecret"
+            }
           }
         ],
-        "currentTab": 46
+        "currentTab": 47
       }
     ],
     "direction": "vertical"
@@ -783,8 +797,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4adee154830f8f20",
+  "active": "ccb8c3370af37a43",
   "lastOpenFiles": [
+    "Write Up/img/Pasted image 20260706173109.png",
+    "Write Up/img/Pasted image 20260706172843.png",
+    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
+    "Write Up/HTB/Web/OpenSecret.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur Flask - Development server.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
@@ -800,7 +818,6 @@
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
-    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
@@ -810,8 +827,6 @@
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
     "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/img/Pasted image 20260524200957.png",
     "Write Up/img/Pasted image 20260524200830.png",
     "Write Up/img/Pasted image 20260524194339.png",
@@ -823,7 +838,6 @@
     "Write Up/img/Pasted image 20260518230114.png",
     "Write Up/img/Pasted image 20260517182636.png",
     "Write Up/img/Pasted image 20260517182547.png",
-    "Write Up/img/Pasted image 20260517181943.png",
     "Write Up/404ctf",
     "Write Up/HTB",
     "Write Up/img/R101-Generalités.pdf",
