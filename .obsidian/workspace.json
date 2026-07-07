@@ -627,12 +627,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/HTB/Web/OpenSecret.md",
+                "file": "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenSecret"
+              "title": "Web-Serveur HTTP-Contournement-de-filtrage-IP"
             }
           }
         ],
@@ -797,8 +797,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "ccb8c3370af37a43",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/img/Pasted image 20260706174018.png",
     "Write Up/img/Pasted image 20260706173655.png",
     "Write Up/img/Pasted image 20260706173548.png",
@@ -806,7 +807,6 @@
     "Write Up/img/Pasted image 20260706172843.png",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/HTB/Web/OpenSecret.md",
-    "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur Flask - Development server.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
@@ -837,7 +837,6 @@
     "Write Up/HTB/Web",
     "Write Up/img/Pasted image 20260518230601.png",
     "Write Up/img/Pasted image 20260518230549.png",
-    "Write Up/img/Pasted image 20260518230330.png",
     "Write Up/404ctf",
     "Write Up/HTB",
     "Write Up/img/R101-Generalités.pdf",
