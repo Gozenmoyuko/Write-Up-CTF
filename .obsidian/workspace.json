@@ -634,9 +634,23 @@
               "icon": "lucide-file",
               "title": "App-script 1 Rootme"
             }
+          },
+          {
+            "id": "8e950085b4e37743",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pentest Bug bounty/Crous admin panel..md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Crous admin panel."
+            }
           }
         ],
-        "currentTab": 47
+        "currentTab": 48
       }
     ],
     "direction": "vertical"
@@ -797,8 +811,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ccb8c3370af37a43",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Write Up/Root-me/App-script 1 Rootme.md",
+    "Pentest Bug bounty/Crous admin panel..md",
+    "Pentest Bug bounty",
     "Write Up/Root-me/BASH system 2 Rootme.md",
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
@@ -825,7 +842,6 @@
     "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
@@ -842,7 +858,6 @@
     "Write Up/img/R101-Generalités.pdf",
     "Write Up/img/Cours limite et continuité.pdf",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
-    "Write Up/img",
-    "Write-Up-CTF/CTF Anssi 2026 (Hackropole)"
+    "Write Up/img"
   ]
 }
