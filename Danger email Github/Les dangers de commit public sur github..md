@@ -40,4 +40,3 @@ git config user.email
 ![](../Write%20Up/img/Pasted%20image%2020260716082029.png)
 Comme vous pouvez le voir, j'ai flouté mes informations personnelles. Mais vous pouvez voir qu'il y a bel et bien mon adresse e-mail privée.
 
-	
