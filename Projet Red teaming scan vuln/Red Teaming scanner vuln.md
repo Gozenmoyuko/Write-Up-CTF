@@ -45,7 +45,7 @@ docker run hello-world
 On peut voir que notre docker est donc fonctionnel, mais si ce n'est pas le cas, alors nous allons y remédier. 
 
 Si vous avez ce problème tel que : 
-![](../Pasted%20image%2020260716172230.png)
+![](../Write%20Up/img/Pasted%20image%2020260716172230.png)
 
 C'est que notre utilisateur actuel n'a pas encore les permissions pour les sockets Docker.
 
@@ -62,4 +62,24 @@ Mais cela ne suffit pas puisque nous avons pas mis à jour on va donc régler ce
 ```bash 
 newgrp docker
 ```
+
+Maintenant on peut regarder si le service est actif. 
+
+![](../Write%20Up/img/Pasted%20image%2020260716175835.png)
+
+Si celui-ci est inactif vous pouvez lancer la commande suivante  : 
+
+```bash
+sudo systemctl enable --now docker
+```
+
+Maintenant on peut retester de faire : 
+
+```bash
+docker run hello-world
+```
+
+Vous devriez avoir ce résultat : 
+
+![](../Pasted%20image%2020260716180110.png)
 
