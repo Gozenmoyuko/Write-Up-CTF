@@ -6,3 +6,9 @@ Dans le fonctionnement de GitHub Basic, lorsque vous n'essayez pas de comprendre
 Il faut savoir que votre email est partagé directement lorsque vous faites un commit public via Git, par exemple. Mais aussi, il faut savoir que le paramètre de protection du partage de votre email par CLI est à la base désactivé et je vous propose de l'activer, mais encore mieux de changer les settings Git pour ne plus partager votre email personnel ! 
 
 
+## Étape 1 : Retirer l'envoi d'email par push et garder son adresse mail privée.
+
+Pour cela nous allons faire simple et efficace.
+
+Tout d'abord rendez-vous sur https://github.com/settings/emails , si l'endpoint à changer alors cliquez sur Settings > Emails 
+
