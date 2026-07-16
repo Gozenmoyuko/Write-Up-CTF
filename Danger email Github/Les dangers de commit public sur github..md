@@ -43,6 +43,9 @@ Comme vous pouvez le voir, j'ai flouté mes informations personnelles. Mais vous
 
 Maintenant nous allons configurer avec le mail que nous avons dans les paramètres d'avant pour cela on fait : 
 ```bash
-git config --global user.email ""
+git config --global user.email "90153990+Gozenmoyuko@users.noreply.github.com"
 ```
 ![](../Write%20Up/img/Pasted%20image%2020260716140537.png)
+
+Maintenant nous allons vérifier comme quoi les settings ce sont bien appliquer. 
+![](../Write%20Up/img/Pasted%20image%2020260716141042.png)
