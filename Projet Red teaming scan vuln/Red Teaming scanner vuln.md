@@ -83,3 +83,20 @@ Vous devriez avoir ce résultat :
 
 ![](../Pasted%20image%2020260716180110.png)
 
+Pour lancer le juicy-shop de OWASP nous allons lancer le docker via l'image qui est disponible:  
+
+```bash
+docker run -d -p 3000:3000 --name juice-shop bkimminich/juice-shop
+```
+
+docker run va nous permettre de lancer le conteneur depuis une image et de la démarrer. 
+
+-d permet de détacher le conteneur et de le faire tourner en arrière plan et donc de nous rendre la main sur le terminale.
+
+-p 3000:3000 ici on fais un mapping de port de la forme : 
+```bash 
+port de notre machine:port du conteneur
+```
+--name pour donner un nom car sinon docker va donner un nom aléatoire et ce n'est pas ce que nous voulons.
+
+et le dernier champs après le nom est l'image docker qu'on peut retrouver sur Docker Hub
