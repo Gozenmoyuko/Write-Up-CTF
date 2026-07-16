@@ -81,7 +81,7 @@ docker run hello-world
 
 Vous devriez avoir ce résultat : 
 
-![](../Pasted%20image%2020260716180110.png)
+![](../Write%20Up/img/Pasted%20image%2020260716180110.png)
 
 Pour lancer le juicy-shop de OWASP nous allons lancer le docker via l'image qui est disponible:  
 
