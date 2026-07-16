@@ -11,16 +11,55 @@ Ici l'option -f permet de s'il y a une erreur que cela échoue silencieusement, 
 
 L'option -s permet de dire qu'on veut rester silencieux sur la barre de production et sur les stats du téléchargement. 
 
-L'option -S "show error" cela permet que même en silencieux cela nous renvoie le code d'erreur en cas de problème. 
+L'option -S "show error" cela permet que même en silencieux, cela nous renvoie le code d'erreur en cas de problème. 
 
-L'option -L permet de suivre les redirections, sachant que docker installe les paquets en faisant des redirection il est donc indispensable.
+L'option -L permet de suivre les redirections, sachant que Docker installe les paquets en faisant des redirections, il est donc indispensable.
 
-sh exécute le code directement.
+Sh exécute le code directement.
 
 
-Maintenant nous allons faire en sorte d'éviter de mettre sudo devant chaque ligne de commande docker, pour cela on va faire : 
-
+Maintenant nous allons faire en sorte d'éviter de mettre sudo devant chaque ligne de commande Docker, pour cela on va faire : 
 
 ```bash
 sudo usermod -aG docker $USER
 ```
+
+Maintenant, nous allons vérifier notre version de Docker. Pour cela, nous allons faire : 
+
+```bash
+docker --version
+```
+
+Résultat : 
+
+![](../Write%20Up/img/Pasted%20image%2020260716171912.png)
+
+Maintenant nous allons essayer d'exécuter Hello World que vous connaissez si bien haha.
+
+```bash
+docker run hello-world
+```
+
+![](../Write%20Up/img/Pasted%20image%2020260716172119.png)
+
+On peut voir que notre docker est donc fonctionnel, mais si ce n'est pas le cas, alors nous allons y remédier. 
+
+Si vous avez ce problème tel que : 
+![](../Pasted%20image%2020260716172230.png)
+
+C'est que notre utilisateur actuel n'a pas encore les permissions pour les sockets Docker.
+
+Cela est dû car il n'y a pas encore de groupes pour Docker.
+
+On va donc y remédier via : 
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+Mais cela ne suffit pas puisque nous avons pas mis à jour on va donc régler cela en faisant : 
+
+```bash 
+newgrp docker
+```
+
