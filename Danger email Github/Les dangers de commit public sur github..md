@@ -17,4 +17,9 @@ Tout d'abord rendez-vous sur https://github.com/settings/emails , si l'endpoint 
 Je vais parler avec les chiffres que j'ai indiqué et vous expliquez ce qu'il faut faire.
 
 - Tout d'abord, regardez que le bouton 1 est bien activé. 
-- 2 Nous allons activer ce paramètre qui est très important mais cela ne suffit pas vous savez très bien qu'il ne faut pas faire confiance au bouton c'est comme la télémétrie sur windows vous avez beau la désactiver elle sera toujours l
+- 2 Nous allons activer ce paramètre qui est très important, mais cela ne suffit pas. Vous savez très bien qu'il ne faut pas faire confiance au bouton, c'est comme la télémétrie sur Windows, vous avez beau la désactiver, elle sera toujours là !! 
+- 3, Ce sera l'email que nous allons configurer sur notre GitHub pour les commits. C'est un email rattaché à GitHub qui n'a aucun sens technique car vous ne pourrez pas l'utiliser pour l'enregistrement de compte Google ou autre par exemple, donc aucune email reliée à vos comptes personnels ! 
+
+Résultat, il faut que vos paramètres ressemblent à cela : 
+
+
