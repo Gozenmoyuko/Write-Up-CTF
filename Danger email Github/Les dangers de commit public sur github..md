@@ -12,7 +12,7 @@ Pour cela nous allons faire simple et efficace.
 
 Tout d'abord rendez-vous sur https://github.com/settings/emails , si l'endpoint à changer alors cliquez sur Settings > Emails.
 
-![](../Pasted%20image%2020260716081400.png)
+![](../Write%20Up/img/Pasted%20image%2020260716081400.png)
 
 Je vais parler avec les chiffres que j'ai indiqué et vous expliquez ce qu'il faut faire.
 
@@ -22,4 +22,13 @@ Je vais parler avec les chiffres que j'ai indiqué et vous expliquez ce qu'il fa
 
 Résultat, il faut que vos paramètres ressemblent à cela : 
 
+![](../Write%20Up/img/Pasted%20image%2020260716081817.png)
+
+
+Maintenant vous pouvez voir que nous l'avons activé. 
+
+
+## Étape 2 : Configuration du git local.
+
+Tout d'abord, nous allons voir quel email est configuré dans notre configuration de Git local.
 
