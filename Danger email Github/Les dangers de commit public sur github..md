@@ -32,3 +32,6 @@ Maintenant vous pouvez voir que nous l'avons activé.
 
 Tout d'abord, nous allons voir quel email est configuré dans notre configuration de Git local.
 
+Pour cela nous allons 
+
+![](../Write%20Up/img/Pasted%20image%2020260716082029.png)
