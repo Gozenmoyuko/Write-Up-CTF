@@ -10,5 +10,11 @@ Il faut savoir que votre email est partagé directement lorsque vous faites un c
 
 Pour cela nous allons faire simple et efficace.
 
-Tout d'abord rendez-vous sur https://github.com/settings/emails , si l'endpoint à changer alors cliquez sur Settings > Emails 
+Tout d'abord rendez-vous sur https://github.com/settings/emails , si l'endpoint à changer alors cliquez sur Settings > Emails.
 
+![](../Pasted%20image%2020260716081400.png)
+
+Je vais parler avec les chiffres que j'ai indiqué et vous expliquez ce qu'il faut faire.
+
+- Tout d'abord, regardez que le bouton 1 est bien activé. 
+- 2 Nous allons activer ce paramètre qui est très important mais cela ne suffit pas vous savez très bien qu'il ne faut pas faire confiance au bouton c'est comme la télémétrie sur windows vous avez beau la désactiver elle sera toujours l
