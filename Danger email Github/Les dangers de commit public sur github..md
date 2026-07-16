@@ -32,6 +32,11 @@ Maintenant vous pouvez voir que nous l'avons activé.
 
 Tout d'abord, nous allons voir quel email est configuré dans notre configuration de Git local.
 
-Pour cela nous allons 
+Pour cela nous allons taper la commande suivante : 
+```bash
+git config user.email
+```
 
 ![](../Write%20Up/img/Pasted%20image%2020260716082029.png)
+Comme vous pouvez le voir, j'ai flouté mes informations personnelles. Mais vous pouvez voir qu'il y a bel et bien mon adresse e-mail privée.
+
