@@ -1,5 +1,5 @@
 
-![](../MomuScan_final.jpeg)
+![](../Write%20Up/img/MomuScan_final.jpeg)
 
 
 
