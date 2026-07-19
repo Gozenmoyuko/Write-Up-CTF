@@ -112,3 +112,8 @@ port de notre machine:port du conteneur
 --name pour donner un nom car sinon docker va donner un nom aléatoire et ce n'est pas ce que nous voulons.
 
 et le dernier champs après le nom est l'image docker qu'on peut retrouver sur Docker Hub.
+
+
+Bon, maintenant voyons voir ce que je fais plus concrètement. 
+
+
