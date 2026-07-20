@@ -128,3 +128,5 @@ On pourrait exécuter nmap automatiquement sur la cible qui a été rentrée. Ma
 
 Dans ce cas, nous allons utiliser la librairie Socket qui va nous permettre d'envoyer des paquets sur chacun des ports possibles sur une machine est en examinant le 3 way handshake qui est le principe TCP basique qui est Syn => Syn+Ack => Ack, ce qui veut dire, demande de connexion, connexion établie, puis connexion établie puis connexion fermé. 
 
+Tout d'abord, pour la compréhension, nous utiliserons la librairie Socket. Qui lui va tenter d'aller jusqu'au bout de la connexion TCP, ce qui veut dire d'aller jusqu'au Ack final. Mais je vous le dis, cette méthode peut être facilement détectable puisque plusieurs outils de type SCADA peuvent détecter ou enregistrer ce qui se passe dès lors qu'il y a une connexion établie. Notre but ici est de simuler une blackbox et donc d'utiliser de manière telle qu'un attaquant le ferait dans la vraie vie, par exemple.
+
