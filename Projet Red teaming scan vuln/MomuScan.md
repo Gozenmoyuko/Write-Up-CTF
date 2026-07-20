@@ -109,3 +109,22 @@ et le dernier champs après le nom est l'image docker qu'on peut retrouver sur D
 Bon, maintenant voyons voir ce que je fais plus concrètement. 
 
 
+## Directory listing
+
+
+La première option qui va être développée est plutôt simple, c'est un simple directory listing qui va récupérer les différents endpoints mis dans le fichier que l'utilisateur aura rentré. J'ai pris plusieurs nordiste que j'ai donc concaténer par exemple une wordlist sur les noms de fichier, etc... 
+
+Le but ici est de récupérer simplement les endpoints sur le site cible qui renvoie un code HTTP 200. 
+
+Ce qui signifie que le endpoint est accessible. 
+
+Pour cela je vous invite à aller voir le script directory_listing.py qui est simple de compréhension.
+
+
+
+## Scanneur de services.
+
+On pourrait exécuter nmap automatiquement sur la cible qui a été rentrée. Mais cela n'est pas très intéressant, le but ici dans ce tools est de notamment refaire des outils qui sont déjà créés mais de soit les améliorer soit de les comprendre en les développant de manière à tout automatiser. 
+
+Dans ce cas, nous allons utiliser la librairie Socket qui va nous permettre d'envoyer des paquets sur chacun des ports possibles sur une machine est en examinant le 3 way handshake qui est le principe TCP basique qui est Syn => Syn+Ack => Ack, ce qui veut dire, demande de connexion, connexion établie, puis connexion établie puis connexion fermé. 
+
