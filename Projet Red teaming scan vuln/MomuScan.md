@@ -136,4 +136,8 @@ Donc premièrement nous allons faire avec les sockets de connexion ceci nous per
 Pour comprendre scapy sont utilité ou autre je vous invite à lire : 
 https://liora.io/scapy-tout-savoir
 
-Mais aussi à vous référencé sur leur 
+Mais aussi à vous référencé à leurs documentations : 
+
+https://scapy.net
+
+Ils faut savoir que nous ne pouvons pas simplement nous référencer au numéro de port etc pour les différentes services. En réalité nous allons devoir donc tout d'abord découvrir les ports qui sont ouvert, fermé ou filtré. 
