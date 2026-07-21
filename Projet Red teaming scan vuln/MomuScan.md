@@ -140,4 +140,4 @@ Mais aussi à vous référencé à leurs documentations :
 
 https://scapy.net
 
-Ils faut savoir que nous ne pouvons pas simplement nous référencer au numéro de port etc pour les différentes services. En réalité nous allons devoir donc tout d'abord découvrir les ports qui sont ouvert, fermé ou filtré puis de lancer une connexion complète TCP pour pouvoir avoir la version du service et le service qui tourne sur le port.
+Ils faut savoir que nous ne pouvons pas simplement nous référencer au numéro de port etc pour les différentes services. En réalité nous allons devoir donc tout d'abord découvrir les ports qui sont ouvert, fermé ou filtré puis de lancer une connexion complète TCP pour pouvoir avoir la version du service et le service qui tourne sur le port. Mais attention les versions des services peuvent être cachée exprès pour des raisons de sécurités de la part de l'administrateur ou autre. C'est pour cela qu'il faudra parfois en déduire ou créer des regex po
