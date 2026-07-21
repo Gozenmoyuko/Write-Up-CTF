@@ -130,3 +130,10 @@ Dans ce cas, nous allons utiliser la librairie Socket qui va nous permettre d'en
 
 Tout d'abord, pour la compréhension, nous utiliserons la librairie Socket. Qui lui va tenter d'aller jusqu'au bout de la connexion TCP, ce qui veut dire d'aller jusqu'au Ack final. Mais je vous le dis, cette méthode peut être facilement détectable puisque plusieurs outils de type SCADA peuvent détecter ou enregistrer ce qui se passe dès lors qu'il y a une connexion établie. Notre but ici est de simuler une blackbox et donc d'utiliser de manière telle qu'un attaquant le ferait dans la vraie vie, par exemple.
 
+
+Donc premièrement nous allons faire avec les sockets de connexion ceci nous permettra de comprendre comment initié des connexions TCP mais nous basculeront rapidement vers un deuxième script qui utilisera la librairie scapy qui lui permet directement de formé des paquets et de les envoyers.
+
+Pour comprendre scapy sont utilité ou autre je vous invite à lire : 
+https://liora.io/scapy-tout-savoir
+
+Mais aussi à vous référencé sur leur 
