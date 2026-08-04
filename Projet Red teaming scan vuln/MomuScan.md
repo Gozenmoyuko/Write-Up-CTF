@@ -146,3 +146,4 @@ Pour la déduction nous allons devoir nous basé par exemple sur les Headers HTT
 
 Tout d'abord pour le script avec scapy nous allons devoir utiliser la librairie socket pour pouvoir faire la résolution DNS et transformé donc l'URL en adresse IP pour l'envoie du paquets vers la machine cible. 
 
+Mais il serait trop bruillant de directement envoyer une connexion TCP fini. C'est pour cela que je vais utiliser la librairie
