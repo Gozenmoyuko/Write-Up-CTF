@@ -146,4 +146,8 @@ Pour la déduction nous allons devoir nous basé par exemple sur les Headers HTT
 
 Tout d'abord pour le script avec scapy nous allons devoir utiliser la librairie socket pour pouvoir faire la résolution DNS et transformé donc l'URL en adresse IP pour l'envoie du paquets vers la machine cible. 
 
-Mais il serait trop bruillant de directement envoyer une connexion TCP fini. C'est pour cela que je vais utiliser la librairie
+Mais il serait trop bruillant de directement envoyer une connexion TCP fini. C'est pour cela que je vais utiliser la librairie scapy.
+
+Scapy va nous permettre de faire une connexion TCP half open ce qui veut dire que le fonctionnement est le suivant : 
+
+On envoie un paquet SYN à la machine cible et au port TCP. Celui-ci nous renvoie un SYN+ACK. Si le SYN+ACK est reçu alors nous renvoyons un RST pour couper toutes suites la connexion TCP avant de l'établir. Certains firewall peuvent facilement détecter qu'il y a un scan mais les applications de logs souvent ne prennent qu'en compte les connexions TCP établie car sinon cela leurs ferait beaucoup trop de logs à vérifier chaque fois et de faux positif pour rien. 
