@@ -154,6 +154,6 @@ On envoie un paquet SYN à la machine cible et au port TCP. Celui-ci nous renvoi
 
 Scapy va nous permettre de manager tout cela en créant nous mêmes nos paquets en brute.
 
-Pour la manipulation avec scapy je me suis aider de quelsques exemple qui sont en dessous : 
+Pour la manipulation avec scapy je me suis aider de quelsques exemple qui se situe sur le site ci dessous : 
 
 http://sdz.tdct.org/sdz/manipulez-les-paquets-reseau-avec-scapy.html
