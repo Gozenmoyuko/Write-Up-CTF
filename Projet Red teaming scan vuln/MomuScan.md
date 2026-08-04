@@ -157,3 +157,9 @@ Scapy va nous permettre de manager tout cela en créant nous mêmes nos paquets 
 Pour la manipulation avec scapy je me suis aider de quelsques exemple qui se situe sur le site ci dessous : 
 
 http://sdz.tdct.org/sdz/manipulez-les-paquets-reseau-avec-scapy.html
+
+Mais notamment : 
+
+https://scapy.readthedocs.io/en/latest/usage.html#tcp-port-scanning
+
+https://scapy.readthedocs.io/en/latest/usage.html#tcp-ping
