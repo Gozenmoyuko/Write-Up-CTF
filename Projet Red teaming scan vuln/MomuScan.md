@@ -151,3 +151,5 @@ Mais il serait trop bruillant de directement envoyer une connexion TCP fini. C'e
 Scapy va nous permettre de faire une connexion TCP half open ce qui veut dire que le fonctionnement est le suivant : 
 
 On envoie un paquet SYN à la machine cible et au port TCP. Celui-ci nous renvoie un SYN+ACK. Si le SYN+ACK est reçu alors nous renvoyons un RST pour couper toutes suites la connexion TCP avant de l'établir. Certains firewall peuvent facilement détecter qu'il y a un scan mais les applications de logs souvent ne prennent qu'en compte les connexions TCP établie car sinon cela leurs ferait beaucoup trop de logs à vérifier chaque fois et de faux positif pour rien. 
+
+Scapy va nous permettre de manager tout cela en créant nous mêmes nos paquets en brute 
