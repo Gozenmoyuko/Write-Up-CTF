@@ -676,9 +676,21 @@
               "icon": "lucide-file",
               "title": "MomuScan"
             }
+          },
+          {
+            "id": "f8fac2f4fd4ae3b5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.13.4"
+            }
           }
         ],
-        "currentTab": 50
+        "currentTab": 51
       }
     ],
     "direction": "vertical"
@@ -698,7 +710,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorateur de fichiers"
@@ -839,7 +853,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a57baaa3559aa935",
+  "active": "f8fac2f4fd4ae3b5",
   "lastOpenFiles": [
     "Write Up/img/MomuScan_final.jpeg",
     "Projet Red teaming scan vuln/MomuScan.md",
