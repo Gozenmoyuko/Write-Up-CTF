@@ -681,12 +681,14 @@
             "id": "f8fac2f4fd4ae3b5",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.4"
+                "file": "Danger email Github/Les dangers de commit public sur github..md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Notes de version 1.13.4"
+              "icon": "lucide-file",
+              "title": "Les dangers de commit public sur github."
             }
           }
         ],
