@@ -683,12 +683,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Danger email Github/Les dangers de commit public sur github..md",
+                "file": "Write Up/Root-me/XSS Stored 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Les dangers de commit public sur github."
+              "title": "XSS Stored 2"
             }
           }
         ],
@@ -713,7 +713,7 @@
               "state": {
                 "sortOrder": "alphabetical",
                 "autoReveal": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
@@ -751,7 +751,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 394
   },
   "right": {
     "id": "718a1f42313848b8",
@@ -857,6 +857,23 @@
   },
   "active": "f8fac2f4fd4ae3b5",
   "lastOpenFiles": [
+    "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
+    "Write Up/Root-me/Web-Serveur PHP assert().md",
+    "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
+    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
+    "Write Up/Root-me/Web-serveur JWT secret faible.md",
+    "Write Up/Root-me/Web-Serveur Flask - Development server.md",
+    "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
+    "Write Up/Root-me/Web-Serveur CSRF 0 Protection.md",
+    "Write Up/Root-me/Web-Serveur Directory traversal.md",
+    "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
+    "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
+    "Write Up/Root-me/sudo - faiblesse de configuration.md",
+    "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
+    "Write Up/Root-me/PHP - Remote Xdebug.md",
+    "Write Up/Root-me/XSS Volatile.md",
+    "Write Up/Root-me/XSS Stored 2.md",
+    "Danger email Github/Les dangers de commit public sur github..md",
     "Write Up/img/MomuScan_final.jpeg",
     "Projet Red teaming scan vuln/MomuScan.md",
     "Write Up/img/Pasted image 20260716180110.png",
@@ -871,32 +888,16 @@
     "Write Up/img/Pasted image 20260716082029.png",
     "Write Up/img/Pasted image 20260716081817.png",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
-    "Danger email Github/Les dangers de commit public sur github..md",
     "Danger email Github",
-    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/404ctf/Télégraphe Détourné.md",
     "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
-    "Write Up/Root-me/Web-Serveur API Mass-Assignement.md",
-    "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write Up/Root-me/Web-serveur JWT secret faible.md",
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
     "Write Up/Root-me/BASH system 2 Rootme.md",
-    "Write Up/Root-me/App-script 1 Rootme.md",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
-    "Write Up/Root-me/PHP - Remote Xdebug.md",
-    "Write Up/Root-me/Web-Serveur Directory traversal.md",
-    "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
-    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
-    "Write Up/HTB/Web/OpenSecret.md",
-    "Write Up/Root-me/Web-Serveur Flask - Development server.md",
-    "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
-    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
-    "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
-    "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/HTB/Reverse",
     "Write Up/HTB/Web",
     "Write Up/404ctf",
