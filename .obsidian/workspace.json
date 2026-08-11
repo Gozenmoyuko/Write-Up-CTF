@@ -821,16 +821,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
+                "file": "Reverse Engineering/Cours Claude/Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Cours 5 — Les Conventions d'Appel (Calling Conventions)"
             }
+          },
+          {
+            "id": "6d14fb4a70ea5ac8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cours 6 — GDB (GNU Debugger), le débogueur Linux de référence.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 6 — GDB (GNU Debugger), le débogueur Linux de référence"
+            }
           }
         ],
-        "currentTab": 61
+        "currentTab": 62
       }
     ],
     "direction": "vertical"
@@ -993,10 +1007,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3302bed8daa378b5",
+  "active": "6d14fb4a70ea5ac8",
   "lastOpenFiles": [
+    "Reverse Engineering/Cours Claude/Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
+    "Cours 6 — GDB (GNU Debugger), le débogueur Linux de référence.md",
     "Reverse Engineering/Cours Claude/Cours 4 — La Pile (Stack) et les Stack Frames.md",
-    "Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
     "Reverse Engineering/Cours Claude/Cours 3 — Les registres x86  x86-64, en détail.md",
     "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
     "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
@@ -1023,7 +1038,6 @@
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root-me/XSS Stored 2.md",
-    "Danger email Github/Les dangers de commit public sur github..md",
     "Write Up/img/MomuScan_final.jpeg",
     "Write Up/img/Pasted image 20260716180110.png",
     "Write Up/img/Pasted image 20260716175835.png",
