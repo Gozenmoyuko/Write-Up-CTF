@@ -751,16 +751,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Engineering/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
+                "file": "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours 1 — Comment marche un ordinateur, et les pointeurs"
+              "title": "Cours de base de reverse Engineering (Claude)"
+            }
+          },
+          {
+            "id": "edf928505f52bba6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Engineering/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 2 — Les instructions Assembleur x86 x86-64, en détail"
             }
           }
         ],
-        "currentTab": 56
+        "currentTab": 57
       }
     ],
     "direction": "vertical"
@@ -923,12 +937,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "edf928505f52bba6",
   "lastOpenFiles": [
-    "Reverse Engineering/Prompte nouveau cours..md",
-    "Reverse Engineering/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
-    "Reverse Engineering/Les registres (Claude).md",
     "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
+    "Reverse Engineering/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
+    "Reverse Engineering/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
+    "Reverse Engineering/Prompte nouveau cours..md",
+    "Reverse Engineering/Les registres (Claude).md",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
@@ -964,7 +979,6 @@
     "Danger email Github",
     "Write Up/404ctf/Télégraphe Détourné.md",
     "Write Up/404ctf/The Scientist's Footprint Brouillons..md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
     "Write Up/HTB/Reverse",

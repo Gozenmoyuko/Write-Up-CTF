@@ -16,11 +16,11 @@ Donc voici le cours qui est plutôt pas mal en réalité.
 
 ### 1.1 Les 3 acteurs principaux
 
-| Composant             | Rôle                                                     | Analogie           |
-| --------------------- | -------------------------------------------------------- | ------------------ |
-| **CPU (processeur)**  | Exécute les instructions une par une, très vite          | Le cuisinier       |
-| **RAM (mémoire)**     | Stocke temporairement code + données pendant l'exécution | Le plan de travail |
-| **Stockage (disque)** | Stocke les fichiers de façon permanente                  | Le garde-manger    |
+|Composant|Rôle|Analogie|
+|---|---|---|
+|**CPU (processeur)**|Exécute les instructions une par une, très vite|Le cuisinier|
+|**RAM (mémoire)**|Stocke temporairement code + données pendant l'exécution|Le plan de travail|
+|**Stockage (disque)**|Stocke les fichiers de façon permanente|Le garde-manger|
 
 Le CPU ne "comprend" que des **nombres binaires** (des 0 et des 1). Tout ce que tu vois — texte, image, code — finit sous forme de suites de bits en mémoire.
 
