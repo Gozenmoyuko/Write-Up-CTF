@@ -898,9 +898,23 @@
               "icon": "lucide-file",
               "title": "Cours 7 — IDA (Interactive DisAssembler)"
             }
+          },
+          {
+            "id": "d5f7613e3f85a0c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cracking ELF x86 - Basique.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cracking ELF x86 - Basique"
+            }
           }
         ],
-        "currentTab": 66
+        "currentTab": 67
       }
     ],
     "direction": "vertical"
@@ -1063,8 +1077,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "d5f7613e3f85a0c8",
   "lastOpenFiles": [
+    "Cracking ELF x86 - Basique.md",
     "Reverse Engineering/Cours Claude/Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
     "Reverse Engineering/Cours Claude/Cours 9 — Les Formats Binaires ELF et PE.md",
     "Reverse Engineering/Cours Claude/Cours 8 — Ghidra et radare2, les alternatives open-source.md",
@@ -1093,7 +1108,6 @@
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
-    "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/img/MomuScan_final.jpeg",
     "Write Up/img/Pasted image 20260716180110.png",
     "Write Up/img/Pasted image 20260716175835.png",
