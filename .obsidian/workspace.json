@@ -765,12 +765,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Engineering/Cours Claude/Prompte nouveau cours..md",
+                "file": "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prompte nouveau cours."
+              "title": "Cours 2 — Les instructions Assembleur x86 x86-64, en détail"
             }
           }
         ],
@@ -937,14 +937,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "edf928505f52bba6",
   "lastOpenFiles": [
+    "Reverse Engineering/Cours Claude/Prompte nouveau cours..md",
     "Reverse Engineering/Cours Claude/Les registres (Claude).md",
     "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
     "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
     "Reverse Engineering/Cours Claude",
     "Reverse Engineering/Cours Claude/Cours de base de reverse Engineering (Claude).md",
-    "Reverse Engineering/Cours Claude/Prompte nouveau cours..md",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",

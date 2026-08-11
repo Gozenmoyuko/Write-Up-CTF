@@ -31,17 +31,17 @@ Exemple : `MOV EAX, EBX` → "copie la valeur de EBX dans EAX" (destination à g
 
 ## 2. Catégorie 1 — Transfert de données
 
-|Instruction|Nom complet|Rôle détaillé|
-|---|---|---|
-|`MOV`|**Mov**e|Copie une valeur (registre→registre, mémoire→registre, registre→mémoire, immédiat→registre). L'instruction la plus utilisée, sans exception.|
-|`LEA`|**L**oad **E**ffective **A**ddress|Calcule une adresse (via les crochets) mais **ne va PAS lire en mémoire** — il donne juste le résultat du calcul. `LEA EAX, [EBX+4]` met `EBX+4` dans EAX, sans toucher à la mémoire. Souvent détourné pour faire de l'arithmétique rapide.|
-|`MOVZX`|**Mov**e with **Z**ero e**X**tend|Copie une petite valeur (8/16 bits) vers un registre plus grand, en remplissant les bits du haut avec des 0 (pour un nombre non signé)|
-|`MOVSX`|**Mov**e with **S**ign e**X**tend|Pareil mais remplit avec le bit de signe (pour un nombre signé négatif/positif)|
-|`PUSH`|**Push** (empiler)|Décrémente ESP/RSP puis écrit la valeur au sommet de la pile|
-|`POP`|**Pop** (dépiler)|Lit la valeur au sommet de la pile puis incrémente ESP/RSP|
-|`XCHG`|E**xch**an**g**e|Échange le contenu de deux opérandes|
-|`IN` / `OUT`|**In**put / **Out**put|Lecture/écriture sur un port matériel (bas niveau, rare en reverse applicatif)|
-|`CMOVcc`|**C**onditional **Mov**e|Copie seulement si une condition (flag) est vraie — évite un saut conditionnel|
+| Instruction  | Nom complet                        | Rôle détaillé                                                                                                                                                                                                                               |
+| ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `MOV`        | **Mov**e                           | Copie une valeur (registre→registre, mémoire→registre, registre→mémoire, immédiat→registre). L'instruction la plus utilisée, sans exception.                                                                                                |
+| `LEA`        | **L**oad **E**ffective **A**ddress | Calcule une adresse (via les crochets) mais **ne va PAS lire en mémoire** — il donne juste le résultat du calcul. `LEA EAX, [EBX+4]` met `EBX+4` dans EAX, sans toucher à la mémoire. Souvent détourné pour faire de l'arithmétique rapide. |
+| `MOVZX`      | **Mov**e with **Z**ero e**X**tend  | Copie une petite valeur (8/16 bits) vers un registre plus grand, en remplissant les bits du haut avec des 0 (pour un nombre non signé)                                                                                                      |
+| `MOVSX`      | **Mov**e with **S**ign e**X**tend  | Pareil mais remplit avec le bit de signe (pour un nombre signé négatif/positif)                                                                                                                                                             |
+| `PUSH`       | **Push** (empiler)                 | Décrémente ESP/RSP puis écrit la valeur au sommet de la pile                                                                                                                                                                                |
+| `POP`        | **Pop** (dépiler)                  | Lit la valeur au sommet de la pile puis incrémente ESP/RSP                                                                                                                                                                                  |
+| `XCHG`       | E**xch**an**g**e                   | Échange le contenu de deux opérandes                                                                                                                                                                                                        |
+| `IN` / `OUT` | **In**put / **Out**put             | Lecture/écriture sur un port matériel (bas niveau, rare en reverse applicatif)                                                                                                                                                              |
+| `CMOVcc`     | **C**onditional **Mov**e           | Copie seulement si une condition (flag) est vraie — évite un saut conditionnel                                                                                                                                                              |
 
 ---
 
