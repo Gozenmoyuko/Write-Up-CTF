@@ -702,9 +702,23 @@
               "icon": "lucide-book-up",
               "title": "Notes de version 1.13.6"
             }
+          },
+          {
+            "id": "90481a9af43845c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Engineering/Les registres.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Les registres"
+            }
           }
         ],
-        "currentTab": 52
+        "currentTab": 53
       }
     ],
     "direction": "vertical"
@@ -867,8 +881,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "27cdb3d49e586dd6",
+  "active": "90481a9af43845c3",
   "lastOpenFiles": [
+    "Reverse Engineering/Les registres.md",
+    "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
     "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
@@ -907,13 +923,11 @@
     "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
-    "Write Up/Root-me/BASH system 2 Rootme.md",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
     "Write Up/HTB/Reverse",
     "Write Up/HTB/Web",
     "Write Up/404ctf",
-    "Write Up/HTB",
-    "Write Up/img/R101-Generalités.pdf"
+    "Write Up/HTB"
   ]
 }
