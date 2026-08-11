@@ -14,6 +14,7 @@ Ici j'exécute entant que root pour l'option -E permet d'utiliser l'environnemen
 
 ![](../img/Pasted%20image%2020260812001248.png)
 
+
 ![](../img/Pasted%20image%2020260812001208.png)
 
 
