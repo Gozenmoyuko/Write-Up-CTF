@@ -95,17 +95,17 @@ Même logique pour B, C, D → BX/BH/BL, CX/CH/CL, DX/DH/DL. (ESI, EDI, EBP, ESP
 
 ## 5. Passage en 64 bits (x86-64)
 
-|32 bits|64 bits|Nouveaux registres (pas d'équivalent 32b historique)|
-|---|---|---|
-|EAX →|**RAX**|R8, R9, R10, R11, R12, R13, R14, R15|
-|EBX →|**RBX**|(numérotés, pas de nom fonctionnel — juste "Register 8 à 15")|
-|ECX →|**RCX**|Leurs sous-parties : R8D (32b), R8W (16b), R8B (8b)|
-|EDX →|**RDX**||
-|ESI →|**RSI**||
-|EDI →|**RDI**||
-|EBP →|**RBP**||
-|ESP →|**RSP**||
-|EIP →|**RIP**||
+| 32 bits | 64 bits | Nouveaux registres (pas d'équivalent 32b historique)          |
+| ------- | ------- | ------------------------------------------------------------- |
+| EAX →   | **RAX** | R8, R9, R10, R11, R12, R13, R14, R15                          |
+| EBX →   | **RBX** | (numérotés, pas de nom fonctionnel — juste "Register 8 à 15") |
+| ECX →   | **RCX** | Leurs sous-parties : R8D (32b), R8W (16b), R8B (8b)           |
+| EDX →   | **RDX** |                                                               |
+| ESI →   | **RSI** |                                                               |
+| EDI →   | **RDI** |                                                               |
+| EBP →   | **RBP** |                                                               |
+| ESP →   | **RSP** |                                                               |
+| EIP →   | **RIP** |                                                               |
 
 **Mnémo** : R8 à R15 sont numérotés parce qu'AMD (créateur du x86-64) a arrêté d'inventer des noms fonctionnels et a juste dit "**R**egistre n°8, 9, 10...".
 
