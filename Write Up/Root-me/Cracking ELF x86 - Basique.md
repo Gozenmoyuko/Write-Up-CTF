@@ -18,7 +18,10 @@ On peut voir que celui-ci effectue plusieurs fonctions par exemple le puts qui d
 Je vais donc rentrer dans la fonction strcmp en faisans disas strcmp.
 
 ![](../img/Pasted%20image%2020260812001248.png)
-Ici nous pouvons voir qu'il y a plusieurs test qui sont fais entre plusieurs variables mais aussi des réécriture dans d'autre variable etc. Ce qui va nous intéresser ici c'est les sauts vers d'autre instructions ou adresse mémoire. On rappel que chaque adresse mémoire contiens une valeur, si celle-ci n'as pas était défini dans le code (en c avec maloc ou autre) alors celui-ci prends la valeurs qui était stocker avant dans cette adresse mémoire. Ici on voit qu'il y a un JE (Jump Equal) donc si les deux variables (registre ici al et al dans le premier JE et dans le deuxième al, cl) 
+Ici nous pouvons voir qu'il y a plusieurs test qui sont fais entre plusieurs variables mais aussi des réécriture dans d'autre variable etc. Ce qui va nous intéresser ici c'est les sauts vers d'autre instructions ou adresse mémoire. On rappel que chaque adresse mémoire contiens une valeur, si celle-ci n'as pas était défini dans le code (en c avec maloc ou autre) alors celui-ci prends la valeurs qui était stocker avant dans cette adresse mémoire. Ici on voit qu'il y a un JE (Jump Equal) donc si les deux variables (dans le deuxième JE et dans le deuxième al, cl) bref il vont comparer caractère par caractère et regarde si c'est égale. Si cela est le cas alors il saute à la prochaine instruction. Pour les petits curieux, le test al, al permet de voir s'il y a le caractère de fin de chaîne qui est \0 ou que si le registre al = 0.
+
+Vous pouvez voir que j'ai notamment taper : 
+set {char}[Adresse en hexa]=[opcode instruction assembleur]
 
 ![](../img/Pasted%20image%2020260812001208.png)
 
