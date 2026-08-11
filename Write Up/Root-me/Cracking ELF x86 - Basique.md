@@ -23,6 +23,14 @@ Ici nous pouvons voir qu'il y a plusieurs test qui sont fais entre plusieurs var
 Vous pouvez voir que j'ai notamment taper : 
 set {char}[Adresse en hexa]=[opcode instruction assembleur]
 
+Pour ceux qui sont pas habitué à qu'est-ce qu'un opcode, enfaite un opcode c'est une instruction assembleur qui est encoder en hexadécimal, vous pouvez facilement les trouvés lorsque vous aurez besoin ou même faites vous une fiche globale (il y en as beaucoup je privilégie la recherche personnellement.) Maintenant que vous savez enfaite ce que j'ai fais c'est que j'ai remplacer ducoup 1 octet à l'adresse mémoire en lui affectant le nouveau opcode. Ce qui veut dire que j'ai inversé la logique du code. Maintenant si je n'ai pas le bon username alors je passe à la suite. 
+Résultat : 
+```asm
+set {char}0x805030a=0x75
+```
+*NB : 0x74 = JE, 0x75 = JNE*
+
+Puis je fais un point d'arrêt sur l'adresse mémoire pour voir ce qui se passe exactement. C'est le fameux b 
 ![](../img/Pasted%20image%2020260812001208.png)
 
 
