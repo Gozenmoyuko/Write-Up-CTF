@@ -800,9 +800,37 @@
               "icon": "lucide-file",
               "title": "Cours 3 — Les registres x86  x86-64, en détail"
             }
+          },
+          {
+            "id": "c9fb420a4488f1ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Engineering/Cours Claude/Cours 4 — La Pile (Stack) et les Stack Frames.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 4 — La Pile (Stack) et les Stack Frames"
+            }
+          },
+          {
+            "id": "3302bed8daa378b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 5 — Les Conventions d'Appel (Calling Conventions)"
+            }
           }
         ],
-        "currentTab": 59
+        "currentTab": 61
       }
     ],
     "direction": "vertical"
@@ -965,10 +993,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "3302bed8daa378b5",
   "lastOpenFiles": [
-    "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
+    "Reverse Engineering/Cours Claude/Cours 4 — La Pile (Stack) et les Stack Frames.md",
+    "Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
     "Reverse Engineering/Cours Claude/Cours 3 — Les registres x86  x86-64, en détail.md",
+    "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
     "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Write Up/Root-me/Cracking ELF x86 - 0 protection.md",
@@ -995,13 +1025,11 @@
     "Write Up/Root-me/XSS Stored 2.md",
     "Danger email Github/Les dangers de commit public sur github..md",
     "Write Up/img/MomuScan_final.jpeg",
-    "Projet Red teaming scan vuln/MomuScan.md",
     "Write Up/img/Pasted image 20260716180110.png",
     "Write Up/img/Pasted image 20260716175835.png",
     "Write Up/img/Pasted image 20260716172230.png",
     "Write Up/img/Pasted image 20260716172119.png",
     "Write Up/img/Pasted image 20260716171912.png",
-    "Pentest Bug bounty/Crous admin panel..md",
     "Projet Red teaming scan vuln",
     "Write Up/img/Pasted image 20260716141042.png",
     "Write Up/img/Pasted image 20260716140537.png",
