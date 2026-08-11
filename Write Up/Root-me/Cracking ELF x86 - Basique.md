@@ -5,12 +5,15 @@ Ici j'exécute entant que root pour l'option -E permet d'utiliser l'environnemen
 
 ![](../img/Pasted%20image%2020260812001427.png)
 
+Ici nous pouvons voir plusieurs registre mais aussi le code source associés avec les instructions assembleurs comme par exemple cmp qui permet de comparer deux valeurs de registre donc par exemple un input d'utilisateur avec une valeur que l'ont à défini auparavant. Nous avons aussi par exemple tous ce qui va être dans la catégorie stack qui sont les adresses en mémoire vive. 
 
+Tout en haut dans les registre on peu tout d'abord voir plusieurs registre ce qui m'interesse ici c'est le registre EIP qui est le registre de la prochaine instruction. Extended Instruction Pointer (EIP)
 
+On va tout d'abord donc mettre en pause le processus main pour après le désassembler pour comprendre un peu plus ce que fais le code source.
 
 ![](../img/Pasted%20image%2020260812001340.png)
 
-
+On peut voir que celui-ci effectue plusieurs fonctions par exemple le puts qui doit être pour afficher un texte. Moi je vais m'interessais ici sur la fonction strcmp qui si le développeur est censer veut dire que la fonction compare deux chaînes de caractère. 
 
 ![](../img/Pasted%20image%2020260812001248.png)
 
