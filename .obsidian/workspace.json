@@ -723,12 +723,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
+                "file": "Reverse Engineering/Les registres (Claude).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cours de base de reverse Engineering (Claude)"
+              "title": "Les registres (Claude)"
             }
           }
         ],
@@ -897,8 +897,8 @@
   },
   "active": "70cc0aba5a9bbe72",
   "lastOpenFiles": [
-    "Reverse Engineering/Les registres (Claude).md",
     "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
+    "Reverse Engineering/Les registres (Claude).md",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
