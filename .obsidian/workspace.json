@@ -905,7 +905,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cracking ELF x86 - Basique.md",
+                "file": "Write Up/Root-me/Cracking ELF x86 - Basique.md",
                 "mode": "source",
                 "source": false
               },
@@ -1079,7 +1079,12 @@
   },
   "active": "d5f7613e3f85a0c8",
   "lastOpenFiles": [
-    "Cracking ELF x86 - Basique.md",
+    "Pasted image 20260812001446.png",
+    "Pasted image 20260812001427.png",
+    "Pasted image 20260812001340.png",
+    "Pasted image 20260812001248.png",
+    "Pasted image 20260812001208.png",
+    "Write Up/Root-me/Cracking ELF x86 - Basique.md",
     "Reverse Engineering/Cours Claude/Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
     "Reverse Engineering/Cours Claude/Cours 9 — Les Formats Binaires ELF et PE.md",
     "Reverse Engineering/Cours Claude/Cours 8 — Ghidra et radare2, les alternatives open-source.md",
@@ -1107,7 +1112,6 @@
     "Write Up/Root-me/Web-Serveur CSRF 0 Protection.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
-    "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/img/MomuScan_final.jpeg",
     "Write Up/img/Pasted image 20260716180110.png",
     "Write Up/img/Pasted image 20260716175835.png",
@@ -1115,10 +1119,6 @@
     "Write Up/img/Pasted image 20260716172119.png",
     "Write Up/img/Pasted image 20260716171912.png",
     "Projet Red teaming scan vuln",
-    "Write Up/img/Pasted image 20260716141042.png",
-    "Write Up/img/Pasted image 20260716140537.png",
-    "Write Up/img/Pasted image 20260716082029.png",
-    "Write Up/img/Pasted image 20260716081817.png",
     "Danger email Github",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
