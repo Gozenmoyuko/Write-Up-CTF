@@ -1,4 +1,16 @@
 
+Bonjour aujourd'hui nous allons faire le deuxième challenge de root-me sur la partie cracking. Pour l'instant voici l'énoncer : 
+
+![](../img/Pasted%20image%2020260812012634.png)
+
+Le but est de trouver le mot de passe du challenge. Pour cela on va lancer et voir comment ce comporte le code. Ici j'utiliserais GDB ajouté avec une extension nommée peda qui est simple d'installation voici le github du projet peda : 
+https://github.com/longld/peda
+
+Pour trouver le processus : 
+
+![](../img/Pasted%20image%2020260812012525.png)
+
+
 ![](../img/Pasted%20image%2020260812001446.png)
 
 Ici j'exécute entant que root pour l'option -E permet d'utiliser l'environnement actuel et pas celui du root. Je met le code source du code donc le binaire et le process id (PID) que va se rattacher GDB pour faire son mode de debugage.
@@ -28,11 +40,23 @@ Résultat :
 ```asm
 set {char}0x805030a=0x75
 ```
+
 *NB : 0x74 = JE, 0x75 = JNE*
 
-Puis je fais un point d'arrêt sur l'adresse mémoire pour voir ce qui se passe exactement. C'est le fameux b 
+Puis je fais un point d'arrêt sur l'adresse mémoire pour voir ce qui se passe exactement. C'est le fameux 
+```
+b *[adresse_en_hexa]
+```
+
+Cela va faire un arrêt sur le processus lorsqu'il va sauté à cette instruction.
+
+![](../img/Pasted%20image%2020260812012343.png)
+
+J'ai donc marquer test et comme nous pouvons le voir en dessous il y a d'autre informations utilisateur (que j'ai enlever sinon vous auriez déjà la réponse.)
+
 ![](../img/Pasted%20image%2020260812001208.png)
 
+J'arrête l'attachement au processus et je test avec les données utilisateurs trouver.
 
 
 ![](../img/Pasted%20image%2020260812001647.png)
