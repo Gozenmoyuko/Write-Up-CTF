@@ -786,9 +786,23 @@
               "icon": "lucide-file",
               "title": "Cours 2 — Les instructions Assembleur x86 x86-64, en détail"
             }
+          },
+          {
+            "id": "a17d54f7fab3dc37",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse Engineering/Cours Claude/Cours 3 — Les registres x86  x86-64, en détail.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cours 3 — Les registres x86  x86-64, en détail"
+            }
           }
         ],
-        "currentTab": 58
+        "currentTab": 59
       }
     ],
     "direction": "vertical"
@@ -951,11 +965,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e12657255614bbf6",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
+    "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
+    "Reverse Engineering/Cours Claude/Cours 3 — Les registres x86  x86-64, en détail.md",
     "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
-    "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
     "Write Up/Root-me/Cracking ELF x86 - 0 protection.md",
     "Reverse Engineering/Cours Claude/Prompte nouveau cours..md",
     "Reverse Engineering/Cours Claude/Les registres (Claude).md",
@@ -992,7 +1007,6 @@
     "Write Up/img/Pasted image 20260716140537.png",
     "Write Up/img/Pasted image 20260716082029.png",
     "Write Up/img/Pasted image 20260716081817.png",
-    "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Danger email Github",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
