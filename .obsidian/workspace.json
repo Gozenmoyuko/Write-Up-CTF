@@ -891,7 +891,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
+                "file": "Reverse Engineering/Cours Claude/Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
                 "mode": "source",
                 "source": false
               },
@@ -1063,10 +1063,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e864c8d77c5a60a8",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
     "Reverse Engineering/Cours Claude/Cours 9 — Les Formats Binaires ELF et PE.md",
-    "Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
+    "Reverse Engineering/Cours Claude/Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
     "Reverse Engineering/Cours Claude/Cours 8 — Ghidra et radare2, les alternatives open-source.md",
     "Reverse Engineering/Cours Claude/Cours 5 — Les Conventions d'Appel (Calling Conventions).md",
     "Reverse Engineering/Cours Claude/Cours 7 — IDA (Interactive DisAssembler).md",
