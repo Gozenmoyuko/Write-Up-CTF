@@ -13,10 +13,12 @@ On va tout d'abord donc mettre en pause le processus main pour après le désass
 
 ![](../img/Pasted%20image%2020260812001340.png)
 
-On peut voir que celui-ci effectue plusieurs fonctions par exemple le puts qui doit être pour afficher un texte. Moi je vais m'interessais ici sur la fonction strcmp qui si le développeur est censer veut dire que la fonction compare deux chaînes de caractère. 
+On peut voir que celui-ci effectue plusieurs fonctions par exemple le puts qui doit être pour afficher un texte. Moi je vais m'interessais ici sur la fonction strcmp qui si le développeur est censer veut dire que la fonction compare deux chaînes de caractère.
+
+Je vais donc rentrer dans la fonction strcmp en faisans disas strcmp.
 
 ![](../img/Pasted%20image%2020260812001248.png)
-
+Ici nous pouvons voir qu'il y a plusieurs test qui sont fais entre plusieurs variables mais aussi des réécriture dans d'autre variable etc. Ce qui va nous intéresser ici c'est les sauts vers d'autre instructions ou adresse mémoire. On rappel que chaque adresse mémoire contiens une valeur, si celle-ci n'as pas était défini dans le code (en c avec maloc ou autre) alors celui-ci prends la valeurs qui était stocker avant dans cette adresse mémoire. Ici on voit qu'il y a un JE (Jump Equal) donc si les deux variables (registre ici al et al dans le premier JE et dans le deuxième al, cl) 
 
 ![](../img/Pasted%20image%2020260812001208.png)
 
