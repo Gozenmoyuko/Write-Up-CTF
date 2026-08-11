@@ -1,1 +1,1 @@
-![](Write%20Up/img/Pasted%20image%2020260515153220.png)
+![](../img/Pasted%20image%2020260515153220.png)
