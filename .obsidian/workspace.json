@@ -779,12 +779,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Cracking ELF x86 - 0 protection.md",
+                "file": "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cracking ELF x86 - 0 protection"
+              "title": "Cours 2 — Les instructions Assembleur x86 x86-64, en détail"
             }
           }
         ],
@@ -953,11 +953,12 @@
   },
   "active": "e12657255614bbf6",
   "lastOpenFiles": [
+    "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
+    "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Reverse Engineering/Cours Claude/Cours 2 — Les instructions Assembleur x86 x86-64, en détail.md",
     "Write Up/Root-me/Cracking ELF x86 - 0 protection.md",
     "Reverse Engineering/Cours Claude/Prompte nouveau cours..md",
     "Reverse Engineering/Cours Claude/Les registres (Claude).md",
-    "Reverse Engineering/Cours Claude/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
     "Reverse Engineering/Cours Claude",
     "Reverse Engineering/Cours Claude/Cours de base de reverse Engineering (Claude).md",
     "Reverse Engineering",
@@ -993,7 +994,6 @@
     "Write Up/img/Pasted image 20260716081817.png",
     "CTF Anssi 2026 (Hackropole)/writeup_bubulle_corp.md",
     "Danger email Github",
-    "Write Up/404ctf/Télégraphe Détourné.md",
     "Write Up/img/Archi_syst_inf_BUT_1A_VF.pdf",
     "Pentest Bug bounty",
     "Write Up/HTB/Reverse",
