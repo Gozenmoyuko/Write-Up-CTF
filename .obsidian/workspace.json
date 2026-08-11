@@ -690,9 +690,21 @@
               "icon": "lucide-file",
               "title": "XSS Stored 2"
             }
+          },
+          {
+            "id": "27cdb3d49e586dd6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.13.6"
+            }
           }
         ],
-        "currentTab": 51
+        "currentTab": 52
       }
     ],
     "direction": "vertical"
@@ -855,7 +867,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f8fac2f4fd4ae3b5",
+  "active": "27cdb3d49e586dd6",
   "lastOpenFiles": [
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
