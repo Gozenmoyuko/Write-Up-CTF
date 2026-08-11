@@ -737,7 +737,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Prompte nouveau cours..md",
+                "file": "Reverse Engineering/Prompte nouveau cours..md",
                 "mode": "source",
                 "source": false
               },
@@ -912,7 +912,7 @@
   "active": "febfe5aad6593933",
   "lastOpenFiles": [
     "Reverse Engineering/Les registres (Claude).md",
-    "Prompte nouveau cours..md",
+    "Reverse Engineering/Prompte nouveau cours..md",
     "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Python - Server-side Template Injection Introduction.md",
