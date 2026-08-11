@@ -751,7 +751,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
+                "file": "Reverse Engineering/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
                 "mode": "source",
                 "source": false
               },
@@ -923,10 +923,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d86a43aa52815488",
+  "active": "a33ee41c02f2775e",
   "lastOpenFiles": [
     "Reverse Engineering/Prompte nouveau cours..md",
-    "Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
+    "Reverse Engineering/Cours 1 — Comment marche un ordinateur, et les pointeurs.md",
     "Reverse Engineering/Les registres (Claude).md",
     "Reverse Engineering/Cours de base de reverse Engineering (Claude).md",
     "Reverse Engineering",
