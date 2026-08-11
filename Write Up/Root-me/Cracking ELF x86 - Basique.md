@@ -4,7 +4,12 @@ Bonjour aujourd'hui nous allons faire le deuxième challenge de root-me sur la p
 ![](../img/Pasted%20image%2020260812012634.png)
 
 Le but est de trouver le mot de passe du challenge. Pour cela on va lancer et voir comment ce comporte le code. Ici j'utiliserais GDB ajouté avec une extension nommée peda qui est simple d'installation voici le github du projet peda : 
+
 https://github.com/longld/peda
+
+Je lance tout d'abord le programme normalement : 
+
+![](../img/Pasted%20image%2020260812012848.png)
 
 Pour trouver le processus : 
 
