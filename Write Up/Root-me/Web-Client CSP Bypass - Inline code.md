@@ -129,4 +129,6 @@ Maintenant essayons de voir si on reçoit quelques choses :
 
 Voici le code en base64 de la page qu'on viens de récupérer : 
 
-Maintenant nous allons le décoder directement dans la console web grâce à atob
+Maintenant nous allons le décoder directement dans la console web grâce à atob qui est la fonction de décodage de btoa. 
+
+Voici comment on fait : 
