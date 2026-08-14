@@ -132,3 +132,8 @@ Voici le code en base64 de la page qu'on viens de récupérer :
 Maintenant nous allons le décoder directement dans la console web grâce à atob qui est la fonction de décodage de btoa. 
 
 Voici comment on fait : 
+
+![](../img/Pasted%20image%2020260815013418.png)
+
+
+Bien jouer vous avez réussi le challenge haha. Au passage on peut voir notre payload dans la page web.
