@@ -2,9 +2,24 @@
 ![](../img/Pasted%20image%2020260814235635.png)
 
 
-Dans ce challenge nous pouvons voir qu'il faudra exfiltrez le contenu de la page. 
+Dans ce challenge nous pouvons voir qu'il faudra exfiltrez le contenu d'une page. 
 
-Pour ce faire nous allons récupérer les informations du site 
+Nous allons tout d'abord voir ce qu'il y a sur le site et comment il se présente.
+
+
+Page principale : 
+
+![](../../Pasted%20image%2020260815001110.png)
+
+Voyons voir ce qu'il se passe lorsqu'on rentre dans le input une valeur de teste par exemple "test".
+
+![](../../Pasted%20image%2020260815001158.png)
+
+Nous pouvons voir actuellement que dans l'URL du site il y a un paramètre de requête nommer user qui à pour valeur l'input qu'on viens de mettre. 
+
+Image explicatif de semrush.com : 
+
+![](../../Pasted%20image%2020260815001358.png)
 
 
 
