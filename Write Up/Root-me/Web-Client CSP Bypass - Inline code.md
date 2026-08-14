@@ -73,7 +73,7 @@ Bon au niveau du svg nous gardons la même logique. Maintenant laisser moi vous 
 	document.location.href= 
 	```
 	
-va nous permettre dans notre cas de dire "lorsque tu as analyser et afficher avec succès l'image tu vas quitter la page et aller naviger vers le nouveau URL : ".
+Va nous permettre dans notre cas de dire "lorsque tu as analyser et afficher avec succès l'image tu vas quitter la page et aller naviger vers le nouveau URL : ".
 Dans notre cas document.location.href va pointer sur l'url de webhook url qui va nous permettre de récupérer les données de la query que nous allons initialisé.
 
 L'url de mon webhook.site : 
