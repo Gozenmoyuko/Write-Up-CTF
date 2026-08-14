@@ -912,9 +912,21 @@
               "icon": "lucide-file",
               "title": "Cracking ELF x86 - Basique"
             }
+          },
+          {
+            "id": "5482c0bd8e218734",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Notes de version 1.13.7"
+            }
           }
         ],
-        "currentTab": 67
+        "currentTab": 68
       }
     ],
     "direction": "vertical"
@@ -1077,7 +1089,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a33ee41c02f2775e",
+  "active": "5482c0bd8e218734",
   "lastOpenFiles": [
     "Write Up/img/Pasted image 20260812012848.png",
     "Write Up/img/Pasted image 20260812012634.png",
