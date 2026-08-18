@@ -933,12 +933,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
+                "file": "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Client CSP Bypass - Inline code"
+              "title": "Réseau -  Fichier Inconnu"
             }
           }
         ],
@@ -1001,7 +1001,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 316.5
   },
   "right": {
     "id": "718a1f42313848b8",
@@ -1107,6 +1107,17 @@
   },
   "active": "596dffd2da632df0",
   "lastOpenFiles": [
+    "Write Up/Root-me/sudo - faiblesse de configuration.md",
+    "Write Up/Root-me/Web-Serveur PHP assert().md",
+    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
+    "Write Up/Root-me/Web-Serveur Flask - Development server.md",
+    "Write Up/Root-me/Cracking ELF x86 - Basique.md",
+    "Write Up/Root-me/BASH system 2 Rootme.md",
+    "Write Up/Root-me/App-script 1 Rootme.md",
+    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
+    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
+    "Write Up/Root-me/Web-Serveur Directory traversal.md",
+    "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
     "Write Up/img/Pasted image 20260815013418.png",
     "Write Up/img/Pasted image 20260815012556.png",
     "Write Up/img/Pasted image 20260815010857.png",
@@ -1117,32 +1128,21 @@
     "Write Up/img/Pasted image 20260815001654.png",
     "Write Up/img/Pasted image 20260815001358.png",
     "Write Up/img/Pasted image 20260815001158.png",
-    "Write Up/img/Pasted image 20260815001110.png",
     "Write Up/Root-me/Web-Serveur CSRF 0 Protection.md",
-    "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
-    "Write Up/Root-me/Cracking ELF x86 - Basique.md",
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Root-me/Python input().md",
-    "Write Up/Root-me/Web-Serveur Directory traversal.md",
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
-    "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
     "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
-    "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Danger email Github/Les dangers de commit public sur github..md",
-    "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
     "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
     "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
     "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/Web-Serveur PHP assert().md",
-    "Write Up/Root-me/Web-Serveur Flask - Development server.md",
     "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
-    "Reverse Engineering/Cours Claude/Cours 10 — Méthodologie de Reverse Engineering et Exploitation.md",
     "Reverse Engineering/Cours Claude",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
