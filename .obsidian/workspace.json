@@ -933,16 +933,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Danger email Github/Les dangers de commit public sur github..md",
+                "file": "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Les dangers de commit public sur github."
+              "title": "Web-Client CSP Bypass - Inline code"
+            }
+          },
+          {
+            "id": "b6c226938d793910",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Client Websocket - 0 protection.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web-Client Websocket - 0 protection"
             }
           }
         ],
-        "currentTab": 69
+        "currentTab": 70
       }
     ],
     "direction": "vertical"
@@ -1105,8 +1119,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "596dffd2da632df0",
+  "active": "b6c226938d793910",
   "lastOpenFiles": [
+    "Pasted image 20260819192124.png",
+    "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
+    "Web-Client Websocket - 0 protection.md",
+    "Write Up/Root-me/XSS Volatile.md",
+    "Write Up/Root-me/XSS Stored 2.md",
+    "Projet Red teaming scan vuln/MomuScan.md",
+    "Danger email Github/Les dangers de commit public sur github..md",
     "Write Up/Root-me/Réseau -  Fichier Inconnu.md",
     "Write Up/Root-me/sudo - faiblesse de configuration.md",
     "Write Up/Root-me/Web-Serveur PHP assert().md",
@@ -1118,7 +1139,6 @@
     "Write Up/Root-me/Web-Serveur PHP - Configuration Apache.md",
     "Write Up/Root-me/Web-Serveur HTTP-Contournement-de-filtrage-IP.md",
     "Write Up/Root-me/Web-Serveur Directory traversal.md",
-    "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
     "Write Up/img/Pasted image 20260815013418.png",
     "Write Up/img/Pasted image 20260815012556.png",
     "Write Up/img/Pasted image 20260815010857.png",
@@ -1137,12 +1157,6 @@
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
     "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Write Up/Root-me/Web-Serveur JWT Jeton Révoqué.md",
-    "Write Up/Root-me/Web-Serveur  Insecure Code Management.md",
-    "Danger email Github/Les dangers de commit public sur github..md",
-    "Write Up/Root-me/Web-Serveur PHP - Register globals.md",
-    "Write Up/Root-me/Web-Serveur Nginx - Alias Misconfiguration.md",
-    "Write Up/Root-me/Web-serveur JWT secret faible.md",
-    "Write Up/Root-me/Web-Serveur  Flask - Unsecure session.md",
     "Reverse Engineering/Cours Claude",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
