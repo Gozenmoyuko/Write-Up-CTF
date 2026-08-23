@@ -947,12 +947,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Client Websocket - 0 protection.md",
+                "file": "Write Up/Root-me/Web-Serveur Nginx - Root Location Misconfiguration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Web-Client Websocket - 0 protection"
+              "title": "Web-Serveur Nginx - Root Location Misconfiguration"
             }
           }
         ],
@@ -1121,10 +1121,10 @@
   },
   "active": "b6c226938d793910",
   "lastOpenFiles": [
-    "Pasted image 20260819214415.png",
-    "Pasted image 20260819192124.png",
+    "Write Up/Root-me/Web-Client Websocket - 0 protection.md",
+    "Write Up/img/Pasted image 20260819214415.png",
+    "Write Up/img/Pasted image 20260819192124.png",
     "Write Up/Root-me/Web-Client CSP Bypass - Inline code.md",
-    "Web-Client Websocket - 0 protection.md",
     "Write Up/Root-me/XSS Volatile.md",
     "Write Up/Root-me/XSS Stored 2.md",
     "Projet Red teaming scan vuln/MomuScan.md",
@@ -1148,7 +1148,6 @@
     "Write Up/img/Pasted image 20260815002907.png",
     "Write Up/img/Pasted image 20260815002652.png",
     "Write Up/img/Pasted image 20260815001654.png",
-    "Write Up/img/Pasted image 20260815001358.png",
     "Write Up/Root-me/Web-Serveur CSRF 0 Protection.md",
     "Write Up/Root-me/PHP - Remote Xdebug.md",
     "Write Up/Root-me/Python input().md",
