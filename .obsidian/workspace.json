@@ -1121,6 +1121,7 @@
   },
   "active": "b6c226938d793910",
   "lastOpenFiles": [
+    "README.md",
     "Danger email Github/Les dangers de commit public sur github..md",
     "Projet Red teaming scan vuln/MomuScan.md",
     "Pentest Bug bounty/Crous admin panel..md",
@@ -1156,7 +1157,6 @@
     "Write Up/Root-me/Web-Serveur File upload - Null byte.md",
     "Write Up/Root-me/Web-Serveur File upload - ZIP.md",
     "Write Up/Root-me/Web-Serveur HTTP - Cookies.md",
-    "Write Up/Root-me/Web-Serveur JWT - Unsecure File Signature.md",
     "Reverse Engineering/Cours Claude",
     "Reverse Engineering",
     "Write Up/Root-me/Web-Serveur Challenge 7 http cookies.pdf",
