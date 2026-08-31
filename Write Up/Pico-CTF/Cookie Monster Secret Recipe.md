@@ -36,16 +36,16 @@ Cliquez sur Send et vous allez avoir la réponse du site comme moi.
 
 Essayons d'injecter l'username et le password en JSON comme ceci : 
 
-![[../img/Pasted image 20260307171700.png]]
+![../img/Pasted image 20260307171700.png](../img/Pasted%20image%2020260307171700.png)
 
 Okay cliquez sur Send et voilà vous verrez que cela ne marche pas. Pourquoi ? car on ne dépose pas actuellement c'est information avec le login.php regarder bien en haut à gauche on est dans la racine du site "/" cela peut-être index.html on ne sais pas, refaisons avec login.php.
 
 
-![[../img/Pasted image 20260307171949.png]]
+![../img/Pasted image 20260307171949.png](../img/Pasted%20image%2020260307171700.png)
 
 Bingo on à le cookie, vous pouvez selectionner le cookie et regarder le Inpesctor qui va vous le décoder de base64 en ce qui est lisible.
 
-![[../img/Pasted image 20260307172101.png]]
+![../img/Pasted image 20260307172101.png](../img/Pasted%20image%2020260307172101.png)
 
 Bingo.
 
