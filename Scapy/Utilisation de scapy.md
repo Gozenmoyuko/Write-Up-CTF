@@ -101,4 +101,10 @@ paquet = (
 
 
 
-`sudo apt update && sudo apt install aircrack-ng -y`
+```bash
+sudo apt update && sudo apt install aircrack-ng -y
+```
+
+```bash
+sudo airmon-ng
+```
