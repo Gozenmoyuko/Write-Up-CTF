@@ -42,3 +42,7 @@ sudo /usr/local/bin/scapy
 Maintenant que vous avez fais cela (lancer scapy) passons à son utilisation.
 
 
+## Utilisation de scapy
+
+Maintenant nous allons voir comment utiliser scapy et notamment comment s'y retrouver pour nos différents type de script (on verra le cheminement de penser)
+
