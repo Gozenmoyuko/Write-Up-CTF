@@ -46,3 +46,18 @@ Maintenant que vous avez fais cela (lancer scapy) passons à son utilisation.
 
 Maintenant nous allons voir comment utiliser scapy et notamment comment s'y retrouver pour nos différents type de script (on verra le cheminement de penser)
 
+
+Donc tous d'abord il faut avoir une idée protocolaire de ce que vous voulez faire, par exemple moi je veux faire une attaque de deauth, dès que vous savez ce que vous voulez faire, il faut comprendre sur quel couche du model OSI vous voulez fabriquer votre paquet/trame. Bien-sûr il vous ai possible de construire un paquet avec la couche 2 puis 3 etc... Il suffit de séparer via "/" lors de votre création de votre paquet dans un tuple python.
+
+Exemple : 
+
+```python
+paquet = (
+	Couche2()/
+	Couche3()/ #Ou suite de la trame de couche deux vous pouvez faire les entêtes etc...
+	Couche4()/
+	...
+	...
+	Couche7()/
+)
+```
