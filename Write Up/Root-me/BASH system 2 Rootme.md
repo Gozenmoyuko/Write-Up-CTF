@@ -1,29 +1,29 @@
 **Contexte** 
 
 ![Pasted image 20250407121510.png](../img/Pasted%20image%2020250407121510.png)
-Ici nous voyons lorsque qu'on se connecte au ctf (SSH) que nous somme l'utilisateur **app-script-ch12@challenge02**
+Ici, nous voyons lorsque qu'on se connecte au ctf (SSH) que nous sommes l'utilisateur **app-script-ch12@challenge02**
 
 
 ![Pasted image 20250407121657.png](../img/Pasted%20image%2020250407121657.png)
-on regarde qu'elle sont les fichiers cachées dans notre serveur ssh grâce a la fonction **ls** qui permet de lister **-la** pour lister les fichiers cacher
+on regarde quelles sont les fichiers cachés dans notre serveur ssh grâce à la fonction **ls** qui permet de lister **-la** pour lister les fichiers cachés
 
 ![Pasted image 20250407121814.png](../img/Pasted%20image%2020250407121814.png)
-on essaye ici d'exécuter le binaire du code et nous voyons que nous avons pas la permission 
+on essaye ici d'exécuter le binaire du code et nous voyons que nous n'avons pas la permission 
 
 ---
 Étape 1 : Essayons donc avec cat de voir si nous pouvons au moins lire ce fichier.
 
 ![Pasted image 20250407121943.png](../img/Pasted%20image%2020250407121943.png)
-Ici nous voyons que nous pouvons bel est bien lire le fichier qui est un script d'intéraction avec notre dossier ch12.
+Ici nous voyons que nous pouvons bel et bien lire le fichier qui est un script d'interaction avec notre dossier ch12.
 
 Il appelle `system("ls -lA /challenge/app-script/ch12/.passwd")`, donc il exécute la commande `ls` **via le shell**.
 
 L'objectif est de lire le contenu de `.passwd`, ce fichier appartenant à l’autre utilisateur (`app-script-ch12-cracked`) :
 
 ---
-**Comment ont vas faire ?** 
+**Comment va-t-on faire ?** 
 
-Puisque le C appelle `system("ls -lA ...")`, et que **`system()` utilise `$PATH` pour chercher `ls`**, on peux créer **notre propre script `ls` malveillant** et modifier notre `PATH` pour qu’il soit appelé à la place du vrai.
+Puisque le C appelle `system("ls -lA ...")`, et que **`system()` utilise `$PATH` pour chercher `ls`**, on peut créer **notre propre script `ls` malveillant** et modifier notre `PATH` pour qu’il soit appelé à la place du vrai.
 
  ___
  **Étape 2: 
@@ -31,7 +31,7 @@ Puisque le C appelle `system("ls -lA ...")`, et que **`system()` utilise `$PATH`
  Ici echo affiche le texte de statut dans un fichier ou sur notre écran 
  le -e permet de prendre en compte le retour à la ligne qui est ici ``\n`` 
 
-par la suite on identifie ce que nous allons mettre dans notre configuration bash ici notre bash va être configurer de façon à être en première ligne qu'on identifie ici par #! puis la suite sera le contenu de notre première ligne``` #!/bin/bash``` puis on pourrais ce dire 'mais le \ncat va être sur la première ligne' mais nan puisque notre **\n** permet de sauté la ligne ici notre bash va comprendre comme si nous exécutions une commande mais va incorporer notre deuxième ligne dans notre commande on à donc en deuxième ligne: 
+Par la suite on identifie ce que nous allons mettre dans notre configuration bash. Ici notre bash va être configuré de façon à être en première ligne qu'on identifie ici par #! Puis la suite sera le contenu de notre première ligne``` #!/bin/bash``` puis on pourrait se dire 'mais le \ncat va être sur la première ligne' mais non puisque notre **\n** permet de sauter la ligne ici notre bash va comprendre comme si nous exécutions une commande mais va incorporer notre deuxième ligne dans notre commande on a donc en deuxième ligne: 
 ```cat /challenge/app-script/ch12/.passwd``` puis on incorpore ce bash dans notre nouveau ls qui va contenir notre bash ici on prend ls car le script utilise la fonction ls.
 ___
 Étape 3: 
