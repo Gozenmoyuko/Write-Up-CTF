@@ -83,7 +83,7 @@ les commandes de type listing :
 
 - **lsc()** : Permet d'afficher toutes les fonctions utilitaires de haut niveau fournit par Scapy tel que arping wrpcap etc... 
 
-- explore() : Ouvre une interface interactive dans la console qui permet de naviguer dans l'arborescence des protocoles et des modules disponibles
+- explore() : Ouvre une interface interactive dans la console qui permet de naviguer dans l'arborescence des protocoles et des modules disponibles.
 
 
 Exemple :
