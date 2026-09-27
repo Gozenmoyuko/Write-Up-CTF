@@ -81,13 +81,18 @@ les commandes de type listing :
 
 - **ls(Protocole)** : Permet d'afficher chaque champ du protocole choisi. **Réflexe à avoir systématiquement avant de construire un paquet d'un protocole dont vous n'avez jamais maîtrisé ou dont vous avez du mal à maîtriser :  
 
-- **lsc()** : Permet d'afficher toutes les fonctions utilitaires de haut niveau fournit par Scapy tel que arping wrpcap etc... 
+- **lsc()** : Permet d'afficher toutes les fonctions utilitaires de haut niveau fournies par Scapy telles que arping, wrpcap, etc... 
 
-- **explore()** : Ouvre une interface interactive dans la console qui permet de naviguer dans l'arborescence des protocoles et des modules disponibles. Attention pour l'utilisation de explore() il faut installer iPython sinon vous allez tomber sur : 
+- **explore()** : Ouvre une interface interactive dans la console qui permet de naviguer dans l'arborescence des protocoles et des modules disponibles. Attention pour l'utilisation de explore(), il faut installer iPython sinon vous allez tomber sur : 
 "ImportError: prompt_toolkit is not installed ! You may install IPython, which contains it, via `pip install ipython`"
 
 - **help()** : Permet sur n'importe quel objet d'afficher la docstring, généralement plus complète que le système de listing. 
 
+Si IPython est installé, vous pouvez utiliser aussi l'option 
+"?" et "??".
+
+- IP? : Permet d'afficher la docstring rapide
+- IP?? : Permet d'afficher le code source complet de la méthode ou de la fonction.
 
 
 Exemple :
