@@ -82,7 +82,8 @@ les commandes de type listing :
 - **ls(Protocole)** : Permet d'afficher chaque champ du protocole choisi. **Réflexe à avoir systématiquement avant de construire un paquet d'un protocole dont vous n'avez jamais maîtrisé ou dont vous avez du mal à maîtriser :  
 
 - **lsc()** : Permet d'afficher toutes les fonctions utilitaires de haut niveau fournit par Scapy tel que arping wrpcap etc... 
--
+
+- explore() : Ouvre une interface interactive dans la console qui permet de naviguer dans l'aborescence des protocoles et des modules disponibles
 
 
 Exemple :
