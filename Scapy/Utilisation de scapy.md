@@ -75,8 +75,25 @@ sudo scapy
 
 Par la suite, nous allons maintenant voir les différentes commandes dans l'interpréteur qui vont beaucoup nous aider.
 
+les commandes de type listing : 
+
 - **ls()** : Permet d'afficher tous les protocoles que scapy connaît avec une courte description.
-- **ls(Protocole)** : Permet d'afficher les champs  
+
+- **ls(Protocole)** : Permet d'afficher chaque champ du protocole choisi. **Réflexe à avoir systématiquement avant de construire un paquet d'un protocole dont vous n'avez jamais maîtrisé ou dont vous avez du mal à maîtriser :  
+
+- **lsc()** : Permet d'afficher toutes les fonctions utilitaires de haut niveau fournit par Scapy tel que arping wrpcap etc... 
+-
+
+
+Exemple :
+- **ls(DNS)** ce qui donne : 
+
+![](../Write%20Up/img/Pasted%20image%2020260927191751.png)
+
+
+**lsc()** ce qui donne : 
+![](../Write%20Up/img/Pasted%20image%2020260927192030.png)
+
 
 ## Projet
 
