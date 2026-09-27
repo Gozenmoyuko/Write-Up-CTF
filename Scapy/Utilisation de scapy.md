@@ -107,8 +107,25 @@ Exemple :
 **explore()** Ce qui donne : 
 ![](../Write%20Up/img/Pasted%20image%2020260927194244.png)
 
-- help() ici je vais vous montrez avec IP, help(IP) ce qui donne : 
--![](../Write%20Up/img/Pasted%20image%2020260927194627.png)
+- **help()** ici je vais vous montrez avec IP, help(IP) ce qui donne : 
+
+![](../Write%20Up/img/Pasted%20image%2020260927194627.png)
+
+
+- Exemple de l'utilisation de ? avec le protocole IP : IP? donne : 
+
+![](../Write%20Up/img/Pasted%20image%2020260927195300.png)
+
+Simple et efficace, vous ne trouvez pas ? 
+
+Maintenant si vous êtes curieux ou que vous voulez reprendre la fonction de scapy ou apprendre comment il à étais créer donc voir le code source complet on rajoute un ? ce qui donne : 
+
+**IP??** : Ce qui donne l'affichage suivant : 
+
+![](../Pasted%20image%2020260927195427.png)
+
+Le début est le même que IP? vous devez descendre jusqu'à atteindre l'étiquette "Source : "
+
 
 ## Projet
 
