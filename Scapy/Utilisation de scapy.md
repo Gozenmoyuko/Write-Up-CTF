@@ -75,7 +75,8 @@ sudo scapy
 
 Par la suite, nous allons maintenant voir les différentes commandes dans l'interpréteur qui vont beaucoup nous aider.
 
-- **ls()** : Permet d'afficher tous les protocoles que scapy connaît
+- **ls()** : Permet d'afficher tous les protocoles que scapy connaît avec une courte description.
+- **ls(Protocole)** : Permet d'afficher les champs  
 
 ## Projet
 
