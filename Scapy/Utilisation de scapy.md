@@ -86,7 +86,8 @@ les commandes de type listing :
 - **explore()** : Ouvre une interface interactive dans la console qui permet de naviguer dans l'arborescence des protocoles et des modules disponibles. Attention pour l'utilisation de explore() il faut installer iPython sinon vous allez tomber sur : 
 "ImportError: prompt_toolkit is not installed ! You may install IPython, which contains it, via `pip install ipython`"
 
-- **help()** : Permet sur n'importe quel objet d'afficher la docstring, généralement  
+- **help()** : Permet sur n'importe quel objet d'afficher la docstring, généralement plus complète que le système de listing. 
+
 
 
 Exemple :
@@ -101,7 +102,8 @@ Exemple :
 **explore()** Ce qui donne : 
 ![](../Write%20Up/img/Pasted%20image%2020260927194244.png)
 
-
+- help() ici je vais vous montrez avec IP, help(IP) ce qui donne : 
+-![](../Pasted%20image%2020260927194627.png)
 
 ## Projet
 
