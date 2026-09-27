@@ -103,7 +103,7 @@ Exemple :
 ![](../Write%20Up/img/Pasted%20image%2020260927194244.png)
 
 - help() ici je vais vous montrez avec IP, help(IP) ce qui donne : 
--![](../Pasted%20image%2020260927194627.png)
+-![](../Write%20Up/img/Pasted%20image%2020260927194627.png)
 
 ## Projet
 
