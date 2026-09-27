@@ -64,34 +64,9 @@ paquet = (
 
 
 
-
-
-
-
-
-
-
-
-
 ## Tutoriel option
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Maintenant que vous savez tous cela nous allons voir un tutoriel rapide sur les options qui peuvent être proposer par scapy et leurs utilités.
 
 
 
