@@ -68,3 +68,66 @@ C'est ce qui va nous permettre de lancer notre script.
 
 Rendez-vous dans le dossier de la CVE :
 
+![](../img/Pasted%20image%2020261003225528.png)
+
+Puisque je suis sous WSL, j'ai dû installer différemment de vous, et donc je dois lancer depuis le fichier ~/.dotnet/dotnet mais dans votre cas il vous suffit de le lancer tel que : 
+
+```bash
+dotnet run ../MasterKee.DMP
+```
+
+Il est important de se situer dans le fichier du repo de la CVE que nous avons installé. 
+
+Car sinon le lancement Dotnet ne marchera pas.
+
+Bon, voyons ce que la CVE nous a trouvé comme clé maître : 
+
+
+![](../img/Pasted%20image%2020261003225917.png)
+
+Je cache le début pour éviter la tricherie, mais croyez-moi sur parole lorsque je vous dis que le début de la clé maître n'est pas certain. On peut le voir notamment avec le {e, 3, .....} qui montre que la CVE n'a pas trouvé. 
+
+Personnellement, au vu des lettres qui sont proposées (qui ont été retrouvées dans la RAM), je sais que c'est la lettre H car c'est celle qui fait sens avec le mot de passe.
+
+Bon maintenant je vais le rentrer dans le fichier keepass : 
+
+![](../img/Pasted%20image%2020261003230343.png)
+
+
+Bingo, je suis à l'intérieur, maintenant il suffit de cliquer sur "Copy password" et de le mettre sur root-me : 
+
+![](../img/Pasted%20image%2020261003230435.png)
+
+
+![](../img/Pasted%20image%2020261003230552.png)
+
+Bingo, on a le bon format de flag, allons voir maintenant si c'est bon : 
+
+![](../img/Pasted%20image%2020261003230728.png)
+
+
+
+Maintenant, rappelez-vous que je vous avais dit comme quoi nous pouvions facilement recréer cette CVE lorsqu'on a compris comment marche la version antérieure à la 2.54 de keepass.
+
+Je vais vous expliquez.
+
+La CVE se repose sur le fait que pour le mot de passe de la clé maître (MasterKey), c'est pour cela que ça s'appelle MasterKee le challenge. Chacun des caractères était vérifié directement par Keepass pour savoir si la clé maître était vraie ou non, ce qui faisait une copie notamment dans la mémoire RAM. 
+
+Maintenant que l'on sait cela, il suffisait donc de faire un dump de la mémoire et de voir les caractères qui ont été enregistrés. 
+
+Ceci-dit, il restait le premier caractère, comme nous avons pu le voir qui est caché par le caractère  ●
+En effet, l'ancien caractère est caché, mais il suffit de toutes les coordonnées pour retrouver (ce que fait actuellement la CVE si vous regardez bien le code source) . 
+
+Mais il reste tout de même une solution plus simple, il vous suffit de chercher grâce à la commande "strings" les chaînes de caractères stockées dans le dump de la mémoire et simplement de retrouver les chaînes. 
+
+Rappelez-vous petite subtilité, les systèmes lisent en Little Endian (Les bits de poids faible à gauche et les bits de poids fort à droite) c'est pour cela que nous allons utiliser la commande : 
+
+```bash
+strings -e l ../MasterKee.DMP
+```
+
+Ici -e permet de dire que nous allons encoder les chaînes et l'utilisé pour le Little Endian par strings.
+
+
+
+
