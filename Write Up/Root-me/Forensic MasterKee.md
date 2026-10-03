@@ -36,7 +36,3 @@ On peut remarquer que le fichier date de 2024, nous allons voir si une CVE se tr
 
 Mais avant tout, nous allons extraire directement les strings (chaîne de caractères). 
 
-
-
-
-
