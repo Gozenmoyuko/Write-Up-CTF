@@ -13,4 +13,16 @@ Tout d'abord, attaquons-nous à l'énoncer.
 
 ![](../img/Pasted%20image%2020261003213102.png)
 
-Nous pouvons actuellement voir que nous 
+Nous pouvons actuellement voir que notre collègue ce croit INTOUCHABLE.
+
+Nous allons lui montrer que ce n'est pas parce qu'on est sur Keepass que tout est forcément sécurisé ;) 
+
+
+Nous allons actuellement installer le fichier : 
+
+![](../../Pasted%20image%2020261003213638.png)
+
+
+Le ficher est en ZIP et donc j'ai extrait le fichier.
+
+Nous pouvons voir que nous avons un fichier .DMP qui va nous permettre de lui montrer qu'il est pas invisible 
