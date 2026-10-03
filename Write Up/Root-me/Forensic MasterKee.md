@@ -134,7 +134,7 @@ Bon, en réalité c'est assez complexe de mettre en place directement la lecture
 Mais pour trouver le caractère premier il vous suffit par la suite de faire un grep avec ce que vous connaissais : 
 
 
-![](../../Pasted%20image%2020261003233606.png)
+![](../img/Pasted%20image%2020261003233606.png)
 
 Le premier caractère est montré car le dump mémoire directement est plus puissant pour chercher le caractère que le script dotent car il fait des estimations, or ici vous pouvez le voir directement. Vous combinez les deux types et vous êtes gagnant à 100%, et vous ne faites pas de la devinette. La mémoire ici est plus puissante car nous avons exploité une autre erreur qui a été le copier-coller du mot de passe et donc il se situe dans le : 
 CClipDataObject::GetDataHereImpl
