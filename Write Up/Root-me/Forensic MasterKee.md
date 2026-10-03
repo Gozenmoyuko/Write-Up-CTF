@@ -115,7 +115,6 @@ La CVE repose sur un défaut visuel de KeePass. Lorsque l'utilisateur tape son m
 
 Il suffisait donc de faire un dump de la mémoire pour retrouver ces morceaux de texte enregistrés au fur et à mesure de la frappe.
 
-Maintenant que l'on sait cela, il suffisait donc de faire un dump de la mémoire et de voir les caractères qui ont été enregistrés. 
 
 Ceci-dit, il restait le premier caractère, comme nous avons pu le voir qui est caché par le caractère  ●
 En effet, l'ancien caractère est caché, mais il suffit de toutes les coordonnées pour retrouver (ce que fait actuellement la CVE si vous regardez bien le code source) . 
