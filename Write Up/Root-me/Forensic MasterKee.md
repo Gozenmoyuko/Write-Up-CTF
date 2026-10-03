@@ -31,3 +31,7 @@ Nous pouvons voir que nous avons un fichier .DMP qui va nous permettre de lui mo
 Bon commençons. 
 
 ![](../img/Pasted%20image%2020261003214127.png)
+
+On peut remarquer que le fichier date de 2024, nous allons voir si une CVE se trouve dans les plages de versions ou de date de ce fichier !
+
+Mais avant tout, nous allons extraire directement les strings (chaîne de caractères). 
