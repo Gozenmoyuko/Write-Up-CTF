@@ -111,7 +111,9 @@ Maintenant, rappelez-vous que je vous avais dit comme quoi nous pouvions facilem
 
 Je vais vous expliquez.
 
-La CVE se repose sur le fait que pour le mot de passe de la clé maître (MasterKey), c'est pour cela que ça s'appelle MasterKee le challenge. Chacun des caractères était vérifié directement par Keepass pour savoir si la clé maître était vraie ou non, ce qui faisait une copie notamment dans la mémoire RAM. 
+La CVE repose sur un défaut visuel de KeePass. Lorsque l'utilisateur tape son mot de passe au clavier, le logiciel crée involontairement une copie en clair de ce qui est écrit dans la mémoire RAM à chaque fois qu'une nouvelle lettre est ajoutée.
+
+Il suffisait donc de faire un dump de la mémoire pour retrouver ces morceaux de texte enregistrés au fur et à mesure de la frappe.
 
 Maintenant que l'on sait cela, il suffisait donc de faire un dump de la mémoire et de voir les caractères qui ont été enregistrés. 
 
