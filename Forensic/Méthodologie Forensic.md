@@ -31,6 +31,8 @@ C'est comme si vous venez de trouver le couteau sur la scène de crime, vous le 
 
 Vous venez d'altérer les preuves !! 
 
+Vaut mieux arrêter pendant 2-3 jours, même si pour certaines entreprises c'est énorme comme chiffre d'affaires et de temps, mais si vous ne le faites pas, malheureusement vous risquez de perdre bien plus de temps et d'argent qu'avoir été patients
+
 
 
 
