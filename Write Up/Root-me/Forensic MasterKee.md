@@ -20,9 +20,14 @@ Nous allons lui montrer que ce n'est pas parce qu'on est sur Keepass que tout es
 
 Nous allons actuellement installer le fichier : 
 
-![](../../Pasted%20image%2020261003213638.png)
+![](../img/Pasted%20image%2020261003213638.png)
 
 
 Le ficher est en ZIP et donc j'ai extrait le fichier.
 
-Nous pouvons voir que nous avons un fichier .DMP qui va nous permettre de lui montrer qu'il est pas invisible 
+Nous pouvons voir que nous avons un fichier .DMP qui va nous permettre de lui montrer qu'il n'est pas invincible. 
+
+
+Bon commençons. 
+
+![](../img/Pasted%20image%2020261003214127.png)
