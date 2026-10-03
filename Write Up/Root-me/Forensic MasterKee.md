@@ -35,3 +35,8 @@ Bon commençons.
 On peut remarquer que le fichier date de 2024, nous allons voir si une CVE se trouve dans les plages de versions ou de date de ce fichier !
 
 Mais avant tout, nous allons extraire directement les strings (chaîne de caractères). 
+
+
+
+
+
