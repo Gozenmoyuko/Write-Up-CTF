@@ -128,6 +128,15 @@ strings -e l ../MasterKee.DMP
 
 Ici -e permet de dire que nous allons encoder les chaînes et l'utilisé pour le Little Endian par strings.
 
+Bon, en réalité c'est assez complexe de mettre en place directement la lecture du fichier, dans la cve il fait une recherche du caractère ● qui se traduit en \xCF\x25 et c'est ainsi qu'il retrouve les caractères suivants.
+
+Mais pour trouver le caractère premier il vous suffit par la suite de faire un grep avec ce que vous connaissais : 
+
+
+![](../../Pasted%20image%2020261003233606.png)
+
+Le premier caractère est montré car le dump mémoire directement est plus puissant pour chercher le caractère que le script dotent car il fait des estimations, or ici vous pouvez le voir directement. Vous combinez les deux types et vous êtes gagnant à 100%, et vous ne faites pas de la devinette. 
+
 
 
 
