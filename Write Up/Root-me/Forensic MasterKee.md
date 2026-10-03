@@ -127,7 +127,7 @@ Rappelez-vous petite subtilité, les systèmes lisent en Little Endian (Les bits
 strings -e l ../MasterKee.DMP
 ```
 
-Ici -e permet de dire que nous allons encoder les chaînes et l'utilisé pour le Little Endian par strings.
+Ici -e permet de spécifier au programme l'encodage qu'il doit chercher et le l  est utilisé pour le Little Endian par strings.
 
 Bon, en réalité c'est assez complexe de mettre en place directement la lecture du fichier, dans la cve il fait une recherche du caractère ● qui se traduit en \xCF\x25 et c'est ainsi qu'il retrouve les caractères suivants.
 
