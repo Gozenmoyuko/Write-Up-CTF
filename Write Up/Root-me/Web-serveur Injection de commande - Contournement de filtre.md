@@ -46,5 +46,5 @@ Nous pouvons remarquer qu'il y a un Header nommé "Vary" et que celui-ci détien
 Ce qui veut dire que nous avons la possibilité sûrement d'utiliser de l'encodage URL pour pouvoir effectuer du code arbitraire ou autre.
 
 
-
+Voyons voir maintenant si le caractère ";" est celui-ci bloqué ou non.
 
