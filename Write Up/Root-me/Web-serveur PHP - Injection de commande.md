@@ -10,4 +10,21 @@ Voyons voir à quoi ressemble le site web :
 
 ![](../img/Pasted%20image%2020261015002905.png)
 
-Rien de très étonnant, comme il nous ai expliquer 
+Rien de très étonnant, comme expliqué dans l'énoncé, c'est un site qui permet d'envoyer des paquets ICMP (Ping). 
+
+Si le ping est réussi, cela veut dire que le serveur a reçu un paquet ICMP response. 
+
+Bon, là n'est pas vraiment le sujet. Ce qui nous intéresse est d'exécuter du code arbitraire sur la machine. 
+
+Maintenant, si on réfléchit un peu, nous savons que le serveur exécute la commande ping de son côté. 
+
+Nous avons donc deux possibilités pour effectuer une injection de commande. Soit on fait en sorte d'exécuter des instructions en plus en passant par la façon PHP ou même en ligne de commande, donc en fermant via le caractère ";"
+Soit on fait un pipe "|" pour effectuer une commande à la suite du "ping". 
+
+(Spoiler alert les deux marches)
+
+
+
+
+
+
