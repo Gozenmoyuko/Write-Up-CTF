@@ -48,3 +48,35 @@ Ce qui veut dire que nous avons la possibilité sûrement d'utiliser de l'encoda
 
 Voyons voir maintenant si le caractère ";" est celui-ci bloqué ou non.
 
+![](../img/Pasted%20image%2020261014232528.png)
+
+
+On peut remarquer que le ping s'effectue bel et bien. Mais essayons maintenant de rentrer du code arbitraire, vous verrez ici que n'importe quelle commande Unix ne marche simplement pas à la suite du caractère ";".
+
+
+![](../img/Pasted%20image%2020261014232634.png)
+
+
+![](../img/Pasted%20image%2020261014232651.png)
+
+Nous pouvons remarquer que sur nos différents tests effectués, nous avons une "Syntax Error". 
+
+Maintenant nous allons essayer d'encoder le caractère ";".
+
+![](../img/Pasted%20image%2020261014232953.png)
+
+
+Toujours normal, nous obtenons une Syntax Error, ce qui veut dire que cela n'a tout simplement pas marché.
+
+Maintenant que nous avons écarté cette possibilité, il faut se rappeler que nous pouvons simplement en PHP sauter de ligne pour dire que nous allons exécuter une prochaine commande. Globalement, on met de préférence chaque fois un ";" en PHP, sauf si c'est pour enchaîner plusieurs commandes.  On peut soit imaginer qu'il y a déjà un ";" ce qui donne ";" ";" ce qui n'est pas bon donc => Syntax Error, ou soit que celui-ci trie le caractère ";" et donc que nous pouvons simplement faire un retour à la ligne "LF" comme par exemple "\r\n" ou "\n". Cela dépend du serveur s'il est sur système UNIX ou Windows.
+
+Pour ce faire, nous allons encoder le caractère 
+```
+"
+
+"
+
+```
+Ici, entre les guillemets, c'est pour vous dire explicitement que le caractère que nous allons encoder est le caractère de saut de ligne.
+
+
