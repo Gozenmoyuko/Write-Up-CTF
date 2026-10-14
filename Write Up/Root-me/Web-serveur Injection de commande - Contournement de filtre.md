@@ -43,5 +43,8 @@ Nous venons d'effectuer un ping simple comme juste avant. On peut remarquer que 
 
 Nous pouvons remarquer qu'il y a un Header nommé "Vary" et que celui-ci détient une valeur "Accept-Encoding".
 
-Ce qui veut dire, que nous pouvons 
+Ce qui veut dire que nous avons la possibilité sûrement d'utiliser de l'encodage URL pour pouvoir effectuer du code arbitraire ou autre.
+
+
+
 
