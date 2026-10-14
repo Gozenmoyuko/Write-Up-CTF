@@ -90,3 +90,14 @@ https://gchq.github.io/CyberChef/#recipe=URL_Encode(false)
 
 
 Nous pouvons voir que le résultat donné est %0a, c'est donc ce que nous allons utiliser.
+
+Maintenant, essayons de faire un écho "test" pour voir si cela donne une erreur ou simplement un "Ping Ok". Si cela nous donne un Ping Ok, nous allons pouvoir simplement récupérer la page index.php comme demandé dans l'énoncé.
+
+
+![](../img/Pasted%20image%2020261014234414.png)
+
+
+Ok, nous remarquons que le "Ping Ok" est bel et bien apparu, ce qui veut dire que la commande écho "test" vient d'être effectuée et n'a pas été filtrée.
+
+Nous allons récupérer le collaborators pour récupérer la requête http via curl. 
+
