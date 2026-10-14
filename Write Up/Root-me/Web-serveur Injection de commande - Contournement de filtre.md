@@ -99,5 +99,12 @@ Maintenant, essayons de faire un écho "test" pour voir si cela donne une erreur
 
 Ok, nous remarquons que le "Ping Ok" est bel et bien apparu, ce qui veut dire que la commande écho "test" vient d'être effectuée et n'a pas été filtrée.
 
-Nous allons récupérer le collaborators pour récupérer la requête http via curl. 
+Nous allons récupérer le collaborator pour récupérer la requête http via curl. 
+
+
+
+![](../img/Pasted%20image%2020261014234659.png)
+
+
+Cliquer sur le carré orange, celui-ci va copier dans votre presse papier l'URL donnée par Burpsuite.
 
