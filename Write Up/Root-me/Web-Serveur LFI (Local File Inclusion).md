@@ -80,3 +80,4 @@ Nous pouvons voir qu'il y a une table (array) qui a pour nom de variable "users"
 
 
 ![](../img/Pasted%20image%2020261014184650.png)
+
