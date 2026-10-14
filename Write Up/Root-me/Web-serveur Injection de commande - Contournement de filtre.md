@@ -133,3 +133,13 @@ Parfait, allons voir notre onglet Collaborator :
 
 Il faut savoir que si cela met du temps, je vous conseille de cliquer sur "Poll now".
 
+Voyons voir la réponse de notre requête HTTP : 
+
+![](../img/Pasted%20image%2020261015000302.png)
+
+
+Nous pouvons voir qu'il y a ABSOLUMENT rien du tout. Mais ne vous découragez pas.
+
+Il se peut que le serveur ne nous montre pas de façon explicite et qu'il va falloir aller chercher plus loin avec des options dans curl. Et c'est ce que nous allons actuellement faire. 
+
+
