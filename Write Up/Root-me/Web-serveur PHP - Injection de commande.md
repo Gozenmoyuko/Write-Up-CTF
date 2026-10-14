@@ -24,7 +24,53 @@ Soit on fait un pipe "|" pour effectuer une commande à la suite du "ping".
 (Spoiler alert les deux marches)
 
 
+Bon, tentons tout d'abord : 
+
+```bash
+127.0.0.1;ls -la
+```
+
+![](../img/Pasted%20image%2020261015003959.png)
+
+Bingo ! 
+
+Maintenant essayons l'autre option : 
+
+![](../img/Pasted%20image%2020261015004035.png)
+
+Bingo aussi ! 
+
+Seule différence est que le pipe renvoie seulement la dernière commande, ce qui est normal. L'utilisation du pipe est normalement pour utiliser la sortie d'une commande dans une autre, comme par exemple cat /etc/passwd | grep -e "root" 
+
+Bon, maintenant rien de très compliquer, il nous ai demander de regarder le fichier index.php donc on va faire un : 
+```bash
+127.0.0.1;cat index.php
+```
+ou 
+```bash
+127.0.0.1|cat index.php
+```
 
 
+Bon, en réalité je ne trouve pas cela très pratique car le code de la page réapparaît et qu'il faut faire des magouilles. 
+
+Si vous êtes un habitué, vous savez donc directement que les flags sont dans .passwd très souvent dans root-me. 
+
+Je vais effectuer donc : 
+
+```bash
+127.0.0.1;cat .passwd
+```
+
+Mais avant cela, je vous montre ce qui se serait passé si on avait fait : 
+
+```bash
+127.0.0.1|cat index.php
+```
 
 
+![](../img/Pasted%20image%2020261015004609.png)
+
+Comme vous pouvez le voir, ce n'est pas ouf... 
+
+Don 
