@@ -80,3 +80,13 @@ Pour ce faire, nous allons encoder le caractère
 Ici, entre les guillemets, c'est pour vous dire explicitement que le caractère que nous allons encoder est le caractère de saut de ligne.
 
 
+Dans mon cas, je suis habitué à utiliser Cyberchef qui est un projet open-source et sur lequel il y a plusieurs options d'encodage et de décodage telles que l'URL Encode qui va nous servir. 
+
+https://gchq.github.io/CyberChef/#recipe=URL_Encode(false)
+
+À l'intérieur, je vais simplement appuyer sur entrer. 
+
+![](../img/Pasted%20image%2020261014233738.png)
+
+
+Nous pouvons voir que le résultat donné est %0a, c'est donc ce que nous allons utiliser.
