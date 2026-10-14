@@ -73,4 +73,15 @@ Mais avant cela, je vous montre ce qui se serait passé si on avait fait :
 
 Comme vous pouvez le voir, ce n'est pas ouf... 
 
-Don 
+Donc, je vais effectuer : 
+
+```bash
+127.0.0.1;cat .passwd
+```
+
+![](../img/Pasted%20image%2020261015004929.png)
+
+Bingo, vous venez d'avoir le flag, essayons de valider : 
+![](../img/Pasted%20image%2020261015005008.png)
+
+Bien joué ! Rendez-vous dans un autre challenge ! 
