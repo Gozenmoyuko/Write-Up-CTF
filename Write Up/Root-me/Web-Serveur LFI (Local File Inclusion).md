@@ -79,3 +79,4 @@ Essayons de voir ce que contient le fichier index.php :
 Nous pouvons voir qu'il y a une table (array) qui a pour nom de variable "users", essayons de nous connecter avec le nom et le mot de passe qui sont dans le fichier index.php : 
 
 
+![](../img/Pasted%20image%2020261014184650.png)
