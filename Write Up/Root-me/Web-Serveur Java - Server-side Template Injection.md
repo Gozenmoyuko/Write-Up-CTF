@@ -47,3 +47,31 @@ Maintenant que nous avons fait une petite phase de reconnaissance, on va aiguill
 
 Nous allons maintenant aiguiller nos recherches en tentant les payloads, si le test est réussi on suit la flèche verte sinon on suit la rouge.
 
+![](../img/Pasted%20image%2020261015202027.png)
+
+On voit que le calcul s'est effectué. Ce qui veut dire qu'il est possible d'exécuter une commande arbitraire. Maintenant nous allons encore aiguiller en tentant le payload : 
+
+```java
+a{*comment*}b
+```
+
+![](../img/Pasted%20image%2020261015202139.png)
+Cela n'a pas marché, nous savons donc que c'est un moteur en dehors de ceux qui sont ici. Heureusement que dans l'énoncé il est marqué que c'est du java.
+
+
+Voyons voir la partie Java de PayloadAllTheThings : 
+
+![](../img/Pasted%20image%2020261015202252.png)
+
+
+On a vu que le payload a marché avec ${ }
+
+
+Donc, on va essayer Freemarker pour voir si c'est le moteur Freemarker.
+
+![](../img/Pasted%20image%2020261015202608.png)
+
+Ici, on voit que cela a marché aussi, mais on ne sait pas encore si c'est SpEL. Donc, on va essayer différents payloads. 
+
+
+
