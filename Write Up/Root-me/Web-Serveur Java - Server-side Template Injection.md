@@ -74,4 +74,14 @@ Donc, on va essayer Freemarker pour voir si c'est le moteur Freemarker.
 Ici, on voit que cela a marché aussi, mais on ne sait pas encore si c'est SpEL. Donc, on va essayer différents payloads. 
 
 
+![](../img/Pasted%20image%2020261015203204.png)
 
+Ici, je vais tester le premier payload pour voir si l'id nous est retourné. 
+
+```java
+<#assign ex = "freemarker.template.utility.Execute"?new()>${ ex("id")}
+```
+
+![](../img/Pasted%20image%2020261015203339.png)
+
+On peut voir comme quoi l'id est bel et bien retourner, on va donc pouvoir 
