@@ -45,4 +45,5 @@ Maintenant que nous avons fait une petite phase de reconnaissance, on va aiguill
 ![](../img/Pasted%20image%2020261015200831.png)
 
 
-Nous allons maintenant aiguiller 
+Nous allons maintenant aiguiller nos recherches en tentant les payloads, si le test est réussi on suit la flèche verte sinon on suit la rouge.
+
