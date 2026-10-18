@@ -37,6 +37,25 @@ Maintenant, essayons de faire du Path traversal. Cela consiste à remonter dans 
 
 Mince, il détecte notre attaque. Mais rappelez-vous de ce que nous avons lu au début du challenge. On se rappelle que le nom du challenge contenait "Double-encoding" ce qui explique le bypass du filtre (qui doit être au passage un WAF très certainement) qui filtre un simple encodage ou même les caractères d'accéder ou de remonter pour éviter l'attaque de Path Traversal.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Lien pour les fichiers communs en PHP si besoin : 
 
 https://github.com/danielmiessler/SecLists/blob/master/Discovery/Web-Content/Programming-Language-Specific/Common-PHP-Filenames.txt
@@ -48,3 +67,4 @@ Nous pouvons remarquer que lorsque nous venons d'utiliser l'intruder de Burpsuit
 ![](../img/Pasted%20image%2020261018201914.png)
 
 Nous allons donc nous pencher vers ce fichier.
+
