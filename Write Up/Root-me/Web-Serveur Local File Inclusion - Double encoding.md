@@ -133,4 +133,4 @@ Bingo ! Essayons de voir si la théorie était bonne !
 
 ![](../img/Pasted%20image%2020261018225844.png)
 
-Bien joué ! Vous venez de terminer le challenge on se revoit bientôt ! 
+Bien joué ! Vous venez de terminer le challenge, on se revoit bientôt ! 
