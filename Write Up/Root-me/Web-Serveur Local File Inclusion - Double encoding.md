@@ -48,6 +48,16 @@ Essayons d'encoder une fois en percent encode(URL encode) pour voir si nous somm
 
 ![](../img/Pasted%20image%2020261018215647.png)
 
+Comme nous pouvons le voir, l'attaque a été détectée.
+
+Maintenant, si nous lisons quelques informations qui nous sont données dans les PDF, il nous est dit que si nous mettons %25 cela peut dépasser les WAF, car celui-ci représente le caractère "%" qui peut être lui-même bloqué. Or si nous passons par la valeur %25 qui est interprétée comme un "%", alors nous pouvons contourner. Ce qui revient à un double encodage URL.
+
+Ce qui donne : 
+```html
+/index.php?page=%252e%252e%252f
+```
+
+
 
 Lien pour les fichiers communs en PHP si besoin : 
 
