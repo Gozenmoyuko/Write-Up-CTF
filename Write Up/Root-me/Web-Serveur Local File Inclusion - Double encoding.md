@@ -41,14 +41,12 @@ Pour encoder, je vais actuellement utiliser le décodeur de burpsuite qui peut p
 
 ![](../img/Pasted%20image%2020261018210320.png)
 
-Essayons d'encoder une fois en percent encode(URL encode) pour voir si nous sommes restreints.
+Essayons d'encoder une fois en percent encode(URL encode) pour voir si nous sommes restreints de remonter dans les fichiers, par exemple si nous sommes bloqués dans un même dossier ou non.
 
 
 
 
-
-
-
+![](../img/Pasted%20image%2020261018215647.png)
 
 
 Lien pour les fichiers communs en PHP si besoin : 
