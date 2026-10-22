@@ -1,56 +1,7 @@
 	
-Pour ce challenge j'ai au préalable cracker Burpsuite Pro qui vous seras très utils et je vais vous expliquez pas à pas comment l'installer et comment je suis arrivé à ce résultat. 
-
-Tout d'abord rendez vous sur ce github : 
-https://github.com/xiv3r/Burpsuite-Professional
-
-Par la suite si vous êtes sur Linux ou MacOS je vous invite à suivre les démarches qui sont sur le github et sinon je vous invite à suivre ce que je vais dire attentivement. 
-
-Pour windows : 
-
-Tout d'abord aller dans votre disque C, et créer un Dossier Burp : 
+Pour ce challenge j'ai au préalable installé Burpsuite qui vous sera très utile.
 
 
-
-
-![Pasted image 20260228115516.png](../img/Pasted%20image%2020260228115516.png)
-
-
-Ensuite dès lors que vous avez fais cela nous allons installer le [install.ps1](https://github.com/xiv3r/Burpsuite-Professional/blob/main/install.ps1 "install.ps1")
-Cliquez sur le lien cela vous installera directement. 
-
-Allez dans vos téléchargement et vous allez extraire le fichier : 
-
-![[Pasted image 20260228115718.png]]
-Directement dans le fichier Burp que vous venez de créé dans le chemin suivant qui est censé être : C:\Burp 
-Si vous avez bien fais évidemment. 
-
-Maintenant vous allez lancer votre powershell en mode admin et vous allez taper les commandes suivante. 
-
-- ```
-    Set-ExecutionPolicy -ExecutionPolicy bypass -Scope process
-    ```
-
-Répondez oui à la question et par la suite si vous obtenez des questions répondez Oui. 
-
-Allez dans votre répertoire via la commande : cd C:\Burp 
-
-Et installer le fichier .ps1 qu'on à installer juste auparavant grâce à
-./install.ps1 
-
-Répondez oui, normalement il vont vous faire installer une version de java n'ayez pas peur et faite le sinon l'application ne pourra pas ce lancer. 
-
-Pour la licence Key ce n'est pas trop expliquez dans le github mais je vais vous guidez car moi aussi j'ai galérer. 
-
-Lorsque vous avez fini l'installation c'est censé vous lancer une application avec une licence key lorsque vous allez lancer votre burpsuite (une seule fois ne vous en faites pas les prochaines fois vous n'en n'aurait pas besoin) Vous allez mettre la licence key qui est afficher sur l'application avec marquer "licence key" puis vous allez coller sur Burpsuite le texte et cliquez sur Next.
-
-Par la suite cliquez en bas sur "manual activation". Vous allez voir trois champs copier celui avec le mot "request" et copier le sur votre application de licence crack. Et vous allez voir apparaître une licence "response" en bas copier le et mettez dans le même champs sur burpsuite, le champ response. 
-
-Cliquez sur next. 
-
-Et voilà vous avez votre burpsuite de prêt et vous pouvez utilisez toute les fonctionnalité sauf l'ia de burp. 
-
-Maintenant que vous avez tout cela attaquons le challenge. 
 
 
 Premièrement prenons conscience de l'énoncer : 
