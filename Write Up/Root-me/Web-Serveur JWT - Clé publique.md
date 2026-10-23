@@ -4,6 +4,44 @@
 
 Script : 
 
+
+```python
+└─$ cat parse_json.py
+
+
+def main():
+
+    liste_carac = ['[',']','"','\n'," "]
+    with open("public_key_chall60_root-me.json","r",encoding="utf8") as fd:
+        lignes = fd.readlines()
+        for ligne in lignes :
+            nouvelle_ligne = ligne
+            for carac in liste_carac :
+                 nouvelle_ligne = nouvelle_ligne.replace(carac,'')
+                 ligne_finale = nouvelle_ligne.replace(",","\n")
+                 #with open("result_jwt","a",)
+#             nouvelle_ligne = ligne.strip('[]"\n')
+            #print(ligne)
+            #for carac in liste_carac :
+
+             #   nouvelle_ligne = ligne.strip(carac)
+              #  print(carac)
+#    print(ligne_finale)
+
+    with open("result_jwt","w",encoding="utf8") as fichier:
+        fichier.write(ligne_finale)
+
+
+
+if __name__ == "__main__":
+    main()
+```
+
+
+![](../img/Pasted%20image%2020261024004345.png)
+
+
+
 ![](Write%20Up/img/Pasted%20image%2020261024004135.png)
 
 ```python
