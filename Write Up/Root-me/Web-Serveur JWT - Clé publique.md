@@ -1,4 +1,7 @@
 
+Tout d'abord voyons voir l'énoncer : 
+
+![](../img/Pasted%20image%2020261024011944.png)
 
 
 
@@ -81,3 +84,7 @@ if __name__ == "__main__":
     main()
 ```
 
+
+
+
+![](../img/Pasted%20image%2020261024011853.png)
