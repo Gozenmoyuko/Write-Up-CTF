@@ -10,15 +10,15 @@ Script :
 
 
 def main():
-
-    liste_carac = ['[',']','"','\n'," "]
+    ligne_finale = ""
+    liste_carac = ['[',']','"','\n']
     with open("public_key_chall60_root-me.json","r",encoding="utf8") as fd:
         lignes = fd.readlines()
         for ligne in lignes :
             nouvelle_ligne = ligne
             for carac in liste_carac :
                  nouvelle_ligne = nouvelle_ligne.replace(carac,'')
-                 ligne_finale = nouvelle_ligne.replace(",","\n")
+            ligne_finale += nouvelle_ligne.replace(",","\n") + "\n" #J'avais eu un problème avec le BEGIN PUBLIC KEY qui donner BEGINPUBLICKEY donc j'ai changer.
                  #with open("result_jwt","a",)
 #             nouvelle_ligne = ligne.strip('[]"\n')
             #print(ligne)
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 ```
 
 
-![](../img/Pasted%20image%2020261024004345.png)
+![](../img/Pasted%20image%2020261024010146.png)
 
 Script de confusion d'algorithme : 
 
