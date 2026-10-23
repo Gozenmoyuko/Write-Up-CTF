@@ -40,6 +40,7 @@ if __name__ == "__main__":
 
 ![](../img/Pasted%20image%2020261024004345.png)
 
+Script de confusion d'algorithme : 
 
 
 ![](Write%20Up/img/Pasted%20image%2020261024004135.png)
