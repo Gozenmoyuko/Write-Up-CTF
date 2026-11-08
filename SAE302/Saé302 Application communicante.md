@@ -62,3 +62,8 @@ nano /etc/group
 ```
 
 
+À la fin du fichier, nous allons rajouter la ligne : 
+
+```bash
+
+```
