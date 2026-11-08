@@ -93,3 +93,11 @@ Voici la configuration du hosts sur notre serveur :
 Voici le contenu des fichiers de configuration du hostname : 
 
 ![](img/Pasted%20image%2020261108211323.png)
+
+
+
+Voici un type de configuration possible au niveau des adresses IP mais aussi du masque de sous-réseaux et de la passerelle associée.
+
+![](img/Pasted%20image%2020261108211510.png)
+
+Dès lors que vous venez de configurer les différents paramètres IP 
