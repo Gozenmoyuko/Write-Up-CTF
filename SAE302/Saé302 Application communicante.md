@@ -65,5 +65,11 @@ nano /etc/group
 À la fin du fichier, nous allons rajouter la ligne : 
 
 ```bash
-
+sae302:x:1001:sae302
 ```
+
+Ici je crée le groupe sae302 et à l'intérieur (le dernier champ) je rajoute l'utilisateur qui se nomme sae302.
+
+À NE JAMAIS FAIRE :
+
+Il ne faut pas changer soit même le /etc/shadow 
