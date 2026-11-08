@@ -84,6 +84,12 @@ sudo passwd sae302
 
 Maintenant, on va changer de type de configuration. Nous allons faire la configuration réseau de nos machines virtuelles.
 
+
+Voici la configuration du hosts sur notre serveur :
+
 ![](img/Pasted%20image%2020261108210228.png)
 
 
+Voici le contenu des fichiers de configuration du hostname : 
+
+![](img/Pasted%20image%2020261108211323.png)
