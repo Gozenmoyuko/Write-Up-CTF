@@ -82,4 +82,8 @@ sudo passwd sae302
 ```
 
 
-Maintenant on va changer de type de configuration
+Maintenant, on va changer de type de configuration. Nous allons faire la configuration réseau de nos machines virtuelles.
+
+![](img/Pasted%20image%2020261108210228.png)
+
+
