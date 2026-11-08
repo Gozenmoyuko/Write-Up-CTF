@@ -75,3 +75,11 @@ Ici je crée le groupe sae302 et à l'intérieur (le dernier champ) je rajoute l
 Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèmes à mettre le champ vide du password et qu'on peut avoir la méchante surprise de ne plus pouvoir se connecter au compte.
 
 
+Maintenant que nous avons configuré cela, nous allons rajouter le mot de passe pour notre nouvel utilisateur.
+
+```bash
+sudo passwd r302
+```
+
+
+Maintenant on va changer de type de configuration
