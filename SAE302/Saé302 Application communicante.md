@@ -72,4 +72,6 @@ Ici je crée le groupe sae302 et à l'intérieur (le dernier champ) je rajoute l
 
 À NE JAMAIS FAIRE :
 
-Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèmes à mettre le champ vide du password.
+Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèmes à mettre le champ vide du password et qu'on peut avoir la méchante surprise de ne plus pouvoir se connecter au compte.
+
+
