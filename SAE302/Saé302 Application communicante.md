@@ -78,7 +78,7 @@ Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèm
 Maintenant que nous avons configuré cela, nous allons rajouter le mot de passe pour notre nouvel utilisateur.
 
 ```bash
-sudo passwd r302
+sudo passwd sae302
 ```
 
 
