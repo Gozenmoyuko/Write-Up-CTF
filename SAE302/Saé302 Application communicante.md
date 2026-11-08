@@ -5,7 +5,7 @@ Cette SAÉ est très longue et tous à la programmation orienté objet comme év
 Le but est de créer une application Web de supervision qui permet de regarder l'état des disques en regardant directement dans le fichier /etc/fstab.
 
 
-![](SAÉ3.02%20_%20Solution%20centralisée%20de%20consultation%20de%20statistiques%20disque.pdf)
+![](doc_techniques/SAÉ3.02%20_%20Solution%20centralisée%20de%20consultation%20de%20statistiques%20disque.pdf)
 
 
 Toutes les informations techniques sont juste au-dessus dans le PDF. 
@@ -15,10 +15,19 @@ Je tiens à remercier Monsieur Eric Würbel pour cette SAÉ qui nous apprend rig
 
 Pour cette SAÉ, j'ai pensé à une topologie qui ressemblerait à cela : 
 
-![](../SAE302_Daniel_JORGE_SILVA.png)
+![](img/SAE302_Daniel_JORGE_SILVA.png)
 
 Nous avons au milieu notre serveur avec notre serveur Web Flask qui tourne, mais aussi différents programmes qui vont se lancer qui sont des programmes de fonctions Python, par exemple la gestion d'utilisateur dans un fichier puis un autre, etc... Pour faire en sorte que le code principal ne soit pas trop lourd.
 
 À notre niveau d'étude actuel, il faut savoir faire en sorte de proposer des solutions optimisées et d'avoir un esprit critique, c'est pour cela que j'ai imaginé cette topologie et cette façon de faire, mais il est possible que ce ne soit pas la meilleure. Celle-ci peut être menée à changer si je trouve qu'il manque quelque chose ou si une option, un cheminement de pensée s'avère être une erreur de conception.
+
+
+Pour ce faire, je vais commencer par configurer nos serveurs qui se situent dans le réseau machine.
+
+Je vais utiliser l'image d'une autre SAÉ qui est la SAÉ203 qui était aussi sur de l'administration système. Nous allons faire la configuration réseau mais aussi la création d'un nouveau utilisateur pour notre SAÉ. 
+
+
+
+On va donc changer notre fichier /etc/passwd pour créer notre utilisateur. 
 
 
