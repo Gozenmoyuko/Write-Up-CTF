@@ -56,7 +56,9 @@ mkdir /home/sae302
 Création du groupe : 
 
 Pour la création du groupe il faut se rendre dans le fichier : 
+
 ```bash
 nano /etc/group
 ```
+
 
