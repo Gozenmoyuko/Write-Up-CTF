@@ -13,4 +13,8 @@ Toutes les informations techniques sont juste au-dessus dans le PDF.
 Je tiens à remercier Monsieur Eric Würbel pour cette SAÉ qui nous apprend rigueur, patience et d'être méthodique, car oui, si on regarde bien, cette SAÉ reste d'un niveau assez poussé sur la variété des domaines.
 
 
-Pour cette SAÉ j'ai 
+Pour cette SAÉ, j'ai pensé à une topologie qui ressemblerait à cela : 
+
+![](../SAE302_Daniel_JORGE_SILVA.png)
+
+Nous avons au milieux notre serveur avec notre serveur Web Flask qui tourne mais aussi 
