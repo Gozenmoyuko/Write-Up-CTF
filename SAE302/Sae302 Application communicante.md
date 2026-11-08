@@ -103,3 +103,8 @@ Voici un type de configuration possible au niveau des adresses IP mais aussi du 
 Dès lors que vous venez de configurer les différents paramètres IP il faut relancer le service "networking". 
 
 
+```bash
+sudo systemctl restart networking
+```
+
+Si vous avez des problèmes lors de la relance du service, regarder le journalctl -xeu pour voir l'erreur et vérifier les 4 paramètres IP c'est très important ! 
