@@ -100,4 +100,4 @@ Voici un type de configuration possible au niveau des adresses IP mais aussi du 
 
 ![](img/Pasted%20image%2020261108211510.png)
 
-Dès lors que vous venez de configurer les différents paramètres IP 
+Dès lors que vous venez de configurer les différents paramètres IP il faut relancer 
