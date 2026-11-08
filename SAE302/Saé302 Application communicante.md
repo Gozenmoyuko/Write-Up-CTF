@@ -31,3 +31,32 @@ Je vais utiliser l'image d'une autre SAÉ qui est la SAÉ203 qui était aussi su
 On va donc changer notre fichier /etc/passwd pour créer notre utilisateur. 
 
 
+![](img/Pasted%20image%2020261108200217.png)
+
+Comme nous pouvons le voir, à la fin du fichier j'ai rempli les différents champs demandés par le fichier /etc/passwd. Pour ceux qui ne sont pas habitués, ou pour vous rappeler des champs, voici une liste des champs de /etc/passwd : 
+
+
+```bash
+champs1:champs2:champs3:champs4:champs5:champs6:champs7
+utilisateur:mot_de_passe:id_util:id_groupe:gecos:repertoire_util:shell
+```
+
+
+***NB** : le champ gecos est un champ qui sert d'information générale sur l'utilisateur, ce champ ne peut pas contenir les caractères ":" même si celui-ci prend la valeur comme une chaîne de caractères*
+
+
+Maintenant nous allons créer son groupe, mais aussi son répertoire utilisateur. Pour cela, on fait : 
+
+Création du répertoire utilisateur :
+
+```bash
+mkdir /home/sae302
+```
+
+Création du groupe : 
+
+Pour la création du groupe il faut se rendre dans le fichier : 
+```bash
+nano /etc/group
+```
+
