@@ -212,3 +212,6 @@ Sinon vous pouvez le suivre sur en dessous.
 
 
 Aller dans la rubrique 4.2.2 Séparation des privilèges dans lequel le moindre privilège est rappeler pour le sshd. Pour l'application sur un compte et la clé aller dans la rubrique 4.3.1 et au 4.3.4
+
+
+(Je me suis arrêter à l'installation pour les 3 serveur, reprendre la suite en créant l'utilisateur.)
