@@ -72,7 +72,7 @@ Ici je crée le groupe sae302 et à l'intérieur (le dernier champ) je rajoute l
 
 À NE JAMAIS FAIRE :
 
-Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèmes à mettre le champ vide du password et qu'on peut avoir la méchante surprise de ne plus pouvoir se connecter au compte.
+Il ne faut pas changer soi-même le /etc/shadow car cela peut poser des problèmes de syntaxe et donc casser l'authentification, et un champ vide peut permettre à quelqu'un de se connecter sans mot de passe. C'est pour cela que nous allons utiliser `passwd`.
 
 
 Maintenant que nous avons configuré cela, nous allons rajouter le mot de passe pour notre nouvel utilisateur.
@@ -83,6 +83,26 @@ sudo passwd sae302
 
 
 Maintenant, on va changer de type de configuration. Nous allons faire la configuration réseau de nos machines virtuelles.
+
+
+
+Avant de continuer, nous allons régler les droits sur notre répertoire, car sinon l'utilisateur sae302 ne pourra tout simplement pas écrire dans son propre répertoire et cela compliquera notre connexion ssh si on souhaite envoyer des données via ssh.
+
+
+Pour ce faire, nous allons mettre faire : 
+```bash
+sudo chown sae302:sae302 /home/sae302
+```
+
+Maintenant le répertoire appartient bel et bien à l'utilisateur et au groupe sae302. 
+
+Il faut qu'on gère les droits sur le répertoire, on va donc appliquer les droits suivant : 
+
+ ```bash
+ sudo chmod 750 /home/sae302
+ ```
+
+
 
 
 Voici la configuration du hosts sur notre serveur :
