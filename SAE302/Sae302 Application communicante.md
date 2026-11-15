@@ -1,8 +1,8 @@
 
 
-Cette SAÉ est très longue et tous à la programmation orienté objet comme événementielle avec Flask, mais aussi à la mise en place d'un environnement d'entreprise et de sa sécurité.
+Cette SAÉ est très longue et touche à la programmation orienté objet comme événementielle avec Flask, mais aussi à la mise en place d'un environnement d'entreprise et de sa sécurité.
 
-Le but est de créer une application Web de supervision qui permet de regarder l'état des disques en regardant directement dans le fichier /etc/fstab.
+Le but est de créer une application Web de supervision qui permet de consulter l'état des disques d'un parc de serveur : le fichier `/etc/fstab` va nous fournir la liste des points de montage de chaque machine, la commande `df` va nous fournir quant à elle leurs statistiques d'utilisation tel que les blocs totaux, utilisés et libres etc... .
 
 
 ![](doc_techniques/SAÉ3.02%20_%20Solution%20centralisée%20de%20consultation%20de%20statistiques%20disque.pdf)
@@ -24,7 +24,7 @@ Nous avons au milieu notre serveur avec notre serveur Web Flask qui tourne, mais
 
 Pour ce faire, je vais commencer par configurer nos serveurs qui se situent dans le réseau machine.
 
-Je vais utiliser l'image d'une autre SAÉ qui est la SAÉ203 qui était aussi sur de l'administration système. Nous allons faire la configuration réseau mais aussi la création d'un nouveau utilisateur pour notre SAÉ. 
+Je vais utiliser l'image d'une autre SAÉ qui est la SAÉ203 qui était aussi sur de l'administration système. Nous allons faire la configuration réseau mais aussi la création d'un nouvel utilisateur pour notre SAÉ. 
 
 
 
