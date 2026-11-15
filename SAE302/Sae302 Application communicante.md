@@ -102,7 +102,7 @@ Il faut qu'on gère les droits sur le répertoire, on va donc appliquer les droi
  sudo chmod 750 /home/sae302
  ```
 
-![](../Pasted%20image%2020261115161845.png)
+![](img/Pasted%20image%2020261115161845.png)
 
 On peut remarquer que nos droits se sont bel et bien appliqués.
 
@@ -110,6 +110,23 @@ On peut remarquer que nos droits se sont bel et bien appliqués.
 Voici la configuration du hosts sur notre serveur :
 
 ![](img/Pasted%20image%2020261108210228.png)
+
+
+Nous allons rajouter la résolution DNS dans le fichier `/etc/resolv.conf`
+
+Pour ce faire, on fait : 
+
+```bash
+sudo nano /etc/resolv.conf
+```
+
+Et nous allons rajouter la ligne suivante : 
+```bash
+nameserver 192.168.122.1
+```
+
+
+![](img/Pasted%20image%2020261115162448.png)
 
 
 Voici le contenu des fichiers de configuration du hostname : 
