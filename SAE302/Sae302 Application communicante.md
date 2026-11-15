@@ -108,3 +108,5 @@ sudo systemctl restart networking
 ```
 
 Si vous avez des problèmes lors de la relance du service, regardez le journalctl -xeu pour voir l'erreur et vérifiez les 4 paramètres IP, c'est très important ! 
+
+
