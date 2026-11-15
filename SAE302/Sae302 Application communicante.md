@@ -185,3 +185,6 @@ cat /etc/machine-id
 Sur toutes vos machines, vous devriez voir celles-ci être différentes des autres.
 
 
+![](img/Pasted%20image%2020261115170704.png)
+
+On peut remarquer qu'après la séquence de commande, les machines-id sont différentes.
