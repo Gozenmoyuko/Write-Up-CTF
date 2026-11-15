@@ -149,3 +149,39 @@ sudo systemctl restart networking
 Si vous avez des problèmes lors de la relance du service, regardez le journalctl -xeu pour voir l'erreur et vérifiez les 4 paramètres IP, c'est très important ! 
 
 
+Maintenant il suffit de cloner la VM pour pouvoir avoir les mêmes configuration. Pour ce faire, je vais utiliser l'option graphique en faisant: 
+
+clique droit puis cloner puis je change le nom : 
+
+Attention pour les cloner il faut que les machines soit arrêter. 
+
+![](img/Pasted%20image%2020261115165726.png)
+
+Voici à quoi ressemble l'interface graphique pour le clonage depuis qemu. Maintenant il faut savoir que vous n'aurez pas à changer d'adresse MAC puisque lors de la création du clone de la VM celui-ci sera fait automatiquement.
+
+Point à noter, il vous faudra, si vous souhaitez modifier les utilisateurs, repasser par les étapes précédentes pour changer leurs mots de passe, par exemple, mais aussi changer l'adresse IP en faisant comme auparavant nano /etc/network/interfaces
+
+Il faut que toutes les machines aient des IP différentes, si ceci n'est pas respecté, il risque d'y avoir des confusions d'adresse IP et donc cela nous posera des gros soucis.
+
+Prenez en note le fait que chaque système embarque un fichier qui s'appelle machine-id et qui se trouve dans : `/etc/machine-id`, puisque nous clonons nos machines celui-ci peut avoir les mêmes valeurs, si c'est le cas alors la séquence de commande suivante doit être faite pour éviter quelconques problèmes.
+
+```bash
+sudo rm /etc/machine-id
+```
+Ceci permet de supprimer le machine-id actuel. 
+
+Par la suite : 
+
+```bash
+sudo systemd-machine-id-setup
+```
+
+Pour vérifier que celles-ci sont bel et bien différentes, taper la commande : 
+
+```bash
+cat /etc/machine-id
+```
+
+Sur toutes vos machines, vous devriez voir celles-ci être différentes des autres.
+
+
