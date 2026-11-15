@@ -203,3 +203,12 @@ sudo apt update && sudo apt install openssh-server
 
 Maintenant que le paquet est installé, nous allons créer un utilisateur dédié à la supervision, que nous nommons `supervision`. Il ne détiendra aucun privilège d’administration. Nous nous plaçons en effet dans le contexte d’une entreprise, où les solutions mises en place doivent être sécurisées. Ce compte sera le seul utilisé par le serveur central pour se connecter par clé SSH et lire les informations de disque. Nous procédons ainsi pour limiter les conséquences d’un vol de la clé SSH : l’attaquant qui s’en servirait n’obtiendrait aucun droit d’administration sur le serveur. Il s’agit du principe du moindre privilège, bien connu en cybersécurité et en administration système.
 
+Pour me baser sur le moindre privilège, on va donc restreindre la clé SSH. Par conviction de suivre les recommandations de l'ANSSI, je me suis basé sur leurs PDF open source qui se trouvent sur cette page : https://messervices.cyber.gouv.fr/documents-guides/NT_OpenSSH.pdf
+
+Sinon vous pouvez le suivre sur en dessous. 
+
+
+![](doc_techniques/NT_OpenSSH.pdf)
+
+
+Aller dans la rubrique 4.2.2 Séparation des privilèges.
