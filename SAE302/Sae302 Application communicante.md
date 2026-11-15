@@ -102,7 +102,9 @@ Il faut qu'on gère les droits sur le répertoire, on va donc appliquer les droi
  sudo chmod 750 /home/sae302
  ```
 
+![](../Pasted%20image%2020261115161845.png)
 
+On peut remarquer que nos droits se sont bel et bien appliqués.
 
 
 Voici la configuration du hosts sur notre serveur :
