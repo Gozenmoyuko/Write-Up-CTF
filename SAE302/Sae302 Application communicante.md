@@ -201,4 +201,5 @@ Il va falloir donc tout d'abord installer le paquet sur chacun de nos serveurs, 
 sudo apt update && sudo apt install openssh-server
 ```
 
-Maintenant que le paquet est installé, nous allons créer un utilisateur pour le serveur ssh 
+Maintenant que le paquet est installé, nous allons créer un utilisateur dédié à la supervision, que nous nommons `supervision`. Il ne détiendra aucun privilège d’administration. Nous nous plaçons en effet dans le contexte d’une entreprise, où les solutions mises en place doivent être sécurisées. Ce compte sera le seul utilisé par le serveur central pour se connecter par clé SSH et lire les informations de disque. Nous procédons ainsi pour limiter les conséquences d’un vol de la clé SSH : l’attaquant qui s’en servirait n’obtiendrait aucun droit d’administration sur le serveur. Il s’agit du principe du moindre privilège, bien connu en cybersécurité et en administration système.
+
