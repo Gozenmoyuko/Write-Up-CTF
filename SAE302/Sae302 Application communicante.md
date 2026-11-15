@@ -188,3 +188,17 @@ Sur toutes vos machines, vous devriez voir celles-ci être différentes des autr
 ![](img/Pasted%20image%2020261115170704.png)
 
 On peut remarquer qu'après la séquence de commande, les machines-id sont différentes.
+
+
+Maintenant, il faut savoir que sur nos serveurs, il n'y a pas de serveur ssh qui est déjà configuré ni installé. 
+
+Il va falloir installer sur chacun d'entre eux le serveur ssh pour pouvoir s'envoyer les informations ou même juste pour établir une connexion entre notre serveur central et ceux situés dans la zone des réseaux machines.
+
+
+Il va falloir donc tout d'abord installer le paquet sur chacun de nos serveurs, mais aussi il va falloir l'installer pour la machine client. Pour ce faire, on fait : 
+
+```bash
+sudo apt update && sudo apt install openssh-server
+```
+
+Maintenant que le paquet est installé, nous allons créer un utilisateur pour le serveur ssh 
